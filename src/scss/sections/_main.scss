@@ -1,22 +1,69 @@
 .main {
 	@include background (url("../img/main/main-bg.png"));
+	padding: 44px 0 170px;
+
 	// .main__wrapper
-	&__wrapper {}
+	&__wrapper {
+		@include flex (space-between, center, wrap, column);
+	}
+
 	// .main__title
-	&__title {}
+	&__title {
+		margin-bottom: 20px;
+	}
+
 	// .main__list
-	&__list {}
+	&__list {
+		@include flex (space-between, flex-start, wrap, column);
+		gap: 72px;
+		width: 100%;
+	}
+
 	// .main__item
-	&__item {}
+	&__item {
+		@include flex ($flex-direction: column);
+		gap: 10px;
+	}
+
 	// .main__box
-	&__box {}
+	&__box {
+		@include flex ();
+		gap: 20px;
+	}
+
 	// .main__img
 	&__img {}
-	// .main__desc
-	&__desc {}
-	// .main__link
-	&__link {}
-	// .main__text
-	&__text {}
-}
 
+	// .main__desc
+	&__desc {
+		align-self: flex-end;
+		position: relative;
+
+		&::before {
+			@include pseudo;
+			width: 100%;
+			@include pos (absolute, $bottom: -2px, $left: 0);
+			height: 2px;
+			background-color: #fff;
+
+		}
+
+	}
+
+	// .main__link
+	&__link {
+		font-family: 'TT Norms';
+
+		font-weight: 500;
+		font-size: 33px;
+		line-height: 85.19%;
+		color: $textMainColor;
+		text-shadow: 0px 0px 67px #010715;
+
+	}
+
+	// .main__text
+	&__text {
+		padding-left: 10px;
+	}
+}

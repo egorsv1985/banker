@@ -436,6 +436,72 @@ body {
   background-position: center;
   background-size: cover;
   background-image: url("../img/main/main-bg.png");
+  padding: 44px 0 170px;
+}
+.main__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.main__title {
+  margin-bottom: 20px;
+}
+.main__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 72px;
+  width: 100%;
+}
+.main__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main__box {
+  display: flex;
+  gap: 20px;
+}
+.main__desc {
+  align-self: flex-end;
+  position: relative;
+}
+.main__desc::before {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 2px;
+  background-color: #fff;
+}
+.main__link {
+  font-family: "TT Norms";
+  font-weight: 500;
+  font-size: 33px;
+  line-height: 85.19%;
+  color: #FFF;
+  text-shadow: 0px 0px 67px #010715;
+}
+.main__text {
+  padding-left: 10px;
+}
+
+.order__wrapper {
+  display: flex;
+  gap: 20px;
+}
+.order__box {
+  display: flex;
+  flex-direction: column;
+}
+.order__inner {
+  display: flex;
 }
 .header {
   padding: 36px 0;

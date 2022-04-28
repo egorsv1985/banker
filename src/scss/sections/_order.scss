@@ -1,0 +1,26 @@
+.order {
+	// .order__wrapper
+	&__wrapper {
+		@include flex ();
+		gap: 20px;
+	}
+	// .order__box-img
+	&__box-img {}
+	// .order__img
+	&__img {}
+	// .order__box
+	&__box {
+		@include flex ($flex-direction: column);
+	}
+	// .order__inner
+	&__inner {
+		@include flex ();
+	}
+	// .order__title
+	&__title {}
+	// .order__subtitle
+	&__subtitle {}
+	// .order__form
+	&__form {}
+}
+
