@@ -1,0 +1,22 @@
+.main {
+	@include background (url("../img/main/main-bg.png"));
+	// .main__wrapper
+	&__wrapper {}
+	// .main__title
+	&__title {}
+	// .main__list
+	&__list {}
+	// .main__item
+	&__item {}
+	// .main__box
+	&__box {}
+	// .main__img
+	&__img {}
+	// .main__desc
+	&__desc {}
+	// .main__link
+	&__link {}
+	// .main__text
+	&__text {}
+}
+

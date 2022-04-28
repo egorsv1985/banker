@@ -1,0 +1,13 @@
+
+.contacts {
+@include flex (space-between, center);
+gap: 30px;
+	// .contacts__item
+	&__item {}
+
+	// .contacts__link
+	&__link {}
+
+	// .contacts__img
+	&__img {}
+}

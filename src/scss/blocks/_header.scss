@@ -1,0 +1,38 @@
+.header {
+	padding: 36px 0;
+
+	// .header__wrapper
+	&__wrapper {
+		@include flex (space-between, center, wrap);
+	}
+
+	// .header__logo
+	&__logo {
+		@include background (url("../img/header/Logo.svg"));
+		@include wh(238px, 66px);
+	}
+
+	// .header__nav
+	&__nav {}
+
+	// .header__contacts
+	&__contacts {}
+
+	// .header__enter
+	&__enter {}
+
+	// .header__button
+	&__button {
+		@include flex (center, center);
+		@include wh(113px, 48px);
+		background-color: rgba(15, 15, 15, 0.35);
+		border: 1px solid #DCFFF9;
+		border-radius: 5px;
+		font-family: 'Roboto';
+		font-weight: 500;
+		font-size: 23px;
+		line-height: 27px;
+		text-align: center;
+		color: #DCFFF9;
+		}
+}
