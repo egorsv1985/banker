@@ -1,28 +1,35 @@
 .order {
+
 	// .order__wrapper
 	&__wrapper {
-		@include flex ($flex-wrap: wrap);
+		@include flex ();
 		gap: 20px;
 	}
+
 	// .order__box-img
 	&__box-img {}
+
 	// .order__img
 	&__img {}
+
 	// .order__box
 	&__box {
 		@include flex ($flex-direction: column);
 		gap: 45px;
 		padding-top: 50px;
 	}
+
 	// .order__inner
 	&__inner {
 		@include flex ($align-items: flex-start, $flex-direction: column);
 	}
+
 	// .order__title
 	&__title {}
+
 	// .order__subtitle
 	&__subtitle {}
+
 	// .order__form
 	&__form {}
 }
-
