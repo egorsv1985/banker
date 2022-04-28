@@ -1,0 +1,231 @@
+/** СТИЛИ ДЛЯ БЛОГА **/
+.blogGalerey-title > a {
+  font-size: 120%;
+  padding: 5px;
+  background-color: #7e7f7f;
+  color: #fbfbfb;
+  display: block;
+  position: relative;
+  top: 10px;
+}
+
+.blogGallery-text {
+  display: block;
+  position: relative;
+  padding-top: 15px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+/******** подгоним под флетру *******/
+.blog-summery {
+  height: 369px;
+}
+
+.blogdetails {
+  overflow: hidden !important;
+}
+
+.blogdetails img {
+  height: 175px;
+  overflow: hidden;
+}
+
+.anim-image {
+  height: 214px;
+  width: 214px;
+  overflow: hidden !important;
+}
+
+.anim-image:hover {
+  transform: scale(1.1) translateX(-10px) translateY(-10px);
+  height: 214px;
+  overflow: hidden !important;
+}
+
+.bloggalery {
+  background-color: #ededed;
+}
+
+#blog-gallery-block > div.pagination {
+  position: relative;
+  float: right;
+  padding: 0;
+  margin: 0;
+}
+
+#blog-gallery-block > div.pagination > div > ul {
+  margin: 0;
+  padding-right: 0;
+}
+
+.blogGallery-text {
+  color: black;
+}
+
+.blog-block {
+  padding-right: 10px;
+}
+
+/************************************/
+.blogGalerey-info {
+  font-size: 75%;
+  padding: 5px;
+  #background-color: #7e7f7f;
+  #color: #fbfbfb;
+  display: block;
+  position: relative;
+  top: 10px;
+}
+
+.blogGalerey-info > a {
+  #color: #fbfbfb;
+}
+
+.blogGalerey-info > a:hover {
+  #color: #3bb3c2;
+}
+
+.blogGalerey-commentCount {
+  display: block;
+  position: relative;
+  color: #3bb3c2;
+  top: 10px;
+  padding: 10px;
+  border-top: #7e7e7e !important;
+  border-bottom: #7e7e7e !important;
+  border-left: #fbfbfb;
+  border-right: #fbfbfb;
+  border-style: double !important;
+}
+
+.blog-categories-btn {
+  display: block;
+  position: relative;
+  /*float: right;*/
+  top: -4px;
+  padding-left: 20px;
+}
+
+.blog-categories-btn a {
+  border: 3px solid #7e7e7e !important;
+  height: 34px;
+}
+
+.blog-categories-btn a:hover {
+  border: 3px solid #c73b2c !important;
+  background-color: #c73b2c;
+}
+
+.blogPost-view > h2 {
+  display: block;
+  position: relative;
+  text-align: center;
+  width: 75%;
+  /*top: -20px;*/
+}
+
+a.tag-item {
+  padding: 5px;
+  border-radius: 3px;
+  background-color: #cdcdcd;
+  left: 3px;
+  position: relative;
+}
+
+.blogPost-title > a {
+  display: block;
+  position: relative;
+  padding: 7px;
+  /*background-color: #CDCDCD;*/
+  background-color: #00aff0;
+  float: left;
+  width: 100%;
+  top: -1px;
+}
+
+.blogPost-prop {
+  display: block;
+  position: relative;
+  float: right;
+  right: 0px;
+  background-color: #cdcdcd;
+  padding: 5px;
+  top: -40px;
+}
+
+.blogPost-author {
+  display: block;
+  position: relative;
+  font-size: 70%;
+}
+
+div.blogPost-image img {
+  display: block;
+  position: relative;
+  float: left;
+  /*top: -30px;*/
+}
+
+.blogPost-text {
+  position: relative;
+  /*width: 75%;*/
+  left: 5px;
+  padding-bottom: 10px;
+  /*top: -30px;*/
+}
+
+.blogPost-text img {
+  display: none;
+  position: relative;
+  left: auto;
+  right: auto;
+}
+
+.blog-item-caregory {
+  /*padding: 10px;*/
+}
+
+/*
+.blogPost-text > span, a, p {
+  display: block;
+  position: relative;
+  padding: 10px;
+}
+*/
+.post-update-modal-header {
+  display: block;
+  position: relative;
+  padding: 5px;
+}
+
+.ext-edit > label {
+  display: none;
+}
+
+/* изменим ширину у INPUT - ов
+#blog-posts-create-form input {
+  width: 45%;
+}
+*/
+.rating-block {
+  display: inline-block;
+  position: relative;
+  right: 40px;
+  float: right;
+  top: -2px;
+}
+
+.blog-nav {
+  width: 100%;
+  background-color: #00aff0;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/*
+.blog-teble {
+  width: 80% !important;
+}
+*/
+/** /END : СТИЛИ ДЛЯ БЛОГА **/

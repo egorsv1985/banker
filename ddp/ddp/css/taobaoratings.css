@@ -1,0 +1,97 @@
+.rating {
+  /*display: block;*/
+}
+
+.i-rating {
+  display: inline-block;
+  width: 90px;
+  height: 19px;
+}
+
+.rating_0 {
+  background: url('../images/taobaoratings/level_0.gif') right no-repeat;
+}
+
+.rating_1 {
+  background: url('../images/taobaoratings/level_1.gif') right no-repeat;
+}
+
+.rating_2 {
+  background: url('../images/taobaoratings/level_2.gif') right no-repeat;
+}
+
+.rating_3 {
+  background: url('../images/taobaoratings/level_3.gif') right no-repeat;
+}
+
+.rating_4 {
+  background: url('../images/taobaoratings/level_4.gif') right no-repeat;
+}
+
+.rating_5 {
+  background: url('../images/taobaoratings/level_5.gif') right no-repeat;
+}
+
+.rating_6 {
+  background: url('../images/taobaoratings/level_6.gif') right no-repeat;
+}
+
+.rating_7 {
+  background: url('../images/taobaoratings/level_7.gif') right no-repeat;
+}
+
+.rating_8 {
+  background: url('../images/taobaoratings/level_8.gif') right no-repeat;
+}
+
+.rating_9 {
+  background: url('../images/taobaoratings/level_9.gif') right no-repeat;
+}
+
+.rating_10 {
+  background: url('../images/taobaoratings/level_10.gif') right no-repeat;
+}
+
+.rating_11 {
+  background: url('../images/taobaoratings/level_11.gif') right no-repeat;
+}
+
+.rating_12 {
+  background: url('../images/taobaoratings/level_12.gif') right no-repeat;
+}
+
+.rating_13 {
+  background: url('../images/taobaoratings/level_13.gif') right no-repeat;
+}
+
+.rating_14 {
+  background: url('../images/taobaoratings/level_14.gif') right no-repeat;
+}
+
+.rating_15 {
+  background: url('../images/taobaoratings/level_15.gif') right no-repeat;
+}
+
+.rating_16 {
+  background: url('../images/taobaoratings/level_16.gif') right no-repeat;
+}
+
+.rating_17 {
+  background: url('../images/taobaoratings/level_17.gif') right no-repeat;
+}
+
+.rating_18 {
+  background: url('../images/taobaoratings/level_18.gif') right no-repeat;
+}
+
+.rating_19 {
+  background: url('../images/taobaoratings/level_19.gif') right no-repeat;
+}
+
+.rating_20 {
+  background: url('../images/taobaoratings/level_20.gif') right no-repeat;
+}
+
+.rating_21 {
+  background: url('../images/taobaoratings/level_21.gif') right no-repeat;
+}

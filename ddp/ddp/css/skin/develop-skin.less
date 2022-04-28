@@ -1,0 +1,2602 @@
+/* Определим основные цвета */
+/* Определим основные цвета */
+/**********************/
+@base-color003: #de8f18; /* color1 */
+@base-color103: #F3A53F; /* color1 : hover*/
+/**********************/
+@base-color301: #53a646; /* color2 */
+@base-color200: #56B94a; /* color2 : hover*/
+/**********************/
+@base-color700: #555555; /* color3 */
+@base-color999: #000000; /* color3 : hover*/
+/**********************/
+@base-color555: #844D9E; /* bg-menu3d hover & categories 2 level */
+/**********************/
+/* Цвета кнопок и т.п */
+/**********************/
+@base-color451: #feaa37;
+@base-color452: #fe9404;
+@base-color201: #c73b2c;
+@base-color450: #f3ee29;
+
+@base-color500: #aaaaaa;
+@base-color001: #EEEEEE;
+@base-color000: #ffffff;
+/**********************/
+/*  И раскрасим тему  */
+.color1 {
+  color: @base-color003;
+}
+
+.color2 {
+  color: @base-color301;
+}
+
+.color3 {
+  color: @base-color700;
+}
+
+a.color1 {
+  color: @base-color003;
+}
+
+a.color1:hover {
+  color: @base-color103;
+}
+
+a.color2 {
+  color: @base-color301;
+}
+
+a.color2:hover {
+  color: @base-color200;
+}
+
+a.color3 {
+  color: @base-color700;
+}
+
+a.color3:hover {
+  color: @base-color999;
+}
+
+.bgcolor1 {
+  background-color: @base-color003;
+}
+
+.bgcolor2 {
+  background-color: @base-color301;
+}
+
+.bgcolor3 {
+  background-color: @base-color700;
+}
+
+.input1 {
+  background-color: @base-color003;
+  border: 1px @base-color103 solid;
+  color: @base-color000;
+}
+
+.input2 {
+  background-color: @base-color301;
+  border: 1px @base-color200 solid;
+  color: @base-color000;
+}
+
+.input3 {
+  background-color: @base-color001;
+  border: 1px @base-color500 solid;
+  color: @base-color700;
+}
+
+.input4 {
+  background-color: @base-color000;
+  border: 1px @base-color500 solid;
+  color: @base-color700;
+}
+
+.bg-orange {
+  background-color: orange !important;
+}
+
+.bg-fuchsia {
+  background-color: fuchsia !important;
+}
+
+.bg-blue {
+  background-color: blue !important;
+}
+
+.bg-gray {
+  background-color: gray !important;
+}
+
+.bg-coral {
+  background-color: coral !important;
+}
+
+.bg-khaki {
+  background-color: khaki !important;
+}
+
+.bg-green {
+  background-color: green !important;
+}
+
+.bg-purple {
+  background-color: purple !important;
+}
+
+.bg-salmon {
+  background-color: salmon !important;
+}
+
+.bg-cyan {
+  background-color: cyan !important;
+}
+
+.bg-gold {
+  background-color: gold !important;
+}
+
+.bg-teal {
+  background-color: teal !important;
+}
+
+.bg-white {
+  background-color: white !important;
+}
+
+.bg-black {
+  background-color: black !important;
+}
+
+.bg-red {
+  background-color: red !important;
+}
+
+.border-orange {
+  border-color: orange !important;
+}
+
+.border-fuchsia {
+  border-color: fuchsia !important;
+}
+
+.border-blue {
+  border-color: blue !important;
+}
+
+.border-gray {
+  border-color: gray !important;
+}
+
+.border-coral {
+  border-color: coral !important;
+}
+
+.border-khaki {
+  border-color: khaki !important;
+}
+
+.border-green {
+  border-color: green !important;
+}
+
+.border-purple {
+  border-color: purple !important;
+}
+
+.border-salmon {
+  border-color: salmon !important;
+}
+
+.border-cyan {
+  border-color: cyan !important;
+}
+
+.border-gold {
+  border-color: gold !important;
+}
+
+.border-teal {
+  border-color: teal !important;
+}
+
+.border-white {
+  border-color: white !important;
+}
+
+.border-black {
+  border-color: black !important;
+}
+
+.border-red {
+  border-color: red !important;
+}
+
+.green {
+  color: green !important;
+}
+
+.red {
+  color: red !important;
+}
+
+/* CSS crunched with Crunch - http://crunchapp.net/ */
+body {
+  background: @base-color000;
+}
+
+::selection {
+  background: @base-color200;
+  color: @base-color000;
+}
+
+input {
+  background-color: @base-color200;
+}
+
+.day {
+  color: @base-color103;
+}
+
+.datepicker .dropdown-menu {
+  color {
+    color: @base-color003 !important;
+  }
+}
+
+.datepicker th.switch {
+  color: @base-color003 !important;
+}
+
+.items a {
+  color: @base-color999 !important;
+}
+
+.selected > td > a:hover {
+  color: @base-color999 !important;
+}
+
+.selected > td > a {
+  color: @base-color999 !important;
+}
+
+ul.yiiPager .selected a {
+  background: @base-color103 none repeat scroll 0% 0%;
+  color: @base-color000;
+}
+
+ul.yiiPager a:hover {
+  border: 3px solid @base-color003;
+  color: @base-color000;
+}
+
+.ui1-widget-header .ui1-corner-all .site_main_color {
+  color: @base-color999 !important;
+  font-style: @base-color999 !important;
+}
+
+li.search-filter:hover {
+  background-color: @base-color200;
+}
+
+.ac_results { /** Автодополнение поискового запроса **/
+  background-color: @base-color301;
+  z-index: 1001;
+}
+
+.ac_results li {
+  border-bottom: 1px solid @base-color200;
+}
+
+.ac_results li {
+  padding: 10px 15px;
+  color: @base-color000;
+}
+
+.ac_results li:hover {
+  background-color: @base-color200;
+}
+
+.input-prepend .add-on > .fa {
+  color: @base-color700 !important;
+}
+
+.input-prepend .add-on:hover {
+  color: @base-color700 !important;
+}
+
+.searchboxer {
+  border-left: 1px solid @base-color000;
+}
+
+.searchinputer {
+  /*
+  padding-left: 10px;
+  width: 72%;
+  */
+  background-color: @base-color001;
+  padding: 10px;
+}
+
+.btn-camera:hover {
+  background-color: @base-color200;
+}
+
+.searchbar .searchboxer input.searchinputer {
+  background-color: @base-color001;
+}
+
+.btn-search:hover {
+  background-color: @base-color200;
+}
+
+.searchboxer > button > i {
+  color: @base-color700 !important;
+}
+
+.searchboxer > button:hover > i {
+  color: @base-color000 !important;
+}
+
+#orders-grid.grid-view .summary {
+  color: @base-color103;
+}
+
+.nav .open > a, .nav .open > a:focus, .nav .open > a:hover {
+  background: @base-color103 !important;
+  background-color: @base-color103 !important;
+}
+
+.nav > li > a:focus, .nav > li > a:hover {
+  background-color: @base-color103 !important;
+}
+
+.box-heading-best-sales {
+  background-color: @base-color003;
+}
+
+.box-heading > span > a {
+  color: @base-color000;
+}
+
+.box-heading:hover > span > a:hover {
+  color: @base-color001;
+  cursor: pointer;
+}
+
+.box-heading > div > span > a {
+  color: @base-color000;
+}
+
+.box-heading:hover > div > span > a:hover {
+  color: @base-color001;
+  cursor: pointer;
+}
+
+#menuMega > div.bgr {
+  background-color: @base-color003;
+}
+
+.menuMegasub {
+  border-right: 1px solid @base-color003;
+}
+
+.cat-menu-item-level3 {
+  color: white;
+}
+
+.cat-menu-item-level3:hover {
+  background-color: @base-color999 !important;
+}
+
+.cat-menu li:hover {
+  background-color: @base-color999 !important;
+}
+
+.day {
+  color: @base-color003;
+}
+
+.product-sale {
+  color: @base-color000 !important;
+}
+
+.product-block:hover .product-meta {
+  /*background: @base-color301 !important;*/
+}
+
+span.price-old {
+  color: red;
+}
+
+span.price-new {
+  color: @base-color999;
+}
+
+span.price-cart {
+  color: @base-color003;
+}
+
+.product-meta .name {
+  color: @base-color003;
+}
+
+div.product-meta > div.name > a {
+  color: @base-color003;
+}
+
+#item_ontaobao > a {
+  color: @base-color999 !important;
+}
+
+input.item-count {
+  background: @base-color001;
+  border: solid @base-color301;
+}
+
+.plus, .minus {
+  background-color: @base-color301;
+}
+
+#item-count-price {
+  color: @base-color301;
+}
+
+#item-count-price label {
+  color: @base-color999;
+}
+
+.breadcrumb > li > a {
+  color: @base-color000 !important;
+}
+
+.footer a {
+  color: @base-color500 !important;
+}
+
+.footer a:hover {
+  color: @base-color000 !important;
+}
+
+/********* Оформлнение списка статей ****************/
+.level1 {
+  color: @base-color301 !important;
+}
+
+a.level1:hover {
+  color: @base-color003 !important;
+}
+
+.level2 {
+  color: @base-color003 !important;
+}
+
+a.level2:hover {
+  color: @base-color301 !important;
+}
+
+/***********************/
+translation:hover translate {
+  outline: 2px dotted @base-color450;
+}
+
+.search-sidebar-top {
+  background: @base-color003;
+}
+
+.search-sidebar-next, .search-sidebar-prev {
+  background: @base-color003;
+}
+
+.item-title-container { /*отображение блока с наименованием товара, рейтинге и отзывах*/
+  background-color: @base-color301;
+  color: @base-color000;
+}
+
+.item-cat-path { /*отображения блока наименования категории товара*/
+  color: @base-color000;
+}
+
+#price s { /* Отображение цены без скидки */
+  color: @base-color201;
+}
+
+.profiler:hover {
+  border: 1px @base-color999 solid !important;
+}
+
+/*=====================================*/
+/*        ОФОРМЛЕНИЕ ЗАКАЗА            */
+/*=====================================*/
+.addAdrTitle {
+  background-color: @base-color003;
+  color: @base-color000;
+}
+
+.addAdrForm {
+  background-color: @base-color001;
+}
+
+.comment-space {
+  border: 1px @base-color999;
+}
+
+.delivPrice {
+  color: @base-color003;
+}
+
+.Jumbo {
+  color: @base-color301;
+}
+
+div.product-chooser div.product-chooser-item.selected {
+  border: 7px solid @base-color301;
+}
+
+.blog-summery-cabinet {
+  background-color: @base-color001;
+}
+
+span.btmlinks a {
+  color: @base-color500;
+}
+
+span.copytxt a {
+  color: @base-color500;
+}
+
+.ui-selected {
+  border: 2px @base-color301 solid;
+}
+
+span.sss {
+  color: red;
+}
+
+/****************************/
+.fa {
+  color: @base-color000;
+}
+
+/** Ссылки для страниц */
+a {
+  color: @base-color700;
+}
+
+a:visited {
+  color: @base-color700;
+}
+
+a:hover {
+  color: @base-color103;
+  cursor: pointer;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  background-color: @base-color103;
+  color: @base-color000;
+}
+
+.form-control {
+  background-color: @base-color000;
+  color: @base-color700;
+}
+
+.checkbox {
+  color: @base-color700;
+}
+
+hr {
+  border-top: 1px solid @base-color500;
+}
+
+.btn.color1 {
+  background-color: @base-color003;
+  color: @base-color000;
+}
+
+.btn.color1:hover {
+  background-color: @base-color103;
+  color: @base-color000;
+}
+
+.btn.color2 {
+  background-color: @base-color200;
+  color: @base-color000;
+}
+
+.btn.color2:hover {
+  background-color: @base-color201;
+  color: @base-color000;
+}
+
+.btn.color3 {
+  background-color: @base-color700;
+  color: @base-color000;
+}
+
+.btn.color3:hover {
+  background-color: @base-color999;
+  color: @base-color000;
+}
+
+.logoimage {
+  background: @base-color003;
+}
+
+.logotext {
+  color: @base-color700;
+}
+
+.slogan {
+  color: @base-color301;
+}
+
+.dropdown-menu {
+  color: @base-color000;
+}
+
+.menu3dmega.responsive > ul {
+  background-color: @base-color003;
+}
+
+.topheadrow {
+  background-color: @base-color001;
+}
+
+.topheadrow .nav > li {
+  border-left: 1px solid @base-color000;
+}
+
+.topheadrow .nav > li > a {
+  color: @base-color700;
+}
+
+.topheadrow .nav > li > a .fa {
+  color: @base-color700;
+}
+
+.topheadrow .nav > li:hover {
+  background-color: @base-color103;
+}
+
+.topheadrow .nav > li:hover a {
+  /*background-color: @base-color301;*/
+  color: @base-color000;
+}
+
+.topheadrow .nav > li:hover a .fa {
+  color: @base-color000;
+}
+
+.topheadrow .nav .dropdown-menu {
+  background-color: @base-color301;
+  color: @base-color000;
+}
+
+.topheadrow .nav .dropdown-menu li {
+  border-top: 1px solid @base-color200;
+}
+
+.topheadrow .nav .dropdown-menu li:hover a {
+  background-color: @base-color200;
+  color: @base-color000;
+}
+
+.topheadrow .nav .dropdown-menu a {
+  color: @base-color000;
+}
+
+.topheadrow .nav .loginbox {
+  border-top: 1px solid @base-color200;
+}
+
+.topheadrow .nav .loginbox form i {
+  color: @base-color301;
+}
+
+.topheadrow .nav .loginbox form input {
+  background-color: @base-color200;
+  color: @base-color000;
+}
+
+.topheadrow .nav .loginbox form input::-webkit-input-placeholder {
+  color: @base-color301;
+}
+
+.topheadrow .nav .loginbox form input::-moz-placeholder {
+  color: @base-color301;
+}
+
+.topheadrow .nav .loginbox form input:-ms-input-placeholder {
+  color: @base-color301;
+}
+
+.topheadrow .nav .loginbox form input:-moz-placeholder {
+  color: @base-color301;
+}
+
+.topheadrow .nav .loginbox form .btn {
+  background-color: @base-color200;
+  color: @base-color000;
+}
+
+.topheadrow .nav .loginbox form .btn:hover {
+  background-color: @base-color201;
+}
+
+.searchbar {
+  background-color: @base-color001;
+}
+
+.searchbar .searchbox {
+  background-color: @base-color001;
+}
+
+.searchbar .searchbox input {
+  background-color: @base-color001;
+  color: @base-color700;
+}
+
+.searchbar .searchbox input::-webkit-input-placeholder {
+  color: @base-color700;
+}
+
+.searchbar .searchbox input::-moz-placeholder {
+  color: @base-color700;
+}
+
+.searchbar .searchbox input:-ms-input-placeholder {
+  color: @base-color700;
+}
+
+.searchbar .searchbox input:-moz-placeholder {
+  color: @base-color700;
+}
+
+.searchbar .searchbox button {
+  background-color: @base-color000;
+  color: @base-color700;
+}
+
+.searchbar .searchbox button:hover {
+  background-color: @base-color200;
+  color: @base-color000;
+}
+
+.searchbar > form > ul {
+  background-color: @base-color001;
+  color: @base-color700;
+}
+
+.searchbar > form > ul > li:hover > a {
+  background-color: @base-color301;
+  color: @base-color000;
+}
+
+.searchbar > form > ul > li:hover > a .fa {
+  color: @base-color000;
+}
+
+.searchbar > form > ul > li > a {
+  color: @base-color700;
+}
+
+.searchbar > form > ul > li > a .fa {
+  color: @base-color700;
+}
+
+.searchbar .dropdown-menu {
+  background-color: @base-color301;
+}
+
+.searchbar .dropdown-menu a {
+  color: @base-color000;
+}
+
+.searchbar .dropdown-menu a:hover {
+  color: @base-color000;
+}
+
+.searchbar .dropdown-menu li {
+  border-top: 1px solid @base-color200;
+}
+
+.searchbar .dropdown-menu li:hover a {
+  background-color: @base-color200;
+}
+
+#menuMega {
+  background-color: @base-color003;
+}
+
+.menu-col {
+  color: @base-color000;
+}
+
+.menu-heading {
+  background-color: @base-color003;
+}
+
+#menuMega > ul > li:hover {
+  background: @base-color555;
+}
+
+#menuMega > ul > li > .dropdown-menu > div.content {
+  background: @base-color555;
+}
+
+.menu3dmega > ul > li > a,
+.menu3dmega > ul > li > span {
+  color: @base-color000 !important;
+}
+
+.menu3dmega > ul > li:hover > .arrow-icon-bottom:after,
+.menu3dmega > ul > li:hover > a,
+.menu3dmega > ul > li:hover > a:after,
+.menu3dmega > ul > li:hover > .arrow-icon-bottom {
+  border-color: @base-color000 transparent transparent;
+  color: @base-color000;
+}
+
+.menu3dmega > ul li > a {
+  color: @base-color000;
+}
+
+.menu3dmega li .dropdown-menu {
+  background-color: @base-color003;
+}
+
+.menu3dmega .dropdown-menu > ul > li > a {
+  color: @base-color000;
+}
+
+.menu3dmega span.arrow-icon:after {
+  border-color: transparent transparent transparent @base-color999;
+}
+
+.menu3dmega span.arrow-icon-bottom:after {
+  border-color: @base-color999 transparent transparent transparent;
+}
+
+.menu3dmega .menuToggle .megaMenuToggle-icon {
+  background: none repeat scroll 0px 0px rgba(230, 230, 230, 0.7);
+}
+
+.menu3dmega .menuToggle .megaMenuToggle-icon:before {
+  background: none repeat scroll 0px 0px rgba(230, 230, 230, 0.8);
+}
+
+.menu3dmega .menuToggle .megaMenuToggle-icon:after {
+  background: none repeat scroll 0px 0px rgba(230, 230, 230, 0.9);
+}
+
+.menu3dmega li .blue {
+  background-color: @base-color999;
+}
+
+.menu3dmega .blue li a {
+  color: @base-color000 !important;
+  text-shadow: 0px 1px @base-color999 !important;
+}
+
+.menu3dmega li .grisbox li {
+  background: @base-color999;
+}
+
+.menu3dmega .menu-title {
+  color: @base-color000 !important;
+}
+
+.menu3dmega .menu-title a:hover {
+  background-color: transparent;
+}
+
+.menu3dmega .dropdown-menu .content ul li a {
+  color: @base-color000;
+}
+
+.menu3dmega .desc {
+  color: @base-color999;
+}
+
+.menu3dmega .separator {
+  border-bottom: 1px solid @base-color999;
+}
+
+.menu3dmega .separate {
+  border-bottom: 1px solid @base-color999;
+}
+
+.menu3dmega > ul > li i {
+  /*border-right: 1px solid @base-color003;*/
+}
+
+.menu3dmega .fa-angle-right,
+.menu3dmega .dropdown-menu .fa {
+  border: 0 !important;
+}
+
+.menu3dmega .dropdown-menu ul li {
+  border-bottom: 1px @base-color999 solid;
+}
+
+.menu3dmega .dropdown-menu ul li :last-child {
+  border-bottom: 0;
+}
+
+.menu3dmega .dropdown-menu ul > li:last-child {
+  border-bottom: 0;
+}
+
+.menu3dmega .fa {
+  transition: none;
+  -moz-transition: none;
+  -webkit-transition: none;
+}
+
+.menu3dmega.skin-blue-dark > ul > li {
+  /*border-left: 1px solid @base-color003;*/
+}
+
+.menu3dmega.skin-blue-dark > ul > li {
+  border-top: 1px solid @base-color003;
+}
+
+.menu3dmega.skin-blue-dark > ul > li:hover {
+  background-color: @base-color999;
+  color: @base-color000;
+}
+
+.menu3dmega.skin-blue-dark > ul > li:hover i {
+  /*border-right: 1px solid @base-color001;*/
+}
+
+.menu3dmega .product-block {
+  border: 1px @base-color999 solid;
+}
+
+.menu3dmega.skin-blue-dark > ul > li.no-link:hover {
+  background-color: transparent;
+}
+
+.menu3dmega.skin-blue-dark .dropdown-menu ul li a:hover {
+  background-color: @base-color103 !important;
+  color: @base-color000 !important;
+}
+
+.menu3dmega.skin-blue-dark .dropdown-menu a {
+  color: @base-color000 !important;
+}
+
+.menu-links ul > li {
+  background-color: @base-color003;
+  border-left: 1px solid @base-color103;
+}
+
+.menu-links ul > li:last-child:hover a {
+  background-color: @base-color301;
+}
+
+.menu-links ul > li > a {
+  color: @base-color000;
+}
+
+.menu-links ul > li > a:hover {
+  background-color: @base-color103;
+}
+
+.quick-cart {
+  background-color: transparent;
+  color: @base-color000;
+}
+
+.quick-cart .qc-row-item {
+  border-top: 1px solid @base-color200;
+}
+
+.quick-cart .qc-row-item:hover .qc-col-qty {
+  background-color: @base-color200;
+}
+
+.quick-cart .qc-row-item .qc-col-qty {
+  border-right: 1px solid @base-color200;
+}
+
+.quick-cart .qc-row {
+  background-color: @base-color301;
+  color: @base-color000;
+}
+
+.quick-cart .qc-col-name a {
+  color: @base-color000;
+}
+
+.quick-cart .qc-col-name a:hover {
+  color: @base-color301;
+}
+
+.quick-cart .qc-row-bottom .qc-btn-viewcart {
+  border-right: 1px solid @base-color200;
+}
+
+.quick-cart .qc-row-bottom .btn {
+  border-top: 1px solid @base-color200;
+  color: @base-color000;
+}
+
+.quick-cart .qc-row-bottom .btn:hover {
+  background-color: @base-color200;
+}
+
+.quick-cart .qc-col-remove .fa:hover {
+  background-color: @base-color200;
+}
+
+.quick-cart:after {
+  border-bottom: 12px solid @base-color301;
+  border-left: 16px solid @base-color000;
+}
+
+.top-searchs {
+  background-color: @base-color003;
+  color: @base-color103;
+}
+
+.top-searchs .title {
+  color: @base-color000;
+}
+
+.top-searchs .links a {
+  color: @base-color000;
+}
+
+.quick-message {
+  background-color: @base-color301;
+  color: @base-color000;
+}
+
+.quick-message .quick-box .title {
+  color: @base-color000;
+}
+
+.quick-message .quick-box a {
+  color: @base-color000;
+}
+
+.quick-message .carousel-control {
+  background-image: none !important;
+}
+
+.breadcrumb {
+  background-color: @base-color003;
+  color: @base-color000;
+}
+
+.slider {
+  background-color: @base-color003;
+  color: @base-color000;
+}
+
+.box-heading {
+  background-color: @base-color003;
+}
+
+.box-heading span {
+  color: @base-color000;
+}
+
+.box-block .box-content .box-products .carousel-controls .carousel-control:hover {
+  background-color: @base-color103;
+}
+
+.box-content .box-heading {
+  background-color: @base-color103;
+}
+
+.box-content .carousel-controls {
+  background-color: @base-color003;
+}
+
+.box-content .carousel-controls .carousel-control:hover {
+  background-color: @base-color103;
+}
+
+.box-content .carousel-controls .left {
+  border-left: 1px solid @base-color003;
+}
+
+.box-content .carousel-controls .right {
+  border-left: 1px solid @base-color003;
+}
+
+.sidebar > .box-content > .carousel-controls > .left {
+  border-right: 1px solid @base-color003;
+}
+
+.page-sidebar > .box-content > .carousel-controls > .left {
+  border-right: 1px solid @base-color003;
+}
+
+.nav-bg {
+  background: @base-color003;
+  color: @base-color000;
+}
+
+.product-block {
+  background-color: @base-color301;
+}
+
+.product-block .image .product-label {
+  color: @base-color000;
+}
+
+.product-block .product-meta {
+  background-color: @base-color301;
+  color: @base-color000;
+}
+
+.product-block .product-meta a {
+  color: @base-color000;
+}
+
+.product-block .product-meta .rating {
+  color: @base-color301;
+}
+
+.product-block .product-meta .rating .fa {
+  color: @base-color301;
+}
+
+.product-block .product-meta .rating .fa-star {
+  color: @base-color000;
+}
+
+.product-block .product-meta .small-btns {
+  border: 0;
+}
+
+.product-block .product-meta .small-btns .btn {
+  background-color: @base-color301;
+}
+
+.product-block .product-meta .small-btns .btn-compare {
+  border-right: 0;
+  background-color: @base-color451;
+}
+
+.product-block .product-meta .small-btns .btn-compare:hover {
+  background-color: @base-color200;
+}
+
+.product-block .product-meta .small-btns .btn-wishlist {
+  border-right: 0;
+  background-color: @base-color201;
+}
+
+.product-block .product-meta .small-btns .btn-wishlist:hover {
+  background-color: @base-color200;
+}
+
+.product-block .product-meta .small-btns .btn-addtocart {
+  background-color: @base-color003;
+}
+
+.product-block .product-meta .small-btns .btn-addtocart:hover {
+  background-color: @base-color103;
+}
+
+.product-block .product-meta .big-btns .btn {
+  background-color: @base-color201;
+  border: 0;
+}
+
+.product-block .product-meta .big-btns .btn:hover {
+  background-color: @base-color200;
+}
+
+.product-block .product-meta .big-btns .btn-view {
+  border-right: 1px @base-color301 solid;
+}
+
+.product-new {
+  background-color: @base-color451;
+}
+
+.product-sale {
+  background-color: @base-color301;
+}
+
+.product-hot {
+  background-color: @base-color700;
+}
+
+.rec-banner.black .banner {
+  background-color: @base-color700;
+}
+
+.rec-banner.darkblue .banner {
+  background-color: @base-color103;
+}
+
+.rec-banner.lightblue .banner {
+  background-color: @base-color003;
+}
+
+.rec-banner.orange .banner {
+  background-color: @base-color451;
+}
+
+.rec-banner.red .banner {
+  background-color: @base-color301;
+}
+
+.rec-banner.blue .banner {
+  background-color: @base-color003;
+}
+
+.rec-banner .banner {
+  color: @base-color000;
+}
+
+.rec-banner .banner h3 {
+  color: @base-color000;
+}
+
+.rec-banner .banner p {
+  color: @base-color000;
+}
+
+.subscribe {
+  background-color: @base-color301;
+  color: @base-color000;
+}
+
+.subscribe .heading h3 {
+  color: @base-color000;
+}
+
+.subscribe .formbox form input {
+  background-color: @base-color000;
+  color: @base-color700;
+}
+
+.subscribe .formbox input::-webkit-input-placeholder {
+  color: @base-color700;
+}
+
+.subscribe .formbox input::-moz-placeholder {
+  color: @base-color700;
+}
+
+.subscribe .formbox input:-ms-input-placeholder {
+  color: @base-color700;
+}
+
+.subscribe .formbox input:-moz-placeholder {
+  color: @base-color700;
+}
+
+.subscribe .formbox i {
+  color: @base-color700;
+}
+
+.subscribe .formbox button {
+  background-color: @base-color003;
+  color: @base-color000;
+}
+
+.subscribe .formbox button:hover {
+  background-color: @base-color103;
+}
+
+.blog-block .image .blogico {
+  color: @base-color000;
+}
+
+.blog-block .entry-row .date {
+  background-color: @base-color003;
+  color: @base-color000;
+}
+
+.blog-block .entry-row .blog-text {
+  background-color: @base-color301;
+  border-left: 1px @base-color000 solid;
+  color: @base-color000;
+}
+
+.blog-block .entry-row .blog-text span:last-child {
+  color: @base-color301;
+}
+
+.blog-block .entry-row .blog-text span:last-child a {
+  color: @base-color301;
+}
+
+.blog-block .entry-row .blog-text span:last-child a .fa {
+  color: @base-color301;
+}
+
+.blog-block .entry-row .blog-text span:last-child a:hover {
+  color: @base-color000;
+}
+
+.blog-block .entry-row .blog-text span:last-child a:hover .fa {
+  color: @base-color000;
+}
+
+.blog-block .box-content > .carousel-controls {
+  background: none;
+}
+
+.blog-block .box-content > .carousel-controls .carousel-control {
+  background: @base-color003;
+}
+
+.blog-block .box-content > .carousel-controls .carousel-control:hover {
+  background: @base-color003;
+}
+
+.twitter-block > .box-content {
+  background-color: @base-color003;
+  color: @base-color000;
+}
+
+.brands-row .brand-logo img {
+  filter: @base-color500;
+}
+
+.twitter-box .fa {
+  color: @base-color000;
+}
+
+.brands-row .brand-logo {
+  background-color: @base-color001;
+  border-right: 1px white solid;
+}
+
+footer {
+  background-color: @base-color700;
+  color: @base-color500;
+}
+
+footer a {
+  color: @base-color500;
+}
+
+footer a:hover {
+  color: @base-color001;
+}
+
+footer .title {
+  color: @base-color500;
+}
+
+footer .getintouch li:hover div.icon {
+  background-color: @base-color700;
+}
+
+footer .getintouch div.icon {
+  border: 1px @base-color700 solid;
+}
+
+footer .social-icons ul li a {
+  background-color: @base-color700;
+}
+
+footer .social-icons .google-plus:hover a {
+  background-color: @base-color201;
+}
+
+footer .social-icons .linkedin:hover a {
+  background-color: @base-color003;
+}
+
+footer .social-icons .twitter:hover a {
+  background-color: @base-color003;
+}
+
+footer .social-icons .facebook:hover a {
+  background-color: @base-color003;
+}
+
+footer .copyrights {
+  background-color: @base-color999;
+  border-top: 1px @base-color700 solid;
+}
+
+.page-title {
+  background-color: @base-color001;
+}
+
+.page-title h2 {
+  color: @base-color700;
+}
+
+.about-company-container {
+  background-color: @base-color001;
+}
+
+.about-image {
+  border-right: 1px @base-color000 solid;
+}
+
+.about-company {
+  color: @base-color700;
+}
+
+.about-company h1,
+.about-company h2,
+.about-company h3,
+.about-company h4,
+.about-company h5,
+.about-company p {
+  color: @base-color700;
+}
+
+.circle-icon {
+  border: 1px solid @base-color500 !important;
+  color: @base-color700 !important;
+}
+
+.feature-box {
+  background-color: @base-color001;
+}
+
+.feature-box .feature-title {
+  color: @base-color700;
+}
+
+.feature-box .feature-title .fa {
+  color: @base-color700;
+}
+
+.feature-box .feature-title h4 {
+  color: @base-color700;
+}
+
+.big-unit {
+  background-color: @base-color301;
+  color: @base-color000;
+}
+
+.big-unit h1 {
+  color: @base-color000;
+}
+
+.big-unit p {
+  color: @base-color001;
+}
+
+.big-unit .btn {
+  background-color: @base-color003;
+}
+
+.big-unit .btn:hover {
+  background-color: @base-color103;
+  color: @base-color000;
+}
+
+.big-unit a:hover {
+  color: @base-color301;
+}
+
+.page-sidebar > .box-heading {
+  background-color: @base-color003;
+}
+
+.panel-default > .panel-heading {
+  background-color: @base-color003;
+  color: @base-color000;
+}
+
+.panel-default > .panel-heading a {
+  color: @base-color000;
+}
+
+.panel-default > .panel-heading.opened {
+  background-color: @base-color003;
+}
+
+.panel-default > .panel-heading.opened:hover {
+  background-color: @base-color103;
+}
+
+.panel-default > .panel-heading.closed {
+  background-color: @base-color003;
+}
+
+.panel-default > .panel-heading.closed:hover {
+  background-color: @base-color103;
+}
+
+.panel-group .panel-heading + .panel-collapse .panel-body {
+  border: none !important;
+}
+
+.panel-group .panel .panel-body {
+  background-color: @base-color001;
+}
+
+.panel-group .panel .panel-body ul > li {
+  border-top: 1px @base-color001 solid;
+}
+
+.panel-group .panel .panel-body ul > li:hover {
+  background-color: @base-color000;
+}
+
+.panel-group .panel .panel-body ul > .item > a {
+  color: @base-color700;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: @base-color700;
+  background-color: @base-color001;
+}
+
+.nav-tabs > li.active > a .fa, .nav-tabs > li.active > a:hover .fa, .nav-tabs > li.active > a:focus .fa {
+  color: @base-color700;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  background-color: @base-color001;
+  color: none;
+}
+
+.nav-tabs > li.active > a .fa,
+.nav-tabs > li.active > a:hover .fa,
+.nav-tabs > li.active > a:focus .fa {
+  color: @base-color700;
+}
+
+.nav-tabs > li > a {
+  background: @base-color301;
+  border-bottom: 1px @base-color000 solid !important;
+  border-right: 1px @base-color000 solid !important;
+}
+
+.nav-tabs > li > a:hover {
+  color: @base-color700;
+}
+
+.nav-tabs > li > a:hover i {
+  color: @base-color700;
+}
+
+.nav-tabs > li.active {
+  background-color: @base-color001;
+}
+
+.nav-tabs > li.active > a {
+  background-color: none;
+}
+
+.tab-content > .active, .pill-content > .active {
+  background-color: @base-color001;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+  background-color: @base-color001;
+}
+
+.post-summery-list {
+  border-bottom: 1px @base-color500 solid;
+}
+
+.post-summery p {
+  color: @base-color700;
+}
+
+.post-summery a {
+  color: @base-color003;
+}
+
+.post-summery a:hover {
+  color: @base-color103;
+}
+
+.post-comments-list {
+  border-bottom: 1px @base-color500 solid;
+}
+
+.post-comments em {
+  color: @base-color700;
+}
+
+.post-comments a {
+  color: @base-color003;
+}
+
+.post-comments a:hover {
+  color: @base-color103;
+}
+
+.tags {
+  background-color: @base-color001;
+}
+
+.tags a {
+  background-color: @base-color001;
+  color: @base-color700;
+}
+
+.tags a:hover {
+  background-color: @base-color301;
+  color: @base-color000;
+}
+
+.blog-summery {
+  background-color: @base-color001;
+}
+
+.blog-summery p a {
+  color: @base-color003;
+}
+
+.blog-summery p a:hover {
+  color: @base-color103;
+}
+
+.blogimage {
+  background-color: @base-color301;
+}
+
+.blogcontent h1 {
+  color: inherit;
+}
+
+.blogcontent .bloginfo {
+  border-bottom: 1px @base-color500 solid;
+  color: @base-color700;
+}
+
+.blogcontent .bloginfo .fa {
+  color: @base-color700;
+}
+
+.blogcontent .bloginfo a {
+  color: @base-color700;
+}
+
+.blogcontent .bloginfo a:hover {
+  color: @base-color500;
+}
+
+.blogcontent .bloginfo a:hover .fa {
+  color: @base-color500;
+}
+
+.blogcontent .date {
+  background-color: @base-color003;
+  color: @base-color000;
+}
+
+.blogcontent .date a {
+  border-top: 1px @base-color000 solid;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  background-color: @base-color003;
+  border: 1px solid @base-color000;
+  color: @base-color000;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  background-color: @base-color103;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: @base-color103;
+  color: @base-color000;
+}
+
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  background-color: @base-color003;
+  color: @base-color103;
+}
+
+.pagination > li > a, .pagination > li > span {
+  color: @base-color000;
+  background-color: @base-color003;
+  border: 1px solid @base-color000;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  background-color: @base-color103;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  color: @base-color000;
+  background-color: @base-color103;
+}
+
+.pagination > .selected > a,
+.pagination > .selected > span,
+.pagination > .selected > a:hover,
+.pagination > .selected > span:hover,
+.pagination > .selected > a:focus,
+.pagination > .selected > span:focus {
+  color: @base-color000;
+  background-color: @base-color103;
+}
+
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a, .pagination >
+.disabled > a:hover, .pagination >
+.disabled > a:focus {
+  color: @base-color103;
+  background-color: @base-color003;
+}
+
+.pager li > a,
+.pager li > span {
+  background-color: @base-color000;
+  border: 1px solid @base-color001;
+}
+
+.pager li > a, .pager li > span {
+  background-color: @base-color000;
+  border: 1px solid @base-color001;
+}
+
+.pager li > a:hover,
+.pager li > a:focus {
+  background-color: @base-color001;
+}
+
+.pager li > a:hover, .pager li > a:focus {
+  background-color: @base-color001;
+}
+
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  background-color: @base-color000;
+  color: @base-color700;
+}
+
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: @base-color700;
+  background-color: @base-color000;
+}
+
+ul.yiiPager a {
+  color: @base-color000;
+}
+
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  color: @base-color000 !important;
+}
+
+.blog-single .post-title {
+  background-color: @base-color301;
+  color: @base-color000;
+}
+
+.blog-single .post-info {
+  background-color: @base-color301;
+}
+
+.blog-single .post-info .sharethis {
+  background: @base-color003;
+  border-left: 1px @base-color000 solid;
+}
+
+.blog-single .post-info .sharethis:hover {
+  background: @base-color103;
+}
+
+.blog-single .post-info .sharethis ul > li a {
+  color: @base-color000;
+}
+
+.blog-single .post-info .sharethis .sharefacebook {
+  background-color: @base-color103;
+}
+
+.blog-single .post-info .sharethis .sharefacebook:hover {
+  background-color: @base-color103;
+}
+
+.blog-single .post-info .sharethis .sharetwitter {
+  background-color: @base-color003;
+}
+
+.blog-single .post-info .sharethis .sharetwitter:hover {
+  background-color: @base-color103;
+}
+
+.blog-single .post-info .sharethis .sharegoogleplus {
+  background-color: @base-color201;
+}
+
+.blog-single .post-info .sharethis .sharegoogleplus:hover {
+  background-color: @base-color301;
+}
+
+.blog-single .post-info .sharethis .sharepinterest {
+  background-color: @base-color301;
+}
+
+.blog-single .post-info .sharethis .sharepinterest:hover {
+  background-color: @base-color200;
+}
+
+.blog-single .post-text {
+  background-color: @base-color001;
+}
+
+.blog-single .post-text h1,
+.blog-single .post-text h2,
+.blog-single .post-text h3,
+.blog-single .post-text h4,
+.blog-single .post-text h5,
+.blog-single .post-text h6,
+.blog-single .post-text p {
+  color: @base-color700;
+}
+
+.blog-single .post-author .author-info {
+  background-color: @base-color001;
+}
+
+.blog-single .post-author .author-info a {
+  color: @base-color301;
+}
+
+.blog-single .post-author .author-info a:hover {
+  color: @base-color200;
+}
+
+.blog-single .post-author .author-info ul > li {
+  maring: 0px;
+}
+
+.blog-single .post-author .author-info ul > li a i {
+  color: @base-color500;
+}
+
+.blog-single .post-author .author-info ul > li a i:hover {
+  color: @base-color200;
+}
+
+.blog-single .comment-box {
+  background-color: @base-color003;
+}
+
+.blog-single .user-info {
+  color: @base-color000;
+}
+
+.blog-single .comment-reply {
+  background-color: @base-color001;
+}
+
+.blog-single .comment-reply input,
+.blog-single .comment-reply textarea {
+  background: @base-color000;
+  border: 1px @base-color001 solid;
+  color: @base-color500;
+}
+
+.blog-single .comment-reply input:focus,
+.blog-single .comment-reply textarea:focus {
+  outline: none;
+}
+
+.blog-single .comment-reply .instruction {
+  color: @base-color700;
+}
+
+.blog-single .comment-reply input, .blog-single .comment-reply textarea {
+  color: @base-color500;
+  border: 1px @base-color001 solid;
+  background: @base-color000;
+}
+
+.dark {
+  background-color: @base-color700;
+  color: @base-color001;
+}
+
+.light {
+  background-color: @base-color001;
+  color: @base-color700;
+}
+
+.light a {
+  color: @base-color700;
+}
+
+.category-heading .dropdown > a, .category-heading .view-list a, .category-heading .view-grid a, .category-heading .view-button a {
+  border-left: 1px @base-color003 solid;
+  color: @base-color000;
+}
+
+.category-heading .dropdown > a,
+.category-heading .view-list a,
+.category-heading .view-grid a {
+  border-left: 1px @base-color003 solid;
+  border-top: 0px;
+  color: @base-color000;
+}
+
+.category-heading .dropdown-menu {
+  background-color: @base-color003;
+}
+
+.category-heading ul li a {
+  border-top: 1px @base-color003 solid;
+  color: @base-color000;
+}
+
+.category-heading ul li a:hover {
+  background-color: @base-color103;
+  color: @base-color000;
+}
+
+.category-heading .nav .open > a,
+.category-heading .nav .open > a:hover,
+.category-heading .nav .open > a:focus {
+  background-color: @base-color103;
+  color: @base-color000;
+}
+
+.tooltip {
+  filter: alpha(opacity=0);
+  visibility: visible;
+}
+
+.tooltip.in {
+  filter: alpha(opacity=90);
+}
+
+.tooltip.top .tooltip-arrow {
+  border-top-color: @base-color700;
+}
+
+.tooltip.right .tooltip-arrow {
+  border-right-color: @base-color700;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: @base-color700;
+}
+
+.tooltip.left .tooltip-arrow {
+  border-left-color: @base-color700;
+}
+
+.tooltip-inner {
+  background-color: @base-color700;
+  color: @base-color000;
+}
+
+.tooltip-arrow {
+  border-color: transparent;
+  border-style: solid;
+}
+
+.tooltip.top-left .tooltip-arrow {
+  border-top-color: @base-color700;
+}
+
+.tooltip.top-right .tooltip-arrow {
+  border-top-color: @base-color700;
+}
+
+.tooltip.bottom-left .tooltip-arrow {
+  border-bottom-color: @base-color700;
+}
+
+.tooltip.bottom-right .tooltip-arrow {
+  border-bottom-color: @base-color700;
+}
+
+.irs-slider.single:before {
+  background: @base-color000;
+}
+
+.irs-slider.from:before {
+  /*background: @base-color000;*/
+}
+
+.irs-slider.to:before {
+  /*background: @base-color000;*/
+}
+
+.irs-grid-pol {
+  background: @base-color999;
+}
+
+.irs-grid-text {
+  color: @base-color999;
+}
+
+.irs-line-mid,
+.irs-line-left,
+.irs-line-right,
+.irs-diapason,
+.irs-slider {
+  background-color: @base-color500;
+}
+
+.irs-diapason {
+  background-color: @base-color301;
+}
+
+.irs-slider {
+  background-color: @base-color000;
+  border-right: 2px @base-color301 solid;
+}
+
+#irs-active-slider,
+.irs-slider:hover {
+  border-right: 4px @base-color201 solid;
+}
+
+.irs-min,
+.irs-max {
+  background: @base-color001;
+  color: @base-color500;
+}
+
+.irs-from,
+.irs-to,
+.irs-single {
+  background: @base-color301;
+  color: @base-color000;
+}
+
+.irs-from:after,
+.irs-to:after,
+.irs-single:after {
+  border: 3px solid transparent;
+  border-top-color: @base-color301;
+}
+
+.irs-grid-pol {
+  background: @base-color001;
+}
+
+.irs-grid-text {
+  color: @base-color500;
+}
+
+.categorycount {
+  background-color: @base-color301;
+  border: 1px @base-color000 solid;
+  color: @base-color000;
+}
+
+.shopby {
+  background-color: @base-color001;
+}
+
+.shopby .color span {
+  color: @base-color700;
+}
+
+.compare {
+  background-color: @base-color001;
+}
+
+.compare a,
+.compare i {
+  color: @base-color700;
+}
+
+.compare a:hover,
+.compare i:hover {
+  color: @base-color500;
+}
+
+.list-product .image .product-label {
+  color: @base-color000;
+}
+
+.list-product .producttitle {
+  background-color: @base-color301;
+}
+
+.list-product .producttitle h1 {
+  color: @base-color000;
+}
+
+.list-product .rating .fa {
+  color: @base-color301;
+}
+
+.list-product .rating .fa.fa-star {
+  color: @base-color000;
+}
+
+.list-product span.reviews-info {
+  color: @base-color000;
+}
+
+.list-product .big-price {
+  background-color: @base-color001;
+  color: @base-color700;
+}
+
+.list-product .productmeta {
+  background-color: @base-color001;
+  color: @base-color700;
+}
+
+.list-product .productmeta p a {
+  color: @base-color301;
+}
+
+.list-product .productmeta p a:hover {
+  color: @base-color200;
+}
+
+.list-product .category-list-btns .btn:focus {
+  outline: none;
+}
+
+.list-product .category-list-btns .btn-addtocart {
+  background-color: @base-color003;
+  color: @base-color000;
+}
+
+.list-product .category-list-btns .btn-addtocart:hover {
+  background-color: @base-color103;
+}
+
+.list-product .category-list-btns .btn-wishlist {
+  background-color: @base-color200;
+  color: @base-color000;
+}
+
+.list-product .category-list-btns .btn-wishlist:hover {
+  background-color: @base-color301;
+}
+
+.list-product .category-list-btns .btn-compare {
+  background-color: @base-color451;
+  color: @base-color000;
+}
+
+.list-product .category-list-btns .btn-compare:hover {
+  background-color: @base-color301;
+}
+
+.product-details .title {
+  background: @base-color301;
+  color: @base-color000;
+}
+
+.product-details .title h1 {
+  border-bottom: 1px @base-color200 solid;
+}
+
+.product-details .title .rating i {
+  color: @base-color301;
+}
+
+.product-details .title .rating i.fa-star {
+  color: @base-color000;
+}
+
+.product-details .title .rating a {
+  border-left: 1px @base-color200 solid;
+}
+
+.product-details .title .rating a:hover {
+  color: @base-color301;
+}
+
+.product-details .short-info {
+  background-color: @base-color001;
+  color: @base-color700;
+}
+
+.product-details .short-info span.available {
+  color: lightgreen;
+  background: @base-color999;
+}
+
+.product-details .short-info span.notavailable {
+  color: red;
+  background: @base-color999;
+}
+
+.product-details .special-offers {
+  background: @base-color001;
+  color: @base-color700;
+}
+
+.product-details .share-product {
+  background: @base-color001;
+  color: @base-color700;
+}
+
+.product-details .big-price {
+  background-color: @base-color001;
+  color: @base-color700;
+}
+
+.product-details .short-info-opt {
+  background-color: @base-color001;
+}
+
+.product-details .product-btns {
+  background-color: @base-color001;
+  color: @base-color000;
+}
+
+.product-details .quantity-inp input {
+  color: @base-color000;
+  background: @base-color500;
+}
+
+.product-details a.qty {
+  background-color: @base-color500;
+  color: @base-color000;
+}
+
+.product-details a.qty:hover {
+  background-color: @base-color700;
+}
+
+.product-details .color-options a.dropdown-toggle {
+  background-color: @base-color500;
+}
+
+.product-details .color-options ul.dropdown-menu li a {
+  border-left: 5px @base-color999 solid;
+  border-top: 1px @base-color001 solid;
+}
+
+.product-details .color-options ul.dropdown-menu li a:hover {
+  background-color: @base-color001;
+}
+
+.product-details .size-options a.dropdown-toggle {
+  background-color: @base-color500;
+}
+
+.product-details .size-options ul.dropdown-menu li a {
+  border-top: 1px @base-color001 solid;
+}
+
+.product-details .size-options ul.dropdown-menu li a:hover {
+  background-color: @base-color001;
+}
+
+.product-details .product-big-btns .btn-addtocart {
+  background-color: @base-color003;
+  color: @base-color000;
+}
+
+.product-details .product-big-btns .btn-addtocart:hover {
+  background-color: @base-color103;
+}
+
+.product-details .product-big-btns .btn-wishlist {
+  background-color: @base-color200;
+  color: @base-color000;
+}
+
+.product-details .product-big-btns .btn-wishlist:hover {
+  background-color: @base-color201;
+}
+
+.product-details .product-big-btns .btn-compare {
+  background-color: @base-color451;
+  color: @base-color000;
+}
+
+.product-details .product-big-btns .btn-compare:hover {
+  background-color: @base-color452;
+}
+
+.product-details .product-big-btns .btn-sendtofriend {
+  background-color: @base-color003;
+  color: @base-color000;
+}
+
+.product-details .product-big-btns .btn-sendtofriend:hover {
+  background-color: @base-color103;
+}
+
+.product-details-tabs .tab-content a {
+  color: @base-color003;
+}
+
+.product-details-tabs .tab-content a:hover {
+  color: @base-color103;
+}
+
+.product-details-tabs .tab-content .pagination > li > a,
+.product-details-tabs .tab-content .pagination > li > span {
+  border-color: @base-color001;
+}
+
+.product-details-tabs .tab-content .pagination > li > a {
+  color: @base-color000;
+}
+
+.product-details-tabs .tab-content .heading .rating .fa {
+  color: @base-color500;
+}
+
+.product-details-tabs .tab-content .heading .rating .fa-star {
+  color: @base-color451;
+}
+
+.product-details-tabs .tab-content .heading a {
+  color: @base-color000;
+}
+
+.product-details-tabs .tab-content .review .name {
+  color: @base-color003;
+}
+
+.product-details-tabs .tab-content .review .name i {
+  color: @base-color500;
+}
+
+.product-details-tabs .tab-content .review .rating .fa {
+  color: @base-color500;
+}
+
+.product-details-tabs .tab-content .review .rating .fa-star {
+  color: @base-color451;
+}
+
+.product-details-tabs .tab-content .review .text {
+  background-color: @base-color000;
+  border: 1px solid @base-color500;
+  color: @base-color700;
+}
+
+.product-details-tabs .tab-content .review .text:before {
+  border-bottom: 9px solid @base-color500;
+  border-left: 9px solid @base-color000;
+  border-right: 9px solid @base-color000;
+}
+
+.product-details-tabs .tab-content .review .text:after {
+  border-bottom: 8px solid @base-color000;
+  border-left: 8px solid @base-color000;
+  border-right: 8px solid @base-color000;
+}
+
+.product-details-tabs .tab-content .write-reivew input {
+  background: @base-color000;
+  border: 1px @base-color500 solid;
+}
+
+.product-details-tabs .tab-content .write-reivew textarea {
+  background: @base-color000;
+  border: 1px @base-color500 solid;
+}
+
+.product-details-tabs .tab-content .write-reivew .rating:not(:checked) > input {
+  clip: rect(0px, 0px, 0px, 0px);
+}
+
+.product-details-tabs .tab-content .write-reivew .rating:not(:checked) > label {
+  color: @base-color500;
+}
+
+.product-details-tabs .tab-content .write-reivew .rating > input:checked ~ label {
+  color: @base-color451;
+}
+
+.product-details-tabs .tab-content .write-reivew .rating:not(:checked) > label:hover,
+.product-details-tabs .tab-content .write-reivew .rating:not(:checked) > label:hover ~ label {
+  color: @base-color451;
+}
+
+.product-details-tabs .tab-content .write-reivew .rating > input:checked + label:hover,
+.product-details-tabs .tab-content .write-reivew .rating > input:checked + label:hover ~ label,
+.product-details-tabs .tab-content .write-reivew .rating > input:checked ~ label:hover,
+.product-details-tabs .tab-content .write-reivew .rating > input:checked ~ label:hover ~ label,
+.product-details-tabs .tab-content .write-reivew .rating > label:hover ~ input:checked ~ label {
+  color: @base-color451;
+}
+
+.product-details-tabs .tab-content .write-reivew .static-stars {
+  color: @base-color500;
+}
+
+.product-details-tabs .tab-content .tags > a {
+  color: @base-color700;
+}
+
+.product-details-tabs .tab-content .tags > a:hover {
+  color: @base-color000;
+}
+
+.product .product-attrb-wr {
+  background-color: @base-color001;
+}
+
+.product .product-meta .name a {
+  color: @base-color700;
+}
+
+.product .product-meta .name a:hover {
+  color: @base-color500;
+}
+
+.product .product-attrb .color span {
+  color: @base-color700;
+}
+
+.product .product-attrb .quantity-inp input {
+  background: @base-color000;
+  border: 1px @base-color500 solid;
+  color: @base-color003;
+}
+
+.product .product-attrb .quantity-inp a.qty {
+  background-color: @base-color500;
+  color: @base-color700;
+}
+
+.product .product-attrb .quantity-inp a.qty:hover {
+  background-color: @base-color700;
+}
+
+.product .product-attrb .price .t-price {
+  color: @base-color301;
+}
+
+.product .product-attrb .price .price-new {
+  color: @base-color301;
+}
+
+.cart-box-wr .cart-box {
+  background-color: @base-color001;
+}
+
+.cart-box-wr .cart-box-tm {
+  color: @base-color301;
+}
+
+.cart-box-wr .tm1 {
+  background: @base-color001;
+}
+
+.cart-box-wr .tm2 {
+  background: @base-color001;
+  border-left: 1px @base-color000 solid;
+}
+
+.cart-box-wr .tm3 {
+  background: @base-color200;
+  border-left: 1px @base-color000 solid;
+  color: @base-color000;
+}
+
+.cart-box-wr .tm4 {
+  background: @base-color301;
+  border-left: 1px @base-color000 solid;
+  color: @base-color000;
+}
+
+.checkout-op .op-number {
+  background-color: @base-color003;
+  border: 1px @base-color103 solid;
+  color: @base-color000;
+}
+
+.checkout-op ul > li:hover {
+  background-color: inherit !important;
+}
+
+.checkout-op ul > li i {
+  color: @base-color700;
+}
+
+.checkout-op .radio .provider {
+  color: @base-color003;
+}
+
+.checkout-op .radio .price {
+  color: @base-color301;
+}
+
+.contactdetails-box-wr {
+  background: @base-color001;
+}
+
+.contactdetails-box-wr .contactdetails-box .icon i {
+  color: @base-color301;
+}
+
+.contactform {
+  background: @base-color001;
+}
+
+@media (max-width: 479px) {
+  .menu3dmega.responsive > ul > li:hover .dropdown-menu {
+    border: 1px solid @base-color003;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu3dmega.responsive > ul > li:hover .dropdown-menu {
+    border: 1px solid @base-color999;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu3dmega.responsive li > .arrow-icon:after {
+    background: none repeat scroll 0px 0px transparent;
+    border-color: @base-color500 transparent transparent;
+  }
+
+  .brands-row .brand-logo {
+    border-right: 0px;
+    border-top: 0px;
+    border: 1px @base-color000 solid;
+  }
+
+  .brands-row .brand-logo:last-child {
+    border-left: 1px @base-color000 solid;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu3dmega.vertical span.arrow-icon-bottom:after {
+    border-color: transparent transparent transparent @base-color001;
+  }
+
+  .menu3dmega.vertical li:hover span.arrow-icon-bottom:after {
+    border-color: transparent transparent transparent @base-color000;
+  }
+
+  .menuHeadingdropdown:hover {
+    background-color: @base-color103;
+  }
+}
