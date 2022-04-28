@@ -1,7 +1,7 @@
 .order {
 	// .order__wrapper
 	&__wrapper {
-		@include flex ();
+		@include flex ($flex-wrap: wrap);
 		gap: 20px;
 	}
 	// .order__box-img
@@ -11,10 +11,12 @@
 	// .order__box
 	&__box {
 		@include flex ($flex-direction: column);
+		gap: 45px;
+		padding-top: 50px;
 	}
 	// .order__inner
 	&__inner {
-		@include flex ();
+		@include flex ($align-items: flex-start, $flex-direction: column);
 	}
 	// .order__title
 	&__title {}
