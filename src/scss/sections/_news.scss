@@ -1,0 +1,27 @@
+.news {
+	// .news__wrapper
+	&__wrapper {}
+	// .news__title
+	&__title {}
+	// .news__grid
+	&__grid {display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 40px;
+		row-gap: 105px;}
+	// .news__inner
+	&__inner {
+		@include flex ($flex-direction: column);
+	}
+	// .news__date
+	&__date {}
+	// .news__box
+	&__box {}
+	// .news__img
+	&__img {}
+	// .news__subtitle
+	&__subtitle {}
+	// .news__text
+	&__text {}
+}
+
+
