@@ -1,0 +1,49 @@
+.info {
+	padding-top: 42px;
+	padding-bottom: 35px;
+
+	// .info__wrapper
+	&__wrapper {
+		@include flex ($flex-direction: column);
+	}
+
+	// .info__title
+	&__title {
+
+		font-size: 30px;
+		line-height: 106.19%;
+
+		text-transform: uppercase;
+
+		color: $textMainColor;
+		margin-bottom: 32px;
+
+
+	}
+
+	// .info__text
+	&__text {
+
+		font-weight: 500;
+		line-height: 21px;
+		letter-spacing: 0em;
+		margin-bottom: 20px;
+
+		span {
+			font-size: 20px;
+			font-weight: 300;
+			line-height: 21px;
+			letter-spacing: 0em;
+			color: #55D6C6;
+		}
+	}
+
+	// .info__subtitle
+	&__subtitle {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 21px;
+		letter-spacing: 0em;
+		margin-bottom: 24px;
+	}
+}
