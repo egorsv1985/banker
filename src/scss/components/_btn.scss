@@ -1,0 +1,14 @@
+.btn {
+	@include flex (center, center);
+
+	font-family: 'TT Norms';
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 22px;
+
+	color: $textMainColor;
+
+	border: 2px solid #FFFFFF;
+	border-radius: 15px;
+
+}

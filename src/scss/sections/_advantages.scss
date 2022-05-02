@@ -1,0 +1,72 @@
+.advantages {
+	padding-top: 150px;
+	padding-bottom: 130px;
+
+	// .advantages__wrapper
+	&__wrapper {
+		@include flex ($flex-direction: column);
+	}
+
+	// .advantages__title
+	&__title {
+		font-size: 50px;
+		line-height: 106.19%;
+		text-align: center;
+
+		color: $textMainColor;
+		margin-bottom: 40px;
+	}
+
+	// .advantages__inner
+	&__inner {
+		@include flex($flex-wrap: wrap);
+		column-gap: 45px;
+		row-gap: 20px;
+	}
+
+	// .advantages__button
+	&__button {
+		width: 100%;
+		max-width: 557px;
+		height: 78px;
+		justify-content: flex-start;
+		padding-left: 80px;
+		position: relative;
+
+		background: radial-gradient(184.97% 152.52% at 27.83% 24.1%, #7BECDD 0%, #098A7D 100%);
+
+		&::after {
+			@include pseudo;
+
+			@include pos (absolute, $bottom: 50%, $left:32px);
+			transform: translateY(50%);
+
+		}
+
+	}
+
+	// .advantages__button--term
+	&__button--term {
+		&::after {
+			@include background (url("../img/advantages/term.svg"));
+			@include wh(27px);
+		}
+	}
+
+	// .advantages__button--time
+	&__button--time {
+		&::after {
+			@include background (url("../img/advantages/time.svg"));
+			@include wh(40px);
+		}
+	}
+
+	// .advantages__button--online
+	&__button--online {
+		&::after {
+			@include background (url("../img/advantages/online.svg"));
+			@include wh(38px);
+		}
+	}
+
+}

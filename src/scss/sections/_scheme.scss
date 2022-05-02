@@ -1,0 +1,40 @@
+.scheme {
+
+	// .scheme__wrapper
+	&__wrapper {
+		@include flex ($flex-direction: column);
+	}
+
+	// .scheme__title
+	&__title {
+
+		font-size: 50px;
+		line-height: 106.19%;
+		color: $textMainColor;
+
+		margin-bottom: 35px;
+	}
+
+	// .scheme__inner
+	&__inner {
+		padding-left: 25px;
+	}
+
+	// .scheme__steps
+	&__steps {
+		margin-bottom: 40px;
+	}
+
+	// .scheme__button
+	&__button {
+		align-self: center;
+
+		width: 291px;
+		height: 77px;
+
+		line-height: 80.02%;
+		color: #111111;
+	}
+}
+
+

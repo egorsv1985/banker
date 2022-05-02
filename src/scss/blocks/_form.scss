@@ -20,7 +20,7 @@
 		border-radius: 15px;
 
 
-		font-family: 'TT Norms';
+		font-family: "TTNorms";
 
 		font-weight: 500;
 		font-size: 22px;
@@ -43,7 +43,7 @@
 	&__button {
 		@include flex (center, center);
 
-		font-family: 'TT Norms';
+		font-family: "TTNorms";
 		font-weight: 500;
 		font-size: 25px;
 		line-height: 30px;
@@ -81,7 +81,7 @@
 
 	// .form__label
 	&__label {
-		font-family: 'TT Norms';
+		font-family: "TTNorms";
 
 		font-weight: 400;
 		font-size: 18px;

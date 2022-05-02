@@ -1,0 +1,115 @@
+.steps {
+	@include flex ($flex-direction: column);
+	gap: 7px;
+
+	// .steps__wrap
+	&__wrap {
+		@include flex ();
+		
+	}
+
+	// .steps__number
+	&__number {
+
+		font-family: 'TT Norms';
+		font-weight: 500;
+		font-size: 80px;
+		line-height: 94px;
+
+
+		color: $textMainColor;
+
+		margin-right: 70px;
+
+
+	}
+
+	// .steps__box
+	&__box {
+		@include flex ();
+		min-width: 280px;
+		width: 280px;
+		height: 47px;
+		border-right: 2px solid rgba(14, 218, 197, 0.5);
+
+		align-self: center;
+		gap: 20px;
+
+		position: relative;
+
+		margin-right: 45px;
+
+		&::after {
+			@include pseudo;
+			@include pos (absolute, $bottom: 50%, $left: 0);
+			transform: translateY(50%);
+
+		}
+	}
+
+	// .steps__box--computer
+	&__box--computer {
+		&::after {
+			@include background (url("../img/steps/computer.svg"));
+			@include wh(40px);
+		}
+
+	}
+
+	// .steps__box--analysis
+	&__box--analysis {
+		&::after {
+			@include background (url("../img/steps/analysis.svg"));
+			@include wh(34px);
+		}
+
+	}
+
+	// .steps__box--time
+	&__box--time {
+		&::after {
+			@include background (url("../img/steps/steps-time.svg"));
+			@include wh(44px);
+		}
+
+	}
+
+	// .steps__box--money
+	&__box--money {
+		&::after {
+			@include background (url("../img/steps/money.svg"));
+			@include wh(37px);
+		}
+
+	}
+
+
+	// .steps__img
+	&__img {}
+
+	// .steps__description
+	&__description {
+
+		font-family: 'TT Norms';
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 94.52%;
+		color: #F7F7F7;
+
+		padding-left: 60px;
+
+	}
+
+
+	// .steps__text
+	&__text {
+
+		font-size: 22px;
+		line-height: 94.52%;
+
+		color: #A8A8A8;
+
+		align-self: center;
+
+	}
+}

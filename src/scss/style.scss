@@ -19,6 +19,9 @@
 @import "./components/burger";
 @import "./components/link";
 @import "./components/button";
+@import "./components/btn";
+
+
 @import "./components/inputs";
 
 // sections
@@ -29,6 +32,9 @@
 @import "./sections/foto";
 @import "./sections/info-contacts";
 @import "./sections/decision";
+@import "./sections/invest";
+@import "./sections/advantages";
+@import "./sections/scheme";
 
 @import "./sections/projects";
 
@@ -41,5 +47,6 @@
 @import "./blocks/form-preliminary";
 @import "./blocks/project";
 @import "./blocks/filter";
+@import "./blocks/steps";
 
 @import "./blocks/footer";
