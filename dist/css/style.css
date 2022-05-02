@@ -824,6 +824,54 @@ body {
   color: #111111;
 }
 
+.requirements {
+  padding-top: 120px;
+}
+.requirements__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.requirements__title {
+  font-size: 50px;
+  line-height: 106.19%;
+  color: #FFF;
+  margin-bottom: 40px;
+}
+.requirements__inner {
+  display: flex;
+  gap: 30px;
+}
+.requirements__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 267px;
+  height: 113px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 0 12px;
+}
+.requirements__text {
+  font-family: "TT Norms";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 87.02%;
+  color: #14B0A0;
+  text-align: center;
+}
+.requirements__text--small {
+  font-size: 25px;
+}
+.requirements__desc {
+  font-family: "TT Norms";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #2E2E2E;
+}
+
 .projects {
   padding-top: 54px;
 }
