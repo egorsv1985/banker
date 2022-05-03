@@ -24,6 +24,19 @@
 
 @import "./components/inputs";
 
+
+// block
+@import "./blocks/header";
+@import "./blocks/nav";
+@import "./blocks/contacts";
+@import "./blocks/form";
+@import "./blocks/form-preliminary";
+@import "./blocks/project";
+@import "./blocks/filter";
+@import "./blocks/steps";
+
+@import "./blocks/footer";
+
 // sections
 @import "./sections/main";
 @import "./sections/order";
@@ -46,15 +59,3 @@
 
 @import "./sections/projects";
 
-
-// block
-@import "./blocks/header";
-@import "./blocks/nav";
-@import "./blocks/contacts";
-@import "./blocks/form";
-@import "./blocks/form-preliminary";
-@import "./blocks/project";
-@import "./blocks/filter";
-@import "./blocks/steps";
-
-@import "./blocks/footer";
