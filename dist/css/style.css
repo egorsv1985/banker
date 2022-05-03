@@ -1135,6 +1135,270 @@ body {
   width: 40px;
   height: 40px;
 }
+.contract {
+  padding-top: 60px;
+  position: relative;
+}
+.contract::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/invest/invest-bg.png");
+  width: 623px;
+  height: 663px;
+  position: absolute;
+  bottom: -140px;
+  right: 0;
+}
+.contract::after {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/invest/invest-logo.svg");
+  width: 95px;
+  height: 16px;
+  position: absolute;
+  top: 100px;
+  right: 360px;
+}
+.contract__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.contract__title {
+  font-family: "Roboto";
+  font-size: 45px;
+  line-height: 98.19%;
+  text-align: left;
+  color: #FFF;
+  margin-bottom: 30px;
+}
+.contract__box {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 75px;
+}
+.contract__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 182px;
+  height: 104px;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+.contract__wrap--padding {
+  padding: 0 30px;
+}
+.contract__text {
+  font-size: 15px;
+  line-height: 120.52%;
+  color: #2E2E2E;
+}
+.contract__text span {
+  font-family: "TTNorms";
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 41px;
+  text-align: center;
+  color: #14B0A0;
+}
+.contract__text--small span {
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+.contract__btns {
+  display: flex;
+  gap: 44px;
+}
+.contract__btn {
+  width: 291px;
+  height: 77px;
+}
+
+.advantages-contract {
+  padding-top: 150px;
+  padding-bottom: 140px;
+}
+.advantages-contract__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.advantages-contract__title {
+  font-size: 50px;
+  line-height: 106.19%;
+  text-align: center;
+  color: #FFF;
+  margin-bottom: 40px;
+}
+.advantages-contract__inner {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 45px;
+  row-gap: 20px;
+}
+.advantages-contract__button {
+  width: 100%;
+  max-width: 557px;
+  height: 78px;
+  justify-content: flex-start;
+  padding-left: 80px;
+  position: relative;
+  background: radial-gradient(184.97% 152.52% at 27.83% 24.1%, #7BECDD 0%, #098A7D 100%);
+}
+.advantages-contract__button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 50%;
+  left: 32px;
+  transform: translateY(50%);
+}
+.advantages-contract__button--term::after {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/advantages/term.svg");
+  width: 27px;
+  height: 27px;
+}
+.advantages-contract__button--time::after {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/advantages/time.svg");
+  width: 40px;
+  height: 40px;
+}
+.advantages-contract__button--calendar::after {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/advantages/calendar.svg");
+  width: 34px;
+  height: 34px;
+}
+.advantages-contract__button--money::after {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/advantages/money-advantages.svg");
+  width: 35px;
+  height: 35px;
+}
+
+.requirements-contract {
+  padding-bottom: 175px;
+}
+.requirements-contract__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.requirements-contract__title {
+  font-size: 50px;
+  line-height: 106.19%;
+  color: #FFF;
+  margin-bottom: 40px;
+}
+.requirements-contract__inner {
+  display: flex;
+  gap: 30px;
+}
+.requirements-contract__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 267px;
+  height: 113px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+.requirements-contract__text {
+  font-family: "TT Norms";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 87.02%;
+  color: #14B0A0;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.requirements-contract__desc {
+  font-family: "TT Norms";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #2E2E2E;
+}
+.requirements-contract__text--small {
+  font-size: 20px;
+}
+
+.scheme-contract {
+  padding-bottom: 196px;
+}
+.scheme-contract__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.scheme-contract__title {
+  font-size: 50px;
+  line-height: 106.19%;
+  color: #FFF;
+  margin-bottom: 35px;
+}
+.scheme-contract__steps {
+  margin-bottom: 62px;
+}
+.scheme-contract__button {
+  margin: 0 auto;
+  width: 291px;
+  height: 77px;
+  line-height: 80.02%;
+  color: #111111;
+}
+.scheme-contract .steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+  padding: 0 60px;
+}
+.scheme-contract .steps__wrap {
+  display: flex;
+  flex-direction: column;
+}
+.scheme-contract .steps__number {
+  font-family: "TT Norms";
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 94px;
+  text-align: center;
+  color: #FFF;
+  margin-right: 0;
+}
+.scheme-contract .steps__description {
+  font-family: "TT Norms";
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 94.52%;
+  color: #F7F7F7;
+  text-align: center;
+  max-width: 214px;
+  padding-left: 0;
+}
+
 .projects {
   padding-top: 54px;
 }

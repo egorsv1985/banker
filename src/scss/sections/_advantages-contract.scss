@@ -1,13 +1,12 @@
-.advantages-tender {
+.advantages-contract {
 	padding-top: 150px;
-	padding-bottom: 145px;
+	padding-bottom: 140px;
 
-	// .advantages-tender__wrapper
+	// .advantages-contract__wrapper
 	&__wrapper {
 		@include flex ($flex-direction: column);
 	}
-
-	// .advantages-tender__title
+	// .advantages-contract__title
 	&__title {
 		font-size: 50px;
 		line-height: 106.19%;
@@ -16,23 +15,19 @@
 		color: $textMainColor;
 		margin-bottom: 40px;
 	}
-
-	// .advantages-tender__inner
+	// .advantages-contract__inner
 	&__inner {
 		@include flex($flex-wrap: wrap);
 		column-gap: 45px;
 		row-gap: 20px;
 	}
-
-	// .advantages-tender__button
+	// .advantages-contract__button
 	&__button {
 		width: 100%;
 		max-width: 557px;
 		height: 78px;
 		justify-content: flex-start;
-		text-align: left;
 		padding-left: 80px;
-		padding-right: 15px;
 		position: relative;
 
 		background: radial-gradient(184.97% 152.52% at 27.83% 24.1%, #7BECDD 0%, #098A7D 100%);
@@ -45,30 +40,33 @@
 
 		}
 	}
-
-
-
-	// .advantages-tender__button--paste
-	&__button--paste {
+	// .advantages-contract__button--term
+	&__button--term {
 		&::after {
-			@include background (url("../img/advantages/paste.svg"));
-			@include wh(34px, 37px);
+			@include background (url("../img/advantages/term.svg"));
+			@include wh(27px);
 		}
 	}
-
-	// .advantages-tender__button--money
+	// .advantages-contract__button--time
+	&__button--time {
+		&::after {
+			@include background (url("../img/advantages/time.svg"));
+			@include wh(40px);
+		}
+	}
+	// .advantages-contract__button--calendar
+	&__button--calendar {
+		&::after {
+			@include background (url("../img/advantages/calendar.svg"));
+			@include wh(34px);
+		}
+	}
+	// .advantages-contract__button--money
 	&__button--money {
 		&::after {
 			@include background (url("../img/advantages/money-advantages.svg"));
 			@include wh(35px);
 		}
 	}
-
-	// .advantages-tender__button--map
-	&__button--map {
-		&::after {
-			@include background (url("../img/advantages/map.svg"));
-			@include wh(22px, 37px);
-		}
-	}
 }
+
