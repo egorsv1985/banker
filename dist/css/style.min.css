@@ -443,6 +443,39 @@ body {
   border-radius: 15px;
 }
 
+.platform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 15px;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 101.19%;
+  color: #85A5AC;
+  width: 274px;
+  height: 54px;
+  background-color: #082228;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.platform::after {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/invest/rub.svg");
+  position: absolute;
+  bottom: 50%;
+  left: 16px;
+  width: 28px;
+  height: 28px;
+  transform: translateY(50%);
+}
+
 .btn {
   display: flex;
   justify-content: center;
@@ -484,6 +517,8 @@ body {
   font-size: 18px;
   line-height: 18px;
   color: #FFF;
+  display: flex;
+  gap: 10px;
 }
 
 .main {
@@ -707,38 +742,6 @@ body {
   flex-direction: column;
   width: 65%;
 }
-.invest__platform {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 20px;
-  padding-right: 15px;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 101.19%;
-  color: #85A5AC;
-  width: 274px;
-  height: 54px;
-  background-color: #082228;
-  border-radius: 15px;
-  margin-bottom: 30px;
-  position: relative;
-}
-.invest__platform::after {
-  content: "";
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/invest/rub.svg");
-  position: absolute;
-  bottom: 50%;
-  left: 16px;
-  width: 28px;
-  height: 28px;
-  transform: translateY(50%);
-}
 .invest__title {
   font-family: "Roboto";
   font-size: 45px;
@@ -920,6 +923,218 @@ body {
   color: #2E2E2E;
 }
 
+.tender {
+  padding-top: 60px;
+  position: relative;
+}
+.tender::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/invest/invest-bg.png");
+  width: 623px;
+  height: 663px;
+  position: absolute;
+  bottom: -90px;
+  right: 0;
+}
+.tender::after {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/invest/invest-logo.svg");
+  width: 95px;
+  height: 16px;
+  position: absolute;
+  top: 145px;
+  right: 360px;
+}
+.tender__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.tender__title {
+  font-family: "Roboto";
+  font-size: 45px;
+  line-height: 98.19%;
+  text-align: left;
+  color: #FFF;
+  margin-bottom: 24px;
+}
+.tender__list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  margin-bottom: 36px;
+}
+.tender__item {
+  position: relative;
+  padding-left: 25px;
+}
+.tender__item::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  background-color: #fff;
+  transform: translateY(50%);
+}
+.tender__desc {
+  font-family: "TT Norms";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 106.19%;
+  color: #FFF;
+}
+.tender__description {
+  font-family: "TT Norms";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 106.19%;
+  color: #FFF;
+  margin-bottom: 30px;
+}
+.tender__box {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 70px;
+}
+.tender__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 182px;
+  height: 104px;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+.tender__text {
+  font-size: 15px;
+  line-height: 120.52%;
+  color: #2E2E2E;
+}
+.tender__text span {
+  font-family: "TTNorms";
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 41px;
+  text-align: center;
+  color: #14B0A0;
+}
+.tender__btns {
+  display: flex;
+  gap: 44px;
+}
+.tender__btn {
+  width: 291px;
+  height: 77px;
+}
+
+.advantages-tender {
+  padding-top: 150px;
+  padding-bottom: 145px;
+}
+.advantages-tender__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.advantages-tender__title {
+  font-size: 50px;
+  line-height: 106.19%;
+  text-align: center;
+  color: #FFF;
+  margin-bottom: 40px;
+}
+.advantages-tender__inner {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 45px;
+  row-gap: 20px;
+}
+.advantages-tender__button {
+  width: 100%;
+  max-width: 557px;
+  height: 78px;
+  justify-content: flex-start;
+  text-align: left;
+  padding-left: 80px;
+  padding-right: 15px;
+  position: relative;
+  background: radial-gradient(184.97% 152.52% at 27.83% 24.1%, #7BECDD 0%, #098A7D 100%);
+}
+.advantages-tender__button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 50%;
+  left: 32px;
+  transform: translateY(50%);
+}
+.advantages-tender__button--paste::after {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/advantages/paste.svg");
+  width: 34px;
+  height: 37px;
+}
+.advantages-tender__button--money::after {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/advantages/money-advantages.svg");
+  width: 35px;
+  height: 35px;
+}
+.advantages-tender__button--map::after {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/advantages/map.svg");
+  width: 22px;
+  height: 37px;
+}
+
+.scheme-tender {
+  padding-bottom: 120px;
+}
+.scheme-tender__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.scheme-tender__title {
+  font-size: 50px;
+  line-height: 106.19%;
+  color: #FFF;
+  margin-bottom: 35px;
+}
+.scheme-tender__inner {
+  padding-left: 25px;
+}
+.scheme-tender__steps {
+  margin-bottom: 40px;
+}
+.scheme-tender .steps__box {
+  border-right: none;
+}
+.scheme-tender .steps__box--contract::after {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/steps/contract.svg");
+  width: 40px;
+  height: 40px;
+}
 .projects {
   padding-top: 54px;
 }

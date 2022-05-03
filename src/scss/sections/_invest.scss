@@ -28,37 +28,7 @@
 	}
 
 	// .invest__platform
-	&__platform {
-		@include flex (center, center);
-		padding-left: 20px;
-		padding-right: 15px;
-
-		font-family: "Roboto";
-		font-weight: 300;
-		font-size: 14px;
-		line-height: 101.19%;
-
-
-		color: #85A5AC;
-
-		width: 274px;
-		height: 54px;
-
-		background-color: #082228;
-		border-radius: 15px;
-
-		margin-bottom: 30px;
-		position: relative;
-
-		&::after {
-			@include pseudo;
-			@include background (url("../img/invest/rub.svg"));
-			@include pos (absolute, $bottom:50%, $left: 16px);
-			@include wh(28px);
-			transform: translateY(50%)
-		}
-
-	}
+	&__platform {}
 
 	// .invest__title
 	&__title {
