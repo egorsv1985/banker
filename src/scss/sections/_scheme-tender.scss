@@ -36,6 +36,7 @@ padding-bottom: 120px;
 		// .steps__box
 		&__box {
 			border-right: none;
+			width: 100%;
 		}
 
 		// .steps__box--computer
@@ -44,8 +45,15 @@ padding-bottom: 120px;
 		// .steps__description
 		&__description {}
 
-		// .steps__box--analysis
-		&__box--analysis {}
+	
+			// .steps__box--call
+			&__box--call {
+				&::after {
+					@include background (url("../img/steps/call.svg"));
+					@include wh(40px);
+				}
+			}
+	
 
 		// .steps__box--contract
 		&__box--contract {

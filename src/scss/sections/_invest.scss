@@ -1,25 +1,6 @@
 .invest {
 
-	padding-top: 60px;
-	position: relative;
-
-	&::before {
-		@include pseudo;
-		@include background (url("../img/invest/invest-bg.png"));
-		width: 623px;
-		height: 663px;
-		@include pos (absolute, $bottom:-125px, $right:0);
-
-	}
-
-	&::after {
-		@include pseudo;
-		@include background (url("../img/invest/invest-logo.svg"));
-		width: 95px;
-		height: 16px;
-		@include pos (absolute, $top:110px, $right:360px);
-
-	}
+	
 
 	// .invest__wrapper
 	&__wrapper {

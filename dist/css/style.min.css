@@ -430,6 +430,94 @@ body {
   color: #FFF;
 }
 
+.scheme,
+.scheme-tender,
+.advantages-contract {
+  position: relative;
+}
+.scheme::after,
+.scheme-tender::after,
+.advantages-contract::after {
+  content: "";
+  display: block;
+  width: 1104px;
+  height: 1701px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/section-bg.png");
+  position: absolute;
+  top: 87px;
+  right: 0;
+  z-index: -1;
+}
+
+.scheme-tender::after {
+  top: -320px;
+}
+
+.scheme::after {
+  top: -134px;
+}
+
+.contract,
+.tender,
+.invest {
+  padding-top: 60px;
+  position: relative;
+}
+.contract::before,
+.tender::before,
+.invest::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/invest/invest-bg.png");
+  width: 623px;
+  height: 663px;
+  position: absolute;
+  bottom: -140px;
+  right: 0;
+}
+.contract::after,
+.tender::after,
+.invest::after {
+  content: "";
+  display: block;
+  width: 1062px;
+  height: 632px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/main/main-bg.png");
+  position: absolute;
+  top: 60px;
+  left: 318px;
+  z-index: -1;
+}
+
+.form--bg .order,
+.form--bg .decision {
+  position: relative;
+}
+.form--bg .order::after,
+.form--bg .decision::after {
+  content: "";
+  display: block;
+  width: 1062px;
+  height: 632px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/main/main-bg.png");
+  position: absolute;
+  top: -100px;
+  left: -18px;
+  z-index: -1;
+}
+
 .button {
   display: flex;
   justify-content: center;
@@ -717,36 +805,6 @@ body {
   color: #FFF;
   max-width: 500px;
 }
-.invest {
-  padding-top: 60px;
-  position: relative;
-}
-.invest::before {
-  content: "";
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/invest/invest-bg.png");
-  width: 623px;
-  height: 663px;
-  position: absolute;
-  bottom: -125px;
-  right: 0;
-}
-.invest::after {
-  content: "";
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/invest/invest-logo.svg");
-  width: 95px;
-  height: 16px;
-  position: absolute;
-  top: 110px;
-  right: 360px;
-}
 .invest__wrapper {
   display: flex;
   flex-direction: column;
@@ -933,36 +991,6 @@ body {
   color: #2E2E2E;
 }
 
-.tender {
-  padding-top: 60px;
-  position: relative;
-}
-.tender::before {
-  content: "";
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/invest/invest-bg.png");
-  width: 623px;
-  height: 663px;
-  position: absolute;
-  bottom: -90px;
-  right: 0;
-}
-.tender::after {
-  content: "";
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/invest/invest-logo.svg");
-  width: 95px;
-  height: 16px;
-  position: absolute;
-  top: 145px;
-  right: 360px;
-}
 .tender__wrapper {
   display: flex;
   flex-direction: column;
@@ -1136,6 +1164,15 @@ body {
 }
 .scheme-tender .steps__box {
   border-right: none;
+  width: 100%;
+}
+.scheme-tender .steps__box--call::after {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/steps/call.svg");
+  width: 40px;
+  height: 40px;
 }
 .scheme-tender .steps__box--contract::after {
   background-repeat: no-repeat;
@@ -1144,36 +1181,6 @@ body {
   background-image: url("../img/steps/contract.svg");
   width: 40px;
   height: 40px;
-}
-.contract {
-  padding-top: 60px;
-  position: relative;
-}
-.contract::before {
-  content: "";
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/invest/invest-bg.png");
-  width: 623px;
-  height: 663px;
-  position: absolute;
-  bottom: -140px;
-  right: 0;
-}
-.contract::after {
-  content: "";
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/invest/invest-logo.svg");
-  width: 95px;
-  height: 16px;
-  position: absolute;
-  top: 100px;
-  right: 360px;
 }
 .contract__wrapper {
   display: flex;

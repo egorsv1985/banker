@@ -1,26 +1,6 @@
 
 .tender {
 
-	padding-top: 60px;
-	position: relative;
-
-	&::before {
-		@include pseudo;
-		@include background (url("../img/invest/invest-bg.png"));
-		width: 623px;
-		height: 663px;
-		@include pos (absolute, $bottom:-90px, $right:0);
-
-	}
-
-	&::after {
-		@include pseudo;
-		@include background (url("../img/invest/invest-logo.svg"));
-		width: 95px;
-		height: 16px;
-		@include pos (absolute, $top:145px, $right:360px);
-
-	}
 
 	// .tender__wrapper
 	&__wrapper {
