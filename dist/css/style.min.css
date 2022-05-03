@@ -456,6 +456,36 @@ body {
   border-radius: 15px;
 }
 
+.input {
+  width: 325px;
+  height: 70px;
+  padding: 20px;
+  box-shadow: inset 0px 0px 11px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-family: "TTNorms";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #989898;
+}
+
+.checkbox {
+  width: 25px;
+  height: 25px;
+  background-color: #55D6C6;
+}
+.checkbox:checked {
+  background-color: #55D6C6;
+}
+
+.label {
+  font-family: "TTNorms";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFF;
+}
+
 .main {
   background-repeat: no-repeat;
   background-position: center;
@@ -625,6 +655,23 @@ body {
   justify-content: center;
 }
 
+.decision__wrapper {
+  display: flex;
+  gap: 20px;
+}
+.decision__box {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding-top: 32px;
+}
+.decision__title {
+  font-size: 50px;
+  line-height: 106.19%;
+  text-align: left;
+  color: #FFF;
+  max-width: 500px;
+}
 .invest {
   padding-top: 60px;
   position: relative;
@@ -826,6 +873,7 @@ body {
 
 .requirements {
   padding-top: 120px;
+  padding-bottom: 245px;
 }
 .requirements__wrapper {
   display: flex;
@@ -950,36 +998,14 @@ body {
   gap: 20px;
   margin-bottom: 20px;
 }
-.form__phone, .form__name {
-  width: 325px;
-  height: 70px;
-  padding: 20px;
-  box-shadow: inset 0px 0px 11px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-  font-family: "TTNorms";
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 26px;
-  color: #989898;
-}
 .form__wrap {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
 }
 .form__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "TTNorms";
-  font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
-  color: #1F1F1F;
   width: 325px;
   height: 70px;
-  background: linear-gradient(180deg, #79DDCF 0%, #05A696 100%);
-  border-radius: 15px;
 }
 .form__box {
   display: flex;
@@ -1018,6 +1044,31 @@ body {
   background-color: #55D6C6;
 }
 
+.form-preliminary {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-preliminary__inputs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.form-preliminary__wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.form-preliminary__button {
+  width: 325px;
+  height: 70px;
+}
+.form-preliminary__box {
+  display: flex;
+  gap: 12px;
+}
 .filter__wrap {
   display: flex;
   justify-content: center;

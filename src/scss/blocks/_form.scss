@@ -12,20 +12,7 @@
 	&__phone,
 	&__name {
 
-		width: 325px;
-		height: 70px;
-		padding: 20px;
-
-		box-shadow: inset 0px 0px 11px rgba(0, 0, 0, 0.25);
-		border-radius: 15px;
-
-
-		font-family: "TTNorms";
-
-		font-weight: 500;
-		font-size: 22px;
-		line-height: 26px;
-		color: $textPlaceholderColor;
+		
 
 
 	}
@@ -41,20 +28,9 @@
 
 	// .form__button
 	&__button {
-		@include flex (center, center);
-
-		font-family: "TTNorms";
-		font-weight: 500;
-		font-size: 25px;
-		line-height: 30px;
-		color: $textButtonColor;
-
+	
 		width: 325px;
 		height: 70px;
-
-
-		background: linear-gradient(180deg, #79DDCF 0%, #05A696 100%);
-		border-radius: 15px;
 
 	}
 
