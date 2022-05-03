@@ -73,7 +73,8 @@ body {
 }
 
 .main,
-.articles{
+.articles,
+.info{
 	position: relative;
 	&::after{
 		@include pseudo;

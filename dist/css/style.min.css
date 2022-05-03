@@ -519,11 +519,13 @@ body {
 }
 
 .main,
-.articles {
+.articles,
+.info {
   position: relative;
 }
 .main::after,
-.articles::after {
+.articles::after,
+.info::after {
   content: "";
   display: block;
   width: 1062px;
