@@ -7,6 +7,10 @@
 		@include flex (center, center);
 	}
 
+
+
 	// .foto__img
-	&__img {}
+	&__img {
+		border-radius: 15px;
+	}
 }

@@ -75,7 +75,8 @@ body {
 .main,
 .articles,
 .info,
-.news{
+.news,
+.expert{
 	position: relative;
 	&::after{
 		@include pseudo;
