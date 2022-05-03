@@ -432,11 +432,21 @@ body {
 }
 
 .main {
+  padding: 44px 0 170px;
+  position: relative;
+}
+.main::after {
+  content: "";
+  display: block;
+  width: 1062px;
+  height: 632px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: url("../img/main/main-bg.png");
-  padding: 44px 0 170px;
+  position: absolute;
+  top: 60px;
+  left: 318px;
 }
 .main__wrapper {
   display: flex;

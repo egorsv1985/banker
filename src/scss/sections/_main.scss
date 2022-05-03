@@ -1,6 +1,12 @@
 .main {
-	@include background (url("../img/main/main-bg.png"));
 	padding: 44px 0 170px;
+	position: relative;
+	&::after{
+		@include pseudo;
+		@include wh(1062px, 632px);
+		@include background (url("../img/main/main-bg.png"));
+		@include pos (absolute, $top: 60px, $left: 318px);
+	}
 
 	// .main__wrapper
 	&__wrapper {
