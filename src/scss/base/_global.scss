@@ -36,7 +36,8 @@ body {
 }
 .contract,
 .tender,
-.invest{
+.invest,
+.loan{
 	padding-top: 60px;
 	position: relative;
 
@@ -58,6 +59,13 @@ body {
 	}
 }
 
+.loan{
+	&::before{
+		height: 612px;
+		bottom: -130px;
+	}
+}
+
 .form--bg{
 	.order,
 	.decision{
@@ -76,7 +84,8 @@ body {
 .articles,
 .info,
 .news,
-.expert{
+.expert,
+.loan{
 	position: relative;
 	&::after{
 		@include pseudo;

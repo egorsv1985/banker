@@ -15,6 +15,11 @@
 	color: $textPlaceholderColor;
 }
 
+.form__box input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
 .checkbox {
 	width: 25px;
 	height: 25px;
@@ -24,7 +29,9 @@
 		background-color: #55D6C6;
 	}
 }
-
+.form__box:hover input ~ .checkmark {
+	background-color: #ccc;
+  }
 .label {
 	font-family: "TTNorms";
 

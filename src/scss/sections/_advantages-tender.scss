@@ -46,29 +46,4 @@
 		}
 	}
 
-
-
-	// .advantages-tender__button--paste
-	&__button--paste {
-		&::after {
-			@include background (url("../img/advantages/paste.svg"));
-			@include wh(34px, 37px);
-		}
-	}
-
-	// .advantages-tender__button--money
-	&__button--money {
-		&::after {
-			@include background (url("../img/advantages/money-advantages.svg"));
-			@include wh(35px);
-		}
-	}
-
-	// .advantages-tender__button--map
-	&__button--map {
-		&::after {
-			@include background (url("../img/advantages/map.svg"));
-			@include wh(22px, 37px);
-		}
-	}
 }

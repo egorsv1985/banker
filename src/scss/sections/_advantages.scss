@@ -45,28 +45,5 @@
 
 	}
 
-	// .advantages__button--term
-	&__button--term {
-		&::after {
-			@include background (url("../img/advantages/term.svg"));
-			@include wh(27px);
-		}
-	}
-
-	// .advantages__button--time
-	&__button--time {
-		&::after {
-			@include background (url("../img/advantages/time.svg"));
-			@include wh(40px);
-		}
-	}
-
-	// .advantages__button--online
-	&__button--online {
-		&::after {
-			@include background (url("../img/advantages/online.svg"));
-			@include wh(38px);
-		}
-	}
 
 }
