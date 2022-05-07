@@ -5,13 +5,13 @@
 	// .steps__wrap
 	&__wrap {
 		@include flex ();
-		
+
 	}
 
 	// .steps__number
 	&__number {
 
-		font-family: 'TT Norms';
+		font-family: 'TTNorms';
 		font-weight: 500;
 		font-size: 80px;
 		line-height: 94px;
@@ -78,7 +78,25 @@
 	&__box--money {
 		&::after {
 			@include background (url("../img/steps/money.svg"));
-			@include wh(37px);
+			@include wh(36px, 41px);
+		}
+
+	}
+
+	// .steps__box--call
+	&__box--call {
+		&::after {
+			@include background (url("../img/steps/call.svg"));
+			@include wh(40px);
+		}
+	}
+
+
+	// .steps__box--contract
+	&__box--contract {
+		&::after {
+			@include background (url("../img/steps/contract.svg"));
+			@include wh(40px);
 		}
 
 	}
@@ -90,13 +108,14 @@
 	// .steps__description
 	&__description {
 
-		font-family: 'TT Norms';
+		font-family: 'TTNorms';
 		font-weight: 500;
 		font-size: 25px;
 		line-height: 94.52%;
 		color: #F7F7F7;
 
 		padding-left: 60px;
+		align-self:center;
 
 	}
 

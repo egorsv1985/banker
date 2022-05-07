@@ -13,7 +13,8 @@ body {
 
 .scheme,
 .scheme-tender,
-.advantages-contract {
+.advantages-contract,
+.scheme-loan {
 	position: relative;
 
 	&::after {
@@ -29,6 +30,12 @@ body {
 		top: -320px;
 	}
 }
+.scheme-loan{
+	&::after{
+		top: -344px;
+	}
+}
+
 .scheme{
 	&::after{
 		top: -134px;

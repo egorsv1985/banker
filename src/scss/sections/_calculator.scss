@@ -1,4 +1,5 @@
 .calculator {
+	padding-bottom: 130px;
 
 	// .calculator__wrapper
 	&__wrapper {
@@ -25,7 +26,7 @@
 
 	// .calculator__link
 	&__link {
-		font-family: 'TT Norms';
+		font-family: 'TTNorms';
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 106.19%;
@@ -78,7 +79,7 @@
 	&__label {
 
 
-		font-family: 'TT Norms';
+		font-family: 'TTNorms';
 		font-weight: 700;
 		font-size: 25px;
 		line-height: 20px;
@@ -112,7 +113,7 @@
 		border: none;
 
 
-		font-family: 'TT Norms';
+		font-family: 'TTNorms';
 		font-weight: 400;
 		font-size: 25px;
 		line-height: 30px;
@@ -132,7 +133,7 @@ margin-bottom: 15px;
 
 	// .calculator__value
 	&__value {
-		font-family: 'TT Norms';
+		font-family: 'TTNorms';
 		font-weight: 400;
 		font-size: 12px;
 		line-height: 14px;
@@ -151,7 +152,7 @@ margin-bottom: 15px;
 
 	// .calculator__desc
 	&__desc {
-		font-family: 'TT Norms';
+		font-family: 'TTNorms';
 		font-weight: 700;
 		font-size: 20px;
 		line-height: 81.26%;

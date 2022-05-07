@@ -496,12 +496,14 @@ body {
 
 .scheme,
 .scheme-tender,
-.advantages-contract {
+.advantages-contract,
+.scheme-loan {
   position: relative;
 }
 .scheme::after,
 .scheme-tender::after,
-.advantages-contract::after {
+.advantages-contract::after,
+.scheme-loan::after {
   content: "";
   display: block;
   width: 1104px;
@@ -518,6 +520,10 @@ body {
 
 .scheme-tender::after {
   top: -320px;
+}
+
+.scheme-loan::after {
+  top: -344px;
 }
 
 .scheme::after {
@@ -767,7 +773,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 500;
   font-size: 25px;
   line-height: 22px;
@@ -995,7 +1001,7 @@ body {
   display: flex;
 }
 .steps__number {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 500;
   font-size: 80px;
   line-height: 94px;
@@ -1050,16 +1056,33 @@ body {
   background-position: center;
   background-size: cover;
   background-image: url("../img/steps/money.svg");
-  width: 37px;
-  height: 37px;
+  width: 36px;
+  height: 41px;
+}
+.steps__box--call::after {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/steps/call.svg");
+  width: 40px;
+  height: 40px;
+}
+.steps__box--contract::after {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/steps/contract.svg");
+  width: 40px;
+  height: 40px;
 }
 .steps__description {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 500;
   font-size: 25px;
   line-height: 94.52%;
   color: #F7F7F7;
   padding-left: 60px;
+  align-self: center;
 }
 .steps__text {
   font-size: 22px;
@@ -1114,7 +1137,7 @@ body {
   background-color: #fff;
 }
 .main__link {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 500;
   font-size: 33px;
   line-height: 85.19%;
@@ -1453,7 +1476,7 @@ body {
   padding: 0 12px;
 }
 .requirements__text {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 700;
   font-size: 28px;
   line-height: 87.02%;
@@ -1464,7 +1487,7 @@ body {
   font-size: 25px;
 }
 .requirements__desc {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
@@ -1507,14 +1530,14 @@ body {
   transform: translateY(50%);
 }
 .tender__desc {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 400;
   font-size: 30px;
   line-height: 106.19%;
   color: #FFF;
 }
 .tender__description {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 400;
   font-size: 22px;
   line-height: 106.19%;
@@ -1613,7 +1636,7 @@ body {
   margin-bottom: 35px;
 }
 .scheme-tender__inner {
-  padding-left: 25px;
+  padding-left: 10px;
 }
 .scheme-tender__steps {
   margin-bottom: 40px;
@@ -1622,22 +1645,7 @@ body {
   border-right: none;
   width: 100%;
 }
-.scheme-tender .steps__box--call::after {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/steps/call.svg");
-  width: 40px;
-  height: 40px;
-}
-.scheme-tender .steps__box--contract::after {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../img/steps/contract.svg");
-  width: 40px;
-  height: 40px;
-}
+
 .contract__wrapper {
   display: flex;
   flex-direction: column;
@@ -1765,7 +1773,7 @@ body {
   padding: 0 20px;
 }
 .requirements-contract__text {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 700;
   font-size: 28px;
   line-height: 87.02%;
@@ -1774,7 +1782,7 @@ body {
   margin-bottom: 5px;
 }
 .requirements-contract__desc {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 400;
   font-size: 15px;
   line-height: 18px;
@@ -1821,7 +1829,7 @@ body {
   flex-direction: column;
 }
 .scheme-contract .steps__number {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 500;
   font-size: 80px;
   line-height: 94px;
@@ -1830,7 +1838,7 @@ body {
   margin-right: 0;
 }
 .scheme-contract .steps__description {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 500;
   font-size: 25px;
   line-height: 94.52%;
@@ -1856,7 +1864,7 @@ body {
   margin-bottom: 10px;
 }
 .expert__date {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -1960,6 +1968,9 @@ body {
   transform: translateY(50%);
 }
 
+.calculator {
+  padding-bottom: 130px;
+}
 .calculator__wrapper {
   display: flex;
   align-items: center;
@@ -1976,7 +1987,7 @@ body {
   margin-bottom: 40px;
 }
 .calculator__link {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 400;
   font-size: 20px;
   line-height: 106.19%;
@@ -2016,7 +2027,7 @@ body {
   flex-direction: column;
 }
 .calculator__label {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 700;
   font-size: 25px;
   line-height: 20px;
@@ -2036,7 +2047,7 @@ body {
   height: 58px;
   background: #F7F7F7;
   border: none;
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 400;
   font-size: 25px;
   line-height: 30px;
@@ -2050,7 +2061,7 @@ body {
   align-items: center;
 }
 .calculator__value {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -2062,7 +2073,7 @@ body {
   flex-direction: column;
 }
 .calculator__desc {
-  font-family: "TT Norms";
+  font-family: "TTNorms";
   font-weight: 700;
   font-size: 20px;
   line-height: 81.26%;
@@ -2186,6 +2197,37 @@ input[type=range]:focus::-ms-fill-upper {
     /*Edge starts the margin from the thumb, not the track as other browsers do*/
   }
 }
+.scheme-loan__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.scheme-loan__title {
+  font-size: 50px;
+  line-height: 106.19%;
+  color: #FFF;
+  margin-bottom: 35px;
+}
+.scheme-loan__inner {
+  padding-left: 10px;
+}
+.scheme-loan__steps {
+  margin-bottom: 35px;
+}
+.scheme-loan .steps__box {
+  border-right: none;
+  width: 100%;
+}
+.scheme-loan__btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+}
+.scheme-loan__btn {
+  width: 291px;
+  height: 77px;
+}
+
 .projects {
   padding-top: 54px;
 }
