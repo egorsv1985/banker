@@ -1960,6 +1960,232 @@ body {
   transform: translateY(50%);
 }
 
+.calculator__wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.calculator__title {
+  font-size: 50px;
+  line-height: 106.19%;
+  color: #FFF;
+  margin-bottom: 25px;
+}
+.calculator__subtitle {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.calculator__link {
+  font-family: "TT Norms";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 106.19%;
+  text-align: center;
+  letter-spacing: 0.055em;
+  color: #FFF;
+  position: relative;
+  display: inline-block;
+}
+.calculator__link::after {
+  content: "";
+  display: block;
+  width: 115%;
+  height: 3px;
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(94.03deg, #0EDAC5 8%, #00211E 151.99%);
+  border-radius: 5px;
+}
+.calculator__box {
+  display: flex;
+  gap: 52px;
+  max-width: 936px;
+  background: #FFFFFF;
+  border-radius: 15px;
+  padding: 50px 36px;
+}
+.calculator__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.calculator__form {
+  display: flex;
+  flex-direction: column;
+}
+.calculator__label {
+  font-family: "TT Norms";
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 20px;
+  text-align: center;
+  color: #282828;
+}
+.calculator__label h4 {
+  margin-bottom: 15px;
+}
+.calculator__form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.calculator__input {
+  width: 253px;
+  height: 58px;
+  background: #F7F7F7;
+  border: none;
+  font-family: "TT Norms";
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: #8C8C8C;
+  margin-bottom: 15px;
+}
+.calculator__span-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.calculator__value {
+  font-family: "TT Norms";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #424242;
+}
+.calculator__inner {
+  display: flex;
+  flex-direction: column;
+}
+.calculator__desc {
+  font-family: "TT Norms";
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 81.26%;
+  text-align: center;
+  color: #282828;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.calculator__span {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+  color: #55D6C6;
+  display: block;
+}
+.calculator__button {
+  width: 264px;
+  height: 62px;
+  align-self: flex-end;
+  border-radius: 4px;
+}
+
+input[type=range] {
+  width: 100%;
+  margin: 5px 0;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background: #55d6c6;
+  border: 2px solid #55d6c6;
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  margin-top: -7px;
+  width: 12px;
+  height: 12px;
+  background: #313131;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ffffff;
+}
+
+input[type=range]::-moz-range-track {
+  background: #55d6c6;
+  border: 2px solid #55d6c6;
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: #313131;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+  background: transparent;
+  border-color: transparent;
+  border-width: 6px 0;
+  color: transparent;
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-fill-lower {
+  background: #0e3833;
+  border: 2px solid #55d6c6;
+}
+
+input[type=range]::-ms-fill-upper {
+  background: #55d6c6;
+  border: 2px solid #55d6c6;
+}
+
+input[type=range]::-ms-thumb {
+  width: 12px;
+  height: 12px;
+  background: #313131;
+  border: 1px solid #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 0px;
+  /*Needed to keep the Edge thumb centred*/
+}
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #55d6c6;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #ffffff;
+}
+
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+  how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align: auto) {
+  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+  input[type=range] {
+    margin: 0;
+    /*Edge starts the margin from the thumb, not the track as other browsers do*/
+  }
+}
 .projects {
   padding-top: 54px;
 }
