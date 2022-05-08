@@ -564,7 +564,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/main/main-bg.png");
+  background-image: url("../img/main-bg.png");
   position: absolute;
   top: 60px;
   left: 318px;
@@ -589,7 +589,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/main/main-bg.png");
+  background-image: url("../img/main-bg.png");
   position: absolute;
   top: -100px;
   left: -18px;
@@ -617,7 +617,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/main/main-bg.png");
+  background-image: url("../img/main-bg.png");
   position: absolute;
   top: 60px;
   left: 318px;
@@ -805,13 +805,40 @@ body {
   width: 25px;
   height: 25px;
   background-color: #55D6C6;
+  cursor: pointer;
 }
 .checkbox:checked {
   background-color: #55D6C6;
+  position: relative;
 }
 
-.form__box:hover input ~ .checkmark {
-  background-color: #ccc;
+.form__box:hover input ~ .checkbox {
+  background-color: #fff;
+}
+
+.form__box input:checked ~ .checkbox {
+  background-color: #55D6C6;
+  position: relative;
+}
+
+.checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form__box input:checked ~ .checkbox:after {
+  display: block;
+}
+
+.form__box .checkbox:after {
+  left: 7px;
+  top: -2px;
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
 }
 
 .label {
@@ -901,14 +928,6 @@ body {
   gap: 10px;
   align-self: flex-end;
   margin-bottom: 14px;
-}
-.form__checkbox {
-  width: 25px;
-  height: 25px;
-  background-color: #55D6C6;
-}
-.form__checkbox:checked {
-  background-color: #55D6C6;
 }
 .form__label {
   font-family: "TTNorms";
@@ -1091,20 +1110,20 @@ body {
   align-self: center;
 }
 
-.main {
+.documents {
   padding: 44px 0 170px;
 }
-.main__wrapper {
+.documents__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
 }
-.main__title {
+.documents__title {
   margin-bottom: 20px;
 }
-.main__list {
+.documents__list {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -1113,20 +1132,20 @@ body {
   gap: 72px;
   width: 100%;
 }
-.main__item {
+.documents__item {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.main__box {
+.documents__box {
   display: flex;
   gap: 20px;
 }
-.main__desc {
+.documents__desc {
   align-self: flex-end;
   position: relative;
 }
-.main__desc::before {
+.documents__desc::before {
   content: "";
   display: block;
   width: 100%;
@@ -1136,7 +1155,7 @@ body {
   height: 2px;
   background-color: #fff;
 }
-.main__link {
+.documents__link {
   font-family: "TTNorms";
   font-weight: 500;
   font-size: 33px;
@@ -1144,10 +1163,13 @@ body {
   color: #FFF;
   text-shadow: 0px 0px 67px #010715;
 }
-.main__text {
+.documents__text {
   padding-left: 10px;
 }
 
+.order {
+  padding-bottom: 175px;
+}
 .order__wrapper {
   display: flex;
   gap: 20px;
@@ -1155,13 +1177,22 @@ body {
 .order__box {
   display: flex;
   flex-direction: column;
-  gap: 45px;
+  gap: 40px;
   padding-top: 50px;
 }
 .order__inner {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+}
+.order__title {
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 53px;
+  letter-spacing: 0em;
+}
+.order__subtitle {
+  max-width: 660px;
 }
 .articles {
   padding: 44px 0 215px;
@@ -1315,6 +1346,9 @@ body {
   justify-content: center;
 }
 
+.decision {
+  padding-bottom: 175px;
+}
 .decision__wrapper {
   display: flex;
   gap: 20px;

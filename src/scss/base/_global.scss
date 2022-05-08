@@ -60,7 +60,7 @@ body {
 	&::after{
 		@include pseudo;
 		@include wh(1062px, 632px);
-		@include background (url("../img/main/main-bg.png"));
+		@include background (url("../img/main-bg.png"));
 		@include pos (absolute, $top: 60px, $left: 318px);
 		z-index: -1;
 	}
@@ -80,7 +80,7 @@ body {
 		&::after{
 			@include pseudo;
 			@include wh(1062px, 632px);
-			@include background (url("../img/main/main-bg.png"));
+			@include background (url("../img/main-bg.png"));
 			@include pos (absolute, $top: -100px, $left: -18px);
 			z-index: -1;
 		}
@@ -97,7 +97,7 @@ body {
 	&::after{
 		@include pseudo;
 		@include wh(1062px, 632px);
-		@include background (url("../img/main/main-bg.png"));
+		@include background (url("../img/main-bg.png"));
 		@include pos (absolute, $top: 60px, $left: 318px);
 		z-index: -1;
 	}

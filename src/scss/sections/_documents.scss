@@ -1,40 +1,40 @@
-.main {
+.documents {
 	padding: 44px 0 170px;
 	
 
-	// .main__wrapper
+	// .documents__wrapper
 	&__wrapper {
 		@include flex (space-between, center, wrap, column);
 	}
 
-	// .main__title
+	// .documents__title
 	&__title {
 		margin-bottom: 20px;
 	}
 
-	// .main__list
+	// .documents__list
 	&__list {
 		@include flex (space-between, flex-start, wrap, column);
 		gap: 72px;
 		width: 100%;
 	}
 
-	// .main__item
+	// .documents__item
 	&__item {
 		@include flex ($flex-direction: column);
 		gap: 10px;
 	}
 
-	// .main__box
+	// .documents__box
 	&__box {
 		@include flex ();
 		gap: 20px;
 	}
 
-	// .main__img
+	// .documents__img
 	&__img {}
 
-	// .main__desc
+	// .documents__desc
 	&__desc {
 		align-self: flex-end;
 		position: relative;
@@ -50,7 +50,7 @@
 
 	}
 
-	// .main__link
+	// .documents__link
 	&__link {
 		font-family: 'TTNorms';
 
@@ -62,7 +62,7 @@
 
 	}
 
-	// .main__text
+	// .documents__text
 	&__text {
 		padding-left: 10px;
 	}
