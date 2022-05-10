@@ -795,52 +795,6 @@ body {
   color: #989898;
 }
 
-.form__box input[type=checkbox] {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.checkbox {
-  width: 25px;
-  height: 25px;
-  background-color: #55D6C6;
-  cursor: pointer;
-}
-.checkbox:checked {
-  background-color: #55D6C6;
-  position: relative;
-}
-
-.form__box:hover input ~ .checkbox {
-  background-color: #fff;
-}
-
-.form__box input:checked ~ .checkbox {
-  background-color: #55D6C6;
-  position: relative;
-}
-
-.checkbox:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.form__box input:checked ~ .checkbox:after {
-  display: block;
-}
-
-.form__box .checkbox:after {
-  left: 7px;
-  top: -2px;
-  width: 10px;
-  height: 20px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  transform: rotate(45deg);
-}
-
 .label {
   font-family: "TTNorms";
   font-weight: 400;
@@ -849,6 +803,66 @@ body {
   color: #FFF;
   display: flex;
   gap: 10px;
+}
+
+/* Настройка метки (контейнера) */
+.label-checkbox {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Скрыть флажок браузера по умолчанию */
+.label-checkbox input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Создание пользовательского флажка */
+.checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #55D6C6;
+}
+
+/* При наведении курсора мыши добавьте белый цвет фона */
+.label-checkbox:hover input ~ .checkbox {
+  background-color: #fff;
+}
+
+/* Если флажок установлен, добавьте фон */
+.label-checkbox input:checked ~ .checkbox {
+  background-color: #55D6C6;
+}
+
+/* Создайте флажок/индикатор (скрытый, если он не установлен) */
+.checkbox:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Показывать галочку при установке флажка */
+.label-checkbox input:checked ~ .checkbox:after {
+  display: block;
+}
+
+/* Стиль галочки/индикатора */
+.label-checkbox .checkbox:after {
+  left: 7px;
+  top: -2px;
+  width: 10px;
+  height: 20px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
 }
 
 .header {
@@ -936,6 +950,9 @@ body {
   line-height: 18px;
   color: #FFF;
 }
+.form__label p {
+  padding-left: 35px;
+}
 .form__link {
   position: relative;
   color: #55D6C6;
@@ -975,6 +992,9 @@ body {
 .form-preliminary__box {
   display: flex;
   gap: 12px;
+}
+.form-preliminary__label p {
+  padding-left: 35px;
 }
 .filter__wrap {
   display: flex;
@@ -1194,6 +1214,74 @@ body {
 .order__subtitle {
   max-width: 660px;
 }
+/* Настройка метки (контейнера) */
+.container1 {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Скрыть флажок браузера по умолчанию */
+.container1 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Создание пользовательского флажка */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* При наведении курсора мыши добавьте серый цвет фона */
+.container1:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* Если флажок установлен, добавьте синий фон */
+.container1 input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Создайте флажок/индикатор (скрытый, если он не установлен) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Показывать галочку при установке флажка */
+.container1 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Стиль галочки/индикатора */
+.container1 .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 .articles {
   padding: 44px 0 215px;
 }

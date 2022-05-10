@@ -15,54 +15,6 @@
 	color: $textPlaceholderColor;
 }
 
-.form__box input[type="checkbox"] {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
-}
-
-.checkbox {
-	width: 25px;
-	height: 25px;
-	background-color: #55D6C6;
-	cursor: pointer;
-
-
-	&:checked {
-		background-color: #55D6C6;
-		position: relative;
-	}
-}
-
-.form__box:hover input~.checkbox {
-	background-color: #fff;
-}
-
-
-.form__box input:checked~.checkbox {
-	background-color: #55D6C6;
-	position: relative;
-}
-
-.checkbox:after {
-	content: "";
-	position: absolute;
-	display: none;
-}
-
-.form__box input:checked~.checkbox:after {
-	display: block;
-}
-
-.form__box .checkbox:after {
-	left: 7px;
-	top: -2px;
-	width: 10px;
-	height: 20px;
-	border: solid white;
-	border-width: 0 3px 3px 0;
-	transform: rotate(45deg);
-}
 
 .label {
 	font-family: "TTNorms";
@@ -75,4 +27,63 @@
 
 	display: flex;
 	gap: 10px;
+}
+
+/* Настройка метки (контейнера) */
+.label-checkbox{
+	display: block;
+	position: relative;
+	cursor: pointer;
+	user-select: none;
+}
+
+  /* Скрыть флажок браузера по умолчанию */
+
+.label-checkbox input[type="checkbox"] {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+
+/* Создание пользовательского флажка */
+.checkbox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #55D6C6;
+}
+/* При наведении курсора мыши добавьте белый цвет фона */
+.label-checkbox:hover input~.checkbox {
+	background-color: #fff;
+}
+
+/* Если флажок установлен, добавьте фон */
+.label-checkbox input:checked~.checkbox {
+	background-color: #55D6C6;
+}
+
+/* Создайте флажок/индикатор (скрытый, если он не установлен) */
+.checkbox:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+/* Показывать галочку при установке флажка */
+.label-checkbox input:checked~.checkbox:after {
+	display: block;
+}
+/* Стиль галочки/индикатора */
+.label-checkbox .checkbox:after {
+	left: 7px;
+	top: -2px;
+	width: 10px;
+	height: 20px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	transform: rotate(45deg);
 }

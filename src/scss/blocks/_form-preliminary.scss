@@ -39,9 +39,12 @@
 	&__checkbox {}
 
 	// .form-preliminary__label
-	&__label {}
+	&__label {
+		p {
+			padding-left: 35px;
+		}
+	}
 
 	// .form-preliminary__link
 	&__link {}
 }
-

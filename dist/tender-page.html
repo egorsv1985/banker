@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/style.min.css?_v=20220508111711">
+<link rel="stylesheet" href="css/style.min.css">
 <title>Тендерный заём</title>
 </head>
 <body >
@@ -142,7 +142,7 @@
 <div class="container">
 <div class="decision__wrapper">
 <div class="decision__box-img">
-<picture><source srcset="img/order/order-img.webp" type="image/webp"><img src="img/order/order-img.png" alt="decision" class="decision__img"></picture>
+<img src="img/order/order-img.png" alt="decision" class="decision__img">
 </div>
 <div class="decision__box">
 <h2 class="decision__title title">Получить предварительное решение</h2>
@@ -155,10 +155,11 @@
 <input type="text" class="form-preliminary__inn input" name="inn" placeholder="Ваш ИНН" id="js-inn">
 <button class="form-preliminary__button button">Отправить заявку</button>
 </div>
-<div class="form-preliminary__box">
-<input type="checkbox" class="form-preliminary__checkbox checkbox" name="check" id="js-check">
-<label for="checkbox" class="form-preliminary__label label">Вы соглашаетесь с условиями
-<a href="#" target="_blank" class="form__link">обработки персональных данных</a>
+<div class="form-preliminary__box">							
+<label class="form-preliminary__label label label-checkbox">
+<input type="checkbox" name="check" id="js-check">
+<span class="form-preliminary__checkbox checkbox"></span>
+<p>Вы соглашаетесь с условиями <a href="#" target="_blank" class="form-preliminary__link">обработки	персональных данных</a></p>
 </label>
 </div>
 </form-preliminary>
@@ -170,6 +171,6 @@
 <div class="container">
 </div>
 </footer>
-<script src="js/app.min.js?_v=20220508111711"></script>
+<script src="js/app.min.js"></script>
 </body>
 </html>
