@@ -57,6 +57,9 @@ import {
 import {
 	zip
 } from "./gulp/tasks/zip.js";
+import {
+	deploy
+} from "./gulp/tasks/gh-pages.js";
 // import {
 // 	ftp
 // } from "./gulp/tasks/ftp.js";
@@ -82,6 +85,7 @@ const build = gulp.series(reset, mainTasks);
 const deployZIP = gulp.series(reset, mainTasks, zip);
 const svgSprite = svgSprive;
 const purgecss = purgeCss;
+const ghPages = deploy;
 // const deployFTP = gulp.series(reset, mainTasks, ftp);
 
 // Экспорт сценариев
@@ -99,6 +103,9 @@ export {
 }
 export {
 	purgecss
+}
+export {
+	ghPages
 }
 // export {
 // 	deployFTP

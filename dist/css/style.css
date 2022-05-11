@@ -601,7 +601,8 @@ body {
 .info,
 .news,
 .expert,
-.loan {
+.loan,
+.documents {
   position: relative;
 }
 .main::after,
@@ -609,7 +610,8 @@ body {
 .info::after,
 .news::after,
 .expert::after,
-.loan::after {
+.loan::after,
+.documents::after {
   content: "";
   display: block;
   width: 1062px;
@@ -622,6 +624,51 @@ body {
   top: 60px;
   left: 318px;
   z-index: -1;
+}
+
+.burger {
+  width: 24px;
+  height: 24px;
+  padding: 5px 2px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  z-index: 15;
+}
+.burger__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.burger__inner span, .burger__inner::before, .burger__inner::after {
+  content: "";
+  transition: all 0.3s ease 0s;
+  left: 0px;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 9px;
+}
+.burger__inner::before {
+  top: 0px;
+}
+.burger__inner::after {
+  bottom: 0px;
+}
+.burger__inner span {
+  top: calc(50% - 1px);
+}
+.open .burger__inner span {
+  transform: scale(0);
+}
+.open .burger__inner::before {
+  transform: rotate(-45deg);
+  top: calc(50% - 1px);
+}
+.open .burger__inner::after {
+  transform: rotate(45deg);
+  bottom: calc(50% - 1px);
 }
 
 .button {
@@ -1170,10 +1217,16 @@ body {
   display: block;
   width: 100%;
   position: absolute;
-  bottom: -2px;
+  bottom: -6px;
   left: 0;
+  right: 0;
   height: 2px;
   background-color: #fff;
+  transform: scaleX(1);
+  transition: transform 0.3s;
+}
+.documents__desc:hover::before {
+  transform: scaleX(1);
 }
 .documents__link {
   font-family: "TTNorms";

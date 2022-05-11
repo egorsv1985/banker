@@ -1,6 +1,6 @@
 .documents {
 	padding: 44px 0 170px;
-	
+
 
 	// .documents__wrapper
 	&__wrapper {
@@ -42,13 +42,22 @@
 		&::before {
 			@include pseudo;
 			width: 100%;
-			@include pos (absolute, $bottom: -2px, $left: 0);
+			@include pos (absolute, $bottom: -6px, $left: 0, $right: 0);
 			height: 2px;
 			background-color: #fff;
+			transform: scaleX(1);
+
+			transition: transform 0.3s;
 
 		}
 
+		&:hover {
+			&::before {
+				transform: scaleX(1);
+			}
+		}
 	}
+
 
 	// .documents__link
 	&__link {

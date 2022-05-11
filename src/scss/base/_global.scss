@@ -92,7 +92,8 @@ body {
 .info,
 .news,
 .expert,
-.loan{
+.loan,
+.documents{
 	position: relative;
 	&::after{
 		@include pseudo;
