@@ -85,7 +85,7 @@ const build = gulp.series(reset, mainTasks);
 const deployZIP = gulp.series(reset, mainTasks, zip);
 const svgSprite = svgSprive;
 const purgecss = purgeCss;
-const ghPages = deploy;
+const pages = deploy;
 // const deployFTP = gulp.series(reset, mainTasks, ftp);
 
 // Экспорт сценариев
@@ -105,7 +105,7 @@ export {
 	purgecss
 }
 export {
-	ghPages
+	pages
 }
 // export {
 // 	deployFTP
