@@ -1,0 +1,62 @@
+//<INPUT>
+// Снипет (HTML): inp
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.input {
+	border-radius: 15px;
+	height: 78px;
+	width: 630px;
+	display: block;
+	padding: 0px 20px;
+position: relative;
+
+	background-color: #FFFFFF;
+
+	&:focus-visible,
+	&:focus,
+	&:active {
+
+		border: none;
+		outline-color: transparent;
+	}
+
+	&:focus~.label,
+	&:valid~.label {
+		top: 0;
+	}
+
+
+	&._focus {}
+
+	&._error {}
+}
+
+textarea.input {
+	resize: none;
+	padding: 0px 0px;
+}
+
+.label {
+
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 106.19%;
+
+	color: #B9B9B9;
+
+	position: absolute;
+	top: 25px;
+	left: 25px;
+	transition: .5s;
+
+}
+
+
+.label-checkbox {}

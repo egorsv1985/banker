@@ -1,0 +1,11 @@
+
+.social {
+	@include flex (space-between, center);
+	gap: 30px;
+	// .social__item
+	&__item {}
+	// .social__link
+	&__link {}
+	// .social__img
+	&__img {}
+}

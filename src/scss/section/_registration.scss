@@ -1,0 +1,33 @@
+.registration {
+	padding: 120px 0 190px;
+	// .registration__wrapper
+	&__wrapper {
+		@include flex ($flex-direction: column);
+	}
+	// .registration__title
+	&__title {
+		margin-bottom: 10px;
+	}
+	// .registration__subtitle
+	&__subtitle {
+		margin-bottom: 40px;
+	}
+	// .registration__buttons
+	&__buttons {
+		@include flex (center, center);
+		gap: 30px;
+		margin-bottom: 30px;
+	}
+	// .registration__button
+	&__button {}
+	// .registration__form
+	&__form {
+		margin-left: 70px;
+	}
+
+
+}
+
+
+
+
