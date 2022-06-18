@@ -1,0 +1,16 @@
+.foto {
+	padding-top: 48px;
+	padding-bottom: 192px;
+
+	// .foto__box
+	&__box {
+		@include flex (center, center);
+	}
+
+
+
+	// .foto__img
+	&__img {
+		border-radius: 15px;
+	}
+}

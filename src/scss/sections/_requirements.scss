@@ -1,0 +1,73 @@
+.requirements {
+	padding-top: 120px;
+	padding-bottom: 245px;
+
+	// .requirements__wrapper
+	&__wrapper {
+		@include flex ($flex-direction: column);
+	}
+
+	// .requirements__title
+	&__title {
+
+		font-size: 50px;
+		line-height: 106.19%;
+
+		color: $textMainColor;
+
+		margin-bottom: 40px;
+
+
+	}
+
+	// .requirements__inner
+	&__inner {
+		@include flex ();
+		gap: 30px;
+	}
+
+	// .requirements__item
+	&__item {
+		@include flex (center, center, wrap, column);
+
+		width: 267px;
+		height: 113px;
+
+		background-color: #FFFFFF;
+		border-radius: 5px;
+
+		padding: 0 12px;
+
+
+	}
+
+	// .requirements__text
+	&__text {
+		font-family: 'TTNorms';
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 87.02%;
+		color: #14B0A0;
+
+		text-align: center;
+
+	}
+
+		// .requirements__text--small
+		&__text--small {
+			font-size: 25px;
+		}
+
+	// .requirements__desc
+	&__desc {
+
+		font-family: 'TTNorms';
+		font-weight: 400;
+		font-size: 15px;
+		line-height: 18px;
+
+		color: #2E2E2E;
+
+
+	}
+}

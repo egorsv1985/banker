@@ -8,7 +8,7 @@
 // base
 @import "./base/normalize";
 
-// @import "fonts";
+@import "fonts";
 
 
 @import "./base/sections";
@@ -19,14 +19,51 @@
 @import "./components/burger";
 @import "./components/link";
 @import "./components/button";
+@import "./components/btn";
+
+
 @import "./components/inputs";
 
-// sections
-@import "./sections/_main";
 
 // block
 @import "./blocks/header";
 @import "./blocks/nav";
 @import "./blocks/contacts";
+@import "./blocks/form";
+@import "./blocks/form-preliminary";
+@import "./blocks/project";
+@import "./blocks/filter";
+@import "./blocks/steps";
 
 @import "./blocks/footer";
+
+// sections
+@import "./sections/documents";
+@import "./sections/order";
+@import "./sections/articles";
+@import "./sections/news";
+@import "./sections/info";
+@import "./sections/foto";
+@import "./sections/foto-expert";
+@import "./sections/info-contacts";
+@import "./sections/decision";
+@import "./sections/invest";
+@import "./sections/advantages";
+@import "./sections/scheme";
+@import "./sections/requirements";
+@import "./sections/tender";
+@import "./sections/advantages-tender";
+@import "./sections/scheme-tender";
+@import "./sections/contract";
+@import "./sections/advantages-contract";
+@import "./sections/requirements-contract";
+@import "./sections/scheme-contract";
+@import "./sections/expert";
+@import "./sections/loan";
+@import "./sections/advantages-loan";
+@import "./sections/calculator";
+@import "./sections/scheme-loan";
+@import "./sections/know";
+
+@import "./sections/projects";
+

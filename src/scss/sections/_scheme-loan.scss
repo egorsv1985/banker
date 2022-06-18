@@ -1,0 +1,54 @@
+.scheme-loan {
+	padding-bottom: 135px;
+	// .scheme-loan__wrapper
+	&__wrapper {
+		@include flex ($flex-direction: column);
+	}
+	// .scheme-loan__title
+	&__title {
+		font-size: 50px;
+		line-height: 106.19%;
+		color: $textMainColor;
+
+		margin-bottom: 35px;
+	}
+	// .scheme-loan__inner
+	&__inner {
+		padding-left: 10px;
+	}
+	// .scheme-loan__steps
+	&__steps {
+		margin-bottom: 35px;
+	}
+	.steps {
+		// .steps__wrap
+		&__wrap {}
+		// .steps__number
+		&__number {}
+		// .steps__box
+		&__box {
+			border-right: none;
+			width: 100%;
+		}
+		
+	}
+	// .scheme-loan__btns
+	&__btns {
+		@include flex (center, center);
+		gap: 44px;
+	}
+	// .scheme-loan__btn
+	&__btn {
+		width: 291px;
+		height: 77px;
+	}
+}
+.container {
+}
+.title {
+}
+
+.button {
+}
+.btn {
+}

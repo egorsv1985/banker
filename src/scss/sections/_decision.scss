@@ -1,0 +1,42 @@
+.decision {
+	padding-bottom: 175px;
+
+	// .decision__wrapper
+	&__wrapper {
+		@include flex ();
+		gap: 20px;
+	}
+
+	// .decision__box-img
+	&__box-img {}
+
+	// .decision__img
+	&__img {}
+
+	// .decision__box
+	&__box {
+		@include flex ($flex-direction: column);
+		gap: 45px;
+		padding-top: 32px;
+	}
+
+
+	// .decision__title
+	&__title {
+		
+font-size: 50px;
+line-height: 106.19%;
+text-align: left;
+
+color: $textMainColor;
+
+max-width: 500px;
+
+
+	}
+
+
+
+	// .decision__form-preliminary
+	&__form-preliminary {}
+}

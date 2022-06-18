@@ -1,0 +1,116 @@
+.order {
+	padding-bottom: 175px;
+
+	// .order__wrapper
+	&__wrapper {
+		@include flex ();
+		gap: 20px;
+	}
+
+	// .order__box-img
+	&__box-img {}
+
+	// .order__img
+	&__img {}
+
+	// .order__box
+	&__box {
+		@include flex ($flex-direction: column);
+		gap: 40px;
+		padding-top: 50px;
+	}
+
+	// .order__inner
+	&__inner {
+		@include flex ($align-items: flex-start, $flex-direction: column);
+	}
+
+	// .order__title
+	&__title {
+
+		font-size: 50px;
+		font-weight: 400;
+		line-height: 53px;
+		letter-spacing: 0em;
+
+
+
+	}
+
+	// .order__subtitle
+	&__subtitle {
+		max-width: 660px;
+	}
+
+	// .order__form
+	&__form {}
+}
+
+
+/* Настройка метки (контейнера) */
+.container1 {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  /* Скрыть флажок браузера по умолчанию */
+  .container1 input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  
+  /* Создание пользовательского флажка */
+  .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+  }
+  
+  /* При наведении курсора мыши добавьте серый цвет фона */
+  .container1:hover input ~ .checkmark {
+	background-color: #ccc;
+  }
+  
+  /* Если флажок установлен, добавьте синий фон */
+  .container1 input:checked ~ .checkmark {
+	background-color: #2196F3;
+  }
+  
+  /* Создайте флажок/индикатор (скрытый, если он не установлен) */
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* Показывать галочку при установке флажка */
+  .container1 input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  /* Стиль галочки/индикатора */
+  .container1 .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }

@@ -1,0 +1,288 @@
+.calculator {
+	padding-bottom: 130px;
+
+	// .calculator__wrapper
+	&__wrapper {
+		@include flex ($align-items: center, $flex-direction: column);
+	}
+
+	// .calculator__title
+	&__title {
+
+		font-size: 50px;
+		line-height: 106.19%;
+		color: $textMainColor;
+
+		margin-bottom: 25px;
+
+
+	}
+
+	// .calculator__subtitle
+	&__subtitle {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+
+	// .calculator__link
+	&__link {
+		font-family: 'TTNorms';
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 106.19%;
+		text-align: center;
+		letter-spacing: 0.055em;
+
+		color: $textMainColor;
+		position: relative;
+
+		display: inline-block;
+
+		&::after {
+			@include pseudo;
+			width: 115%;
+			height: 3px;
+			@include pos(absolute, $bottom:-6px, $left:50%);
+			transform: translateX(-50%);
+
+			background: linear-gradient(94.03deg, #0EDAC5 8%, #00211E 151.99%);
+			border-radius: 5px;
+
+		}
+
+	}
+
+	// .calculator__box
+	&__box {
+		@include flex();
+		gap: 52px;
+		max-width: 936px;
+
+		background: #FFFFFF;
+		border-radius: 15px;
+
+		padding: 50px 36px;
+
+	}
+
+	// .calculator__wrap
+	&__wrap {
+		@include flex (space-between, $flex-direction: column);
+	}
+
+	// .calculator__form
+	&__form {
+		@include flex ($flex-direction:column);
+	}
+
+	// .calculator__label
+	&__label {
+
+
+		font-family: 'TTNorms';
+		font-weight: 700;
+		font-size: 25px;
+		line-height: 20px;
+		text-align: center;
+
+		color: #282828;
+
+		h4 {
+			margin-bottom: 15px;
+		}
+
+
+
+	}
+
+	// .calculator__form-group
+	&__form-group {
+		@include flex ($flex-direction: column);
+		margin-bottom: 60px;
+	}
+
+	// .calculator__input
+	&__input {
+
+		width: 253px;
+		height: 58px;
+
+
+		background: #F7F7F7;
+
+		border: none;
+
+
+		font-family: 'TTNorms';
+		font-weight: 400;
+		font-size: 25px;
+		line-height: 30px;
+		text-align: center;
+
+		color: #8C8C8C;
+margin-bottom: 15px;
+	}
+
+	// .calculator__range
+	&__range {}
+
+	// .calculator__span-group
+	&__span-group {
+		@include flex (space-between, center);
+	}
+
+	// .calculator__value
+	&__value {
+		font-family: 'TTNorms';
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 14px;
+		text-align: center;
+
+		color: #424242;
+
+
+	}
+
+
+	// .calculator__inner
+	&__inner {
+		@include flex ($flex-direction: column);
+	}
+
+	// .calculator__desc
+	&__desc {
+		font-family: 'TTNorms';
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 81.26%;
+		text-align: center;
+
+		color: #282828;
+@include flex ($flex-direction: column);
+gap: 10px;
+
+	}
+
+	// .calculator__span
+	&__span {
+
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 35px;
+		text-align: center;
+
+		color: #55D6C6;
+		display: block;
+
+	}
+
+	// .calculator__button
+	&__button {
+		@include wh(264px, 62px);
+		align-self: flex-end;
+		border-radius: 4px;
+
+	}
+}
+
+input[type=range] {
+	width: 100%;
+	margin: 5px 0;
+	background-color: transparent;
+	-webkit-appearance: none;
+}
+
+input[type=range]:focus {
+	outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+	background: #55d6c6;
+	border: 2px solid #55d6c6;
+	width: 100%;
+	height: 2px;
+	cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+	margin-top: -7px;
+	width: 12px;
+	height: 12px;
+	background: #313131;
+	border: 1px solid #000000;
+	border-radius: 50px;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+	background: #ffffff;
+}
+
+input[type=range]::-moz-range-track {
+	background: #55d6c6;
+	border: 2px solid #55d6c6;
+	width: 100%;
+	height: 2px;
+	cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+	width: 12px;
+	height: 12px;
+	background: #313131;
+	border: 1px solid #000000;
+	border-radius: 50px;
+	cursor: pointer;
+}
+
+input[type=range]::-ms-track {
+	background: transparent;
+	border-color: transparent;
+	border-width: 6px 0;
+	color: transparent;
+	width: 100%;
+	height: 2px;
+	cursor: pointer;
+}
+
+input[type=range]::-ms-fill-lower {
+	background: #0e3833;
+	border: 2px solid #55d6c6;
+}
+
+input[type=range]::-ms-fill-upper {
+	background: #55d6c6;
+	border: 2px solid #55d6c6;
+}
+
+input[type=range]::-ms-thumb {
+	width: 12px;
+	height: 12px;
+	background: #313131;
+	border: 1px solid #000000;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-top: 0px;
+	/*Needed to keep the Edge thumb centred*/
+}
+
+input[type=range]:focus::-ms-fill-lower {
+	background: #55d6c6;
+}
+
+input[type=range]:focus::-ms-fill-upper {
+	background: #ffffff;
+}
+
+/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+  how to remove the virtical space around the range input in IE*/
+@supports (-ms-ime-align:auto) {
+
+	/* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+	input[type=range] {
+		margin: 0;
+		/*Edge starts the margin from the thumb, not the track as other browsers do*/
+	}
+}

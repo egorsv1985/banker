@@ -1,0 +1,46 @@
+.scheme-tender {
+	padding-bottom: 120px;
+
+	// .scheme-tender__wrapper
+	&__wrapper {
+		@include flex ($flex-direction: column);
+	}
+
+	// .scheme-tender__title
+	&__title {
+		font-size: 50px;
+		line-height: 106.19%;
+		color: $textMainColor;
+
+		margin-bottom: 35px;
+	}
+
+	// .scheme-tender__inner
+	&__inner {
+		padding-left: 10px;
+	}
+
+	// .scheme-tender__steps
+	&__steps {
+		margin-bottom: 40px;
+	}
+
+	.steps {
+
+		// .steps__wrap
+		&__wrap {}
+
+		// .steps__number
+		&__number {}
+
+		// .steps__box
+		&__box {
+			border-right: none;
+			width: 100%;
+		}
+
+
+
+
+	}
+}

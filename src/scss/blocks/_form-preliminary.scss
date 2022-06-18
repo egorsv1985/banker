@@ -1,0 +1,50 @@
+.form-preliminary {
+	@include flex($flex-direction: column);
+	gap: 20px;
+
+	// .form-preliminary__inputs
+	&__inputs {
+		@include flex ($align-items: center, $flex-wrap: wrap);
+		gap: 20px;
+	}
+
+	// .form-preliminary__phone
+	&__phone {}
+
+	// .form-preliminary__name
+	&__name {}
+
+	// .form-preliminary__wrap
+	&__wrap {
+		@include flex ($align-items: center, $flex-wrap: wrap);
+		gap: 20px;
+	}
+
+	// .form-preliminary__inn
+	&__inn {}
+
+	// .form-preliminary__button
+	&__button {
+		width: 325px;
+		height: 70px;
+	}
+
+	// .form-preliminary__box
+	&__box {
+		@include flex();
+		gap: 12px;
+	}
+
+	// .form-preliminary__checkbox
+	&__checkbox {}
+
+	// .form-preliminary__label
+	&__label {
+		p {
+			padding-left: 35px;
+		}
+	}
+
+	// .form-preliminary__link
+	&__link {}
+}

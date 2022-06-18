@@ -1,0 +1,79 @@
+.form {
+
+	// .form__inputs
+	&__inputs {
+		@include flex ($align-items: center, $flex-wrap: wrap);
+		gap: 20px;
+
+		margin-bottom: 20px;
+	}
+
+	// .form__phone
+	&__phone,
+	&__name {
+
+		
+
+
+	}
+
+	// .form__name
+	&__name {}
+
+	// .form__wrap
+	&__wrap {
+		@include flex ($flex-wrap: wrap);
+		gap: 25px;
+	}
+
+	// .form__button
+	&__button {
+	
+		width: 325px;
+		height: 70px;
+
+	}
+
+	// .form__box
+	&__box {
+		@include flex ($align-items: center);
+		gap: 10px;
+		align-self: flex-end;
+		margin-bottom: 14px;
+	}
+
+
+	// .form__label
+	&__label {
+		font-family: "TTNorms";
+
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 18px;
+
+		color: $textMainColor;
+
+		p{
+			padding-left: 35px;
+		}
+
+		
+
+
+	}
+
+	// .form__link
+	&__link {
+		position: relative;
+		color: #55D6C6;
+
+		&::before {
+			@include pseudo;
+			@include pos(absolute, $bottom: -2px, $left: 0);
+			width: 100%;
+			height: 1px;
+			background-color: #55D6C6;
+
+		}
+	}
+}

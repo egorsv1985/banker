@@ -1,0 +1,63 @@
+.news {
+	padding-top: 40px;
+	padding-bottom: 295px;
+
+	// .news__wrapper
+	&__wrapper {
+		@include flex (space-between, center, wrap, column);
+	}
+
+	// .news__title
+	&__title {
+		margin-bottom: 86px;
+	}
+
+	// .news__grid
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: 40px;
+		row-gap: 180px;
+	}
+
+	// .news__inner
+	&__inner {
+		@include flex ($flex-direction: column);
+	}
+
+	// .news__date
+	&__date {
+		font-family: "TTNorms";
+		font-weight: 500;
+		font-size: 25px;
+		line-height: 106.19%;
+
+	}
+
+	// .news__box
+	&__box {
+		margin-top: 10px;
+		margin-bottom: 35px;
+	}
+
+	// .news__img
+	&__img {}
+
+	// .news__subtitle
+	&__subtitle {
+
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 106.19%;
+		margin-bottom: 24px;
+	}
+
+	// .news__text
+	&__text {
+
+		line-height: 106.19%;
+		letter-spacing: 0.055em;
+
+		color: #C0C0C0;
+	}
+}
