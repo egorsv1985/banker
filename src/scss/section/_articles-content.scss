@@ -19,4 +19,20 @@
 
 	// .articles__description
 	&__description {}
+
+	// .articles-content__text
+	&__text {}
+
+	// .articles-content__list
+	&__list {
+		@include flex ($flex-direction: column);
+
+		padding-left: 28px;
+		gap: 20px;
+	}
+
+	// .articles-content__item
+	&__item {
+		list-style-type: disc;
+	}
 }
