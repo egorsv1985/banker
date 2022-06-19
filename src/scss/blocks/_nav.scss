@@ -1,9 +1,15 @@
 .nav {
+	@include media (max, lg) { 
+		display: none;
+	}
 
 	// .nav__list
 	&__list {
 		@include flex (space-between, center);
 		gap: 60px;
+		@include media (max, xl) {
+			gap: 40px;
+		}
 	}
 
 	// .nav__item

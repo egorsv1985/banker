@@ -3,12 +3,15 @@
 .form {
 	@include flex (space-between, center, $flex-direction: column);
 	gap: 20px;
-	
+
 
 	// .form__box
 	&__box {
 		position: relative;
-		
+		@include flex (center);
+		width: 100%;
+		max-width: 630px;
+
 
 	}
 
@@ -25,18 +28,21 @@
 
 	// .form__checkbox-input
 	&__checkbox-input {}
-	
-		// .form__box-checkbox
-		&__box-checkbox {
-			@include flex ($flex-direction: column);
-			gap: 25px;
-		
-			margin-top: 15px;
-			padding-left: 236px;
-			align-self:flex-start;
-			margin-bottom: 28px;
-		
+
+	// .form__box-checkbox
+	&__box-checkbox {
+		@include flex ($flex-direction: column);
+		gap: 25px;
+
+		margin-top: 15px;
+		padding-left: 228px;
+		align-self: flex-start;
+		margin-bottom: 28px;
+
+		@include media (max, xl) {
+			padding-left: 0;
 		}
+	}
 
 	// .form__checkbox
 	&__checkbox {}
@@ -52,12 +58,13 @@
 	&__box-btns {
 		@include flex ();
 		gap: 16px;
+		@include media(max, md) {
+			flex-direction: column;
+		}
 	}
 
 	// .form__btn
-	&__btn {
-		
-	}
+	&__btn {}
 }
 
 //</FORM>

@@ -8,11 +8,10 @@
 	position: relative;
 	z-index: 15;
 
-
-	background-color: #53CD8B;
+	background: $bgColorBtn;
 	border-radius: 50%;
 
-	@include media (min, xl) {
+	@include media (min, lg) {
 		display: none;
 	}
 

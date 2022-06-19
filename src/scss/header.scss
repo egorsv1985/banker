@@ -8,8 +8,14 @@
 
 	// .header__box-logo
 	&__box-logo {
-		@include flex ();
+		@include flex (space-between, center);
 		margin-right: 15px;
+
+		@include media (max, lg) {
+			
+			margin-right: 0;
+			width: 100%;
+		}
 	}
 
 	// .header__logo
@@ -41,7 +47,12 @@
 
 		color: #DCFFF9;
 		position: relative;
-		&::before{
+
+		@include media (max, lg) {
+			display: none;
+		}
+
+		&::before {
 			content: ">";
 			@include pos (absolute, $top: 10px, $right: 10px);
 			font-size: 16px;

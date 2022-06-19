@@ -438,24 +438,26 @@ export function tabs() {
 }
 // Модуль работы с меню (бургер) =======================================================================================================================================================================================================================
 export function menuInit() {
-	let iconMenu = document.querySelector(".icon-menu");
+	let iconMenu = document.querySelector(".burger");
 	if (iconMenu) {
 		iconMenu.addEventListener("click", function (e) {
 			if (bodyLockStatus) {
 				bodyLockToggle();
-				document.documentElement.classList.toggle("menu-open");
+				document.documentElement.classList.toggle("open");
 			}
 		});
 	};
 }
 export function menuOpen() {
 	bodyLock();
-	document.documentElement.classList.add("menu-open");
+	document.documentElement.classList.add("open");
 }
 export function menuClose() {
 	bodyUnlock();
-	document.documentElement.classList.remove("menu-open");
+	document.documentElement.classList.remove("open");
 }
+
+menuInit();
 // Модуль "показать еще" =======================================================================================================================================================================================================================
 /*
 Документация по работе в шаблоне:

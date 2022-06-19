@@ -134,11 +134,11 @@ body {
 }
 
 .container {
-	max-width: 1162px;
-	padding: 0 0;
+	max-width: 1202px;
+	padding: 0 30px;
 	margin: 0 auto;
 
-	@include media (min, lg) {
-		padding: 0 0;
+	@include media (max, lg) {
+		padding: 0 15px;
 	}
 }

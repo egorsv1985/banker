@@ -6,6 +6,10 @@
     font-size: 45px;
     line-height: 104.19%;
     text-align: center;
+
+    @include media (max, lg) {
+        font-size: 30px;
+    }
 }
 
 .subtitle {
@@ -14,8 +18,28 @@
     line-height: 106.19%;
     text-align: center;
 
+    @include media (max, lg) {
+        font-size: 20px;
+    }
+
 }
 
 .text {}
 
 .link {}
+
+.section--bg {
+    position: relative;
+
+    &::before {
+        @include pseudo;
+        @include background (url("@img/main/main-bg.png"));
+        @include wh (847px, 504px);
+        @include pos (absolute, $top: 100px, $left: 57%);
+        transform: translateX(-50%);
+        z-index: -1;
+
+    }
+
+
+}
