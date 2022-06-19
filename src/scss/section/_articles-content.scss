@@ -12,12 +12,19 @@
 		&--margin{
 			margin: 10px 0;
 		}
+		&--mb0{
+			margin-bottom: 0;
+		}
 	}
 
 	// .articles__box
 	&__box {
 		@include flex ($flex-direction: column);
 		gap: 20px;
+		&--mt{
+			margin-top: 56px;
+		}
+		
 	}
 
 	// .articles__description
@@ -32,6 +39,9 @@
 
 		padding-left: 28px;
 		gap: 20px;
+		&--gap0{
+			gap: 0;
+		}
 	}
 
 	// .articles-content__item
