@@ -1,0 +1,22 @@
+.articles-content {
+	padding: 86px 0 80px;
+
+	// .articles__wrapper
+	&__wrapper {
+		@include flex ($flex-direction: column);
+	}
+
+	// .articles__title
+	&__title {
+		margin-bottom: 32px;
+	}
+
+	// .articles__box
+	&__box {
+		@include flex ($flex-direction: column);
+		gap: 20px;
+	}
+
+	// .articles__description
+	&__description {}
+}

@@ -28,6 +28,7 @@
             font-size: 30px;
         }
     }
+
 }
 
 .subtitle {
@@ -84,7 +85,8 @@
     &--green {
         color: $accentColor;
     }
-    &--mb{
+
+    &--mb {
         margin-bottom: 42px;
     }
 
@@ -127,5 +129,19 @@
             left: -18px;
             top: 46px;
         }
+    }
+}
+
+.description {
+
+    font-size: 20px;
+    line-height: 106.19%;
+    text-shadow: 0px 0px 20px $bgColor;
+    @include media (max, lg) {
+        font-size: 14px;
+    }
+
+    &--bold {
+        font-weight: 700;
     }
 }
