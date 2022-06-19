@@ -1,0 +1,10 @@
+.registration-agent {
+
+	.registration__button {
+		margin-bottom: 28px;
+
+		&::before {
+			width: 162px;
+		}
+	}
+}
