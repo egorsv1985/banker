@@ -1,0 +1,13 @@
+.images {
+	padding: 12px 0;
+	// .images__img
+	&__img {
+		border-radius: 15px;
+		margin: 0 auto;
+		display: block;
+		width: 100%;
+		max-width: 800px;
+
+	}
+}
+

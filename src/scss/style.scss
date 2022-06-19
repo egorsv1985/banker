@@ -22,7 +22,7 @@ $accentColor: #55D6C6; // Вспомогательный цвет текста
 $navLinkColor: #979797; // Цвет ссылок в меню
 $btnTextColor: #1f1f1f; // Цвет в основных кнопках
 $bgColor: #010715; // Основной фон
-$bgColorBtn:  linear-gradient(180deg, #79DDCF 0%, #05A696 100%); // Фон для кнопок
+$bgColorBtn: linear-gradient(180deg, #79DDCF 0%, #05A696 100%); // Фон для кнопок
 
 
 // НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
@@ -42,15 +42,14 @@ $containerPadding: 30;
 $responsiveType: 1;
 
 // Ширина страбатывания первого брейкпоинта
-$containerWidth: $maxWidthContainer + $containerPadding;
+$containerWidth: $maxWidthContainer+$containerPadding;
 
 // Брейк-поинты
 $pc: em($containerWidth); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
 $tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
 $mobile: em(767.98); // Телефоны L
 $mobileSmall: em(479.98); // Телефоны S
-$grid_breakpoints: (
-	xxl: 1439px,
+$grid_breakpoints: (xxl: 1439px,
 	xl: 1279px,
 	lg: 1023px,
 	md: 767px,
@@ -60,27 +59,31 @@ $grid_breakpoints: (
 @import "base/null";
 
 body {
+
 	// Скролл заблокирован
 	.lock & {
 		overflow: hidden;
 		touch-action: none;
 	}
+
 	// Сайт загружен
-	.loaded & {
-	}
+	.loaded & {}
 }
+
 // Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 .wrapper {
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+
 	// Прижимаем footer
-	> main {
+	>main {
 		flex: 1 1 auto;
 	}
+
 	// Фикс для слайдеров
-	> * {
+	>* {
 		min-width: 0;
 	}
 }
@@ -94,6 +97,7 @@ body {
 Снипет (HTML): cnt
 */
 @if ($responsiveType==1) {
+
 	// Отзывчивая
 	[class*="__container"] {
 		@if ($maxWidthContainer>0) {
@@ -101,30 +105,41 @@ body {
 			box-sizing: content-box;
 			margin: 0 auto;
 		}
+
 		@if ($containerPadding>0) {
 			padding: 0 rem(math.div($containerPadding, 2));
 		}
 	}
-} @else {
+}
+
+@else {
+
 	// По брейк-поинтам
 	[class*="__container"] {
 		margin: 0 auto;
+
 		@if ($maxWidthContainer>0) {
 			max-width: rem($maxWidthContainer);
 			box-sizing: content-box;
-		} @else {
+		}
+
+		@else {
 			@if ($containerPadding>0) {
 				padding: 0 rem(math.div($containerPadding, 2));
 			}
 		}
+
 		@media (max-width: $pc) {
 			max-width: rem(970);
 		}
+
 		@media (max-width: $tablet) {
 			max-width: rem(750);
 		}
+
 		@media (max-width: $mobile) {
 			max-width: none;
+
 			@if ($containerPadding>0 and $maxWidthContainer>0) {
 				padding: 0 rem(math.div($containerPadding, 2));
 			}
@@ -146,11 +161,7 @@ body {
 @import "./components/open-burger";
 
 
-// block
-@import "header";
-@import "./blocks/logo";
-@import "./blocks/nav";
-@import "./blocks/social";
+
 
 // Подключение стилей отдельных блоков
 
@@ -158,4 +169,14 @@ body {
 // Подключение стилей секций
 @import "./section/registration";
 @import "./section/registration-agent";
+@import "./section/content-credits";
+@import "./section/content";
+@import "./section/social";
+@import "./section/images";
+@import "./section/request";
 
+
+// block
+@import "header";
+@import "./blocks/logo";
+@import "./blocks/nav";

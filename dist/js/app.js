@@ -40,11 +40,23 @@
           }, t);
       }
     };
-  function c(t) {
+  function c() {
+    let t = document.querySelector(".burger");
+    t &&
+      t.addEventListener("click", function (t) {
+        e &&
+          (((t = 500) => {
+            document.documentElement.classList.contains("lock") ? o(t) : r(t);
+          })(),
+          document.documentElement.classList.toggle("open"));
+      });
+  }
+  function n(t) {
     return t.filter(function (t, e, o) {
       return o.indexOf(t) === e;
     });
   }
+  c();
   t.watcher = new (class {
     constructor(t) {
       (this.config = Object.assign({ logging: !0 }, t)),
@@ -66,7 +78,7 @@
         this.scrollWatcherLogging(
           `Проснулся, слежу за объектами (${t.length})...`
         ),
-          c(
+          n(
             Array.from(t).map(function (t) {
               return `${
                 t.dataset.watchRoot ? t.dataset.watchRoot : null
@@ -160,9 +172,9 @@
         );
     }
   })({});
-  let n = !1;
+  let s = !1;
   setTimeout(() => {
-    if (n) {
+    if (s) {
       let t = new Event("windowScroll");
       window.addEventListener("scroll", function (e) {
         document.dispatchEvent(t);
@@ -182,15 +194,5 @@
       let e = !0 === t ? "webp" : "no-webp";
       document.documentElement.classList.add(e);
     }),
-    (function () {
-      let t = document.querySelector(".icon-menu");
-      t &&
-        t.addEventListener("click", function (t) {
-          e &&
-            (((t = 500) => {
-              document.documentElement.classList.contains("lock") ? o(t) : r(t);
-            })(),
-            document.documentElement.classList.toggle("menu-open"));
-        });
-    })();
+    c();
 })();
