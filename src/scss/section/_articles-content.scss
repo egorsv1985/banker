@@ -9,6 +9,9 @@
 	// .articles__title
 	&__title {
 		margin-bottom: 32px;
+		&--margin{
+			margin: 10px 0;
+		}
 	}
 
 	// .articles__box
