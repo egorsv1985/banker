@@ -10,7 +10,9 @@
 	&__subtitle {}
 
 	// .content__box
-	&__box {}
+	&__box {
+		cursor: pointer;
+	}
 
 	// .content__text
 	&__text {}

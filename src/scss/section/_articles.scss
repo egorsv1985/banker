@@ -1,22 +1,20 @@
-.news {
+.articles {
   padding: 88px 0 120px;
-  @include media(max, lg) {
-    padding: 40px 0 60px;
+  @include media (max, lg) {
+	padding: 40px 0 60px;
   }
-
-  // .news__title
+  // .articles__title
   &__title {
     font-size: 55px;
     line-height: 85.19%;
-    margin-bottom: 80px;
+    margin-bottom: 52px;
   }
-
-  // .news__grid
+  // .articles__grid
   &__grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 35px;
-    row-gap: 125px;
+    row-gap: 110px;
 
     @include media(max, lg) {
       grid-template-columns: repeat(2, 1fr);
@@ -28,8 +26,7 @@
       grid-template-columns: repeat(1, 1fr);
     }
   }
-
-  // .news__box
+  // .articles__box
   &__box {
     @include flex($flex-direction: column);
 
@@ -37,24 +34,15 @@
       align-items: center;
     }
   }
-
-  // .news__date
-  &__date {
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 106.19%;
-    margin-bottom: 15px;
-
-    @include media(max, lg) {
-      font-size: 18px;
-    }
-
-    @include media(max, md) {
-      text-align: center;
+  // .articles__link
+  &__link {
+    &:hover {
+      text-decoration: underline;
+      color: $accentColor;
+      transition: all 0.3s ease;
     }
   }
-
-  // .news__img
+  // .articles__img
   &__img {
     max-width: 360px;
     width: 100%;
@@ -68,19 +56,23 @@
       margin: 0 auto 35px;
     }
   }
-
-  // .news__subtitle
+  // .articles__subtitle
   &__subtitle {
-    margin-bottom: 20px;
-    max-width: 350px;
-
+    margin-bottom: 10px;
     @include media(max, md) {
       text-align: center;
     }
   }
-
-  // .news__text
+  // .articles__content
+  &__content {
+    @include flex($flex-direction: column);
+    gap: 20px;
+  }
+  // .articles__text
   &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 114.19%;
     letter-spacing: 0.055em;
 
     color: #c0c0c0;
@@ -88,15 +80,6 @@
 
     @include media(max, md) {
       text-align: center;
-    }
-  }
-
-  // .news__link
-  &__link {
-    &:hover {
-      text-decoration: underline;
-      color: $accentColor;
-      transition: all 0.3s ease;
     }
   }
 }
