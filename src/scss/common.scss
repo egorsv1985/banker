@@ -14,6 +14,12 @@
   &--left {
     text-align: left;
   }
+  &--section{
+    font-size: 50px;
+		@include media (max, lg) {
+			font-size: 30px;
+		}
+  }
 
   &--not-uppercase {
     text-transform: none;
