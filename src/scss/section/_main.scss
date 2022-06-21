@@ -1,0 +1,66 @@
+.main {
+  padding: 105px 0 80px;
+  // .main__wrapper
+  &__wrapper {
+    @include flex($flex-direction: column);
+    max-width: 750px;
+	@include media (max, xl) {
+		max-width: 100%;
+	}
+  }
+  // .main__link
+  &__link {
+    @include flex(center, center);
+    @include wh(274px, 54px);
+    background: $bgLinkBtn;
+    border-radius: 15px;
+
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 101.19%;
+
+    color: $linkBtnColor;
+
+    padding-left: 50px;
+    margin-bottom: 32px;
+
+    position: relative;
+
+    &::before {
+      @include pseudo;
+      @include wh(28px);
+      @include background(url("@img/icons/currency-rub-icon.svg"));
+      @include pos(absolute, $top: 50%, $left: 14px);
+      transform: translateY(-50%);
+    }
+  }
+  // .main__title
+  &__title {
+    font-family: "Roboto";
+
+    line-height: 98.19%;
+
+    margin-bottom: 30px;
+  }
+  // .main__box
+  &__box {
+    @include flex($align-items: center);
+    gap: 22px;
+    margin-bottom: 100px;
+  }
+  // .main__box-content
+  &__box-content {
+  }
+  // .main__box-btns
+  &__box-btns {
+    @include flex(space-between, center, wrap);
+    gap: 44px;
+    max-width: 626px;
+  }
+  // .main__btn
+  &__btn {
+    max-width: 291px;
+    height: 77px;
+  }
+}

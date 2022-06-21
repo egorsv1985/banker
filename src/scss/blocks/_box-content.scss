@@ -1,0 +1,22 @@
+.box-content {
+  @include flex(center, center, $flex-direction: column);
+
+  width: 182px;
+  height: 104px;
+
+  background: $mainColor;
+  border-radius: 5px;
+  // .box-content__text
+  &__text {
+    
+    font-size: 15px;
+    line-height: 18px;
+    color: $accentColorText;
+	text-shadow: none;
+  }
+  // .box-content__span
+  &__span {
+   
+
+  }
+}

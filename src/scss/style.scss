@@ -17,13 +17,21 @@ $fontFamily: "TTNorms";
 $fontSize: rem(18); // где 14(px) - размер шрифта по умолчанию из макета
 
 // Основные цвета
-$mainColor: #FFF; // Цвет шрифта по умолчанию
-$accentColor: #55D6C6; // Вспомогательный цвет текста
+$mainColor: #fff; // Цвет шрифта по умолчанию
+$accentColor: #55d6c6; // Вспомогательный цвет текста
 $navLinkColor: #979797; // Цвет ссылок в меню
 $btnTextColor: #1f1f1f; // Цвет в основных кнопках
 $bgColor: #010715; // Основной фон
-$bgColorBtn: linear-gradient(180deg, #79DDCF 0%, #05A696 100%); // Фон для кнопок
-$linColor: #43ECD7; // Цвет текста ссылки
+$bgColorBtn: linear-gradient(
+  180deg,
+  #79ddcf 0%,
+  #05a696 100%
+); // Фон для кнопок
+$linColor: #43ecd7; // Цвет текста ссылки
+$bgLinkBtn: #082228; // Цвет фона ссылки-кнопки
+$linkBtnColor: #85a5ac; // Цвет текста ссылки-кнопки
+$accentColorText: #2e2e2e; //Цвет текста на белом фоне
+$accentColorSpan: #14b0a0; // Цвет текста в спане
 
 // НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
 // Минимальная ширина страницы
@@ -42,50 +50,53 @@ $containerPadding: 30;
 $responsiveType: 1;
 
 // Ширина страбатывания первого брейкпоинта
-$containerWidth: $maxWidthContainer+$containerPadding;
+$containerWidth: $maxWidthContainer + $containerPadding;
 
 // Брейк-поинты
-$pc: em($containerWidth); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$pc: em(
+  $containerWidth
+); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
 $tablet: em(991.98); // Планшеты, некоторые телефоны в горизонтальном положении
 $mobile: em(767.98); // Телефоны L
 $mobileSmall: em(479.98); // Телефоны S
-$grid_breakpoints: (xxl: 1439px,
-	xl: 1279px,
-	lg: 1023px,
-	md: 767px,
-	sm: 575px,
+$grid_breakpoints: (
+  xxl: 1439px,
+  xl: 1279px,
+  lg: 1023px,
+  md: 767px,
+  sm: 575px,
 );
 // Обнуление и общие параметры ============================================================================================================================================================================================== =============================================================================================== ===============================================================================================
 @import "base/null";
 
 body {
+  // Скролл заблокирован
+  .lock & {
+    overflow: hidden;
+    touch-action: none;
+  }
 
-	// Скролл заблокирован
-	.lock & {
-		overflow: hidden;
-		touch-action: none;
-	}
-
-	// Сайт загружен
-	.loaded & {}
+  // Сайт загружен
+  .loaded & {
+  }
 }
 
 // Оболочка ============================================================================================================================================================================================================================================================================================================================================================================================================================================
 .wrapper {
-	min-height: 100%;
-	display: flex;
-	flex-direction: column;
-	overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 
-	// Прижимаем footer
-	>main {
-		flex: 1 1 auto;
-	}
+  // Прижимаем footer
+  > main {
+    flex: 1 1 auto;
+  }
 
-	// Фикс для слайдеров
-	>* {
-		min-width: 0;
-	}
+  // Фикс для слайдеров
+  > * {
+    min-width: 0;
+  }
 }
 
 // Ограничивающий контейнер ======================================================================================================================================================================================================================
@@ -97,54 +108,48 @@ body {
 Снипет (HTML): cnt
 */
 @if ($responsiveType==1) {
+  // Отзывчивая
+  [class*="__container"] {
+    @if ($maxWidthContainer>0) {
+      max-width: rem($maxWidthContainer);
+      box-sizing: content-box;
+      margin: 0 auto;
+    }
 
-	// Отзывчивая
-	[class*="__container"] {
-		@if ($maxWidthContainer>0) {
-			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
-			margin: 0 auto;
-		}
+    @if ($containerPadding>0) {
+      padding: 0 rem(math.div($containerPadding, 2));
+    }
+  }
+} @else {
+  // По брейк-поинтам
+  [class*="__container"] {
+    margin: 0 auto;
 
-		@if ($containerPadding>0) {
-			padding: 0 rem(math.div($containerPadding, 2));
-		}
-	}
-}
+    @if ($maxWidthContainer>0) {
+      max-width: rem($maxWidthContainer);
+      box-sizing: content-box;
+    } @else {
+      @if ($containerPadding>0) {
+        padding: 0 rem(math.div($containerPadding, 2));
+      }
+    }
 
-@else {
+    @media (max-width: $pc) {
+      max-width: rem(970);
+    }
 
-	// По брейк-поинтам
-	[class*="__container"] {
-		margin: 0 auto;
+    @media (max-width: $tablet) {
+      max-width: rem(750);
+    }
 
-		@if ($maxWidthContainer>0) {
-			max-width: rem($maxWidthContainer);
-			box-sizing: content-box;
-		}
+    @media (max-width: $mobile) {
+      max-width: none;
 
-		@else {
-			@if ($containerPadding>0) {
-				padding: 0 rem(math.div($containerPadding, 2));
-			}
-		}
-
-		@media (max-width: $pc) {
-			max-width: rem(970);
-		}
-
-		@media (max-width: $tablet) {
-			max-width: rem(750);
-		}
-
-		@media (max-width: $mobile) {
-			max-width: none;
-
-			@if ($containerPadding>0 and $maxWidthContainer>0) {
-				padding: 0 rem(math.div($containerPadding, 2));
-			}
-		}
-	}
+      @if ($containerPadding>0 and $maxWidthContainer>0) {
+        padding: 0 rem(math.div($containerPadding, 2));
+      }
+    }
+  }
 }
 
 // Подключение базовых стилей, шаблонов (заготовок) и вспомагательных классов
@@ -160,11 +165,7 @@ body {
 @import "./components/buttons";
 @import "./components/open-burger";
 
-
-
-
 // Подключение стилей отдельных блоков
-
 
 // Подключение стилей секций
 @import "./section/registration";
@@ -179,9 +180,13 @@ body {
 @import "./section/news";
 @import "./section/articles-content";
 @import "./section/articles";
-
+@import "./section/main";
+@import "./section/main-commissions";
+@import "./section/advantage";
+@import "./section/advantage-commisions";
 
 // block
 @import "header";
 @import "./blocks/logo";
 @import "./blocks/nav";
+@import "./blocks/box-content";
