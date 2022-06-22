@@ -14,11 +14,11 @@
   &--left {
     text-align: left;
   }
-  &--section{
+  &--section {
     font-size: 50px;
-		@include media (max, lg) {
-			font-size: 30px;
-		}
+    @include media(max, lg) {
+      font-size: 30px;
+    }
   }
 
   &--not-uppercase {
@@ -164,6 +164,21 @@
     z-index: -1;
 
     max-width: 624px;
+    @include media(max, xl) {
+      display: none;
+    }
+  }
+}
+.section--bg-planet {
+  position: relative;
+  &::after {
+    @include pseudo;
+    @include background(url("@img/main/main-bg-planet.png"));
+    @include wh(100%, 1140px);
+    @include pos(absolute, $bottom: -83%, $right: 0);
+    z-index: -1;
+    max-width: 1100px;
+    
     @include media(max, xl) {
       display: none;
     }

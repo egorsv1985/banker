@@ -1,7 +1,7 @@
 .articles {
   padding: 88px 0 120px;
-  @include media (max, lg) {
-	padding: 40px 0 60px;
+  @include media(max, lg) {
+    padding: 40px 0 60px;
   }
   // .articles__title
   &__title {
@@ -77,6 +77,14 @@
 
     color: #c0c0c0;
     text-shadow: none;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 6; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    &:nth-child(2) {
+      -webkit-line-clamp: 2; // количество строк
+    }
 
     @include media(max, md) {
       text-align: center;
