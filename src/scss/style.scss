@@ -170,8 +170,8 @@ body {
 // Подключение стилей секций
 @import "./section/registration";
 @import "./section/registration-agent";
-@import "./section/content-credits";
-@import "./section/content";
+@import "./section/news-content";
+@import "./section/news";
 @import "./section/social";
 @import "./section/images";
 @import "./section/request";
@@ -186,6 +186,8 @@ body {
 @import "./section/advantage-commissions";
 @import "./section/scheme";
 @import "./section/scheme-commissions";
+@import "./section/requirements";
+@import "./section/requirements-commissions";
 
 // block
 @import "header";

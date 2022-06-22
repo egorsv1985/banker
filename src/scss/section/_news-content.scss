@@ -1,5 +1,8 @@
 .content {
 	padding: 86px 0 60px;
+	&.content-support {
+		padding-bottom: 112px;
+	}
 
 	// .content__wrapper
 	&__wrapper {
@@ -93,4 +96,6 @@
 		}
 
 	}
+	
 }
+

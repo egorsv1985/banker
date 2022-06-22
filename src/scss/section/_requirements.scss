@@ -1,0 +1,26 @@
+.requirements {
+  padding: 50px 0;
+  // .requirements__wrapper
+  &__wrapper {
+    @include flex($flex-direction: column);
+  }
+  // .requirements__title
+  &__title {
+    margin-bottom: 42px;
+  }
+  // .requirements__box
+  &__box {
+	@include flex (space-between, center);
+  }
+  .box-content {
+    width: 267px;
+    height: 113px;
+	.span{
+		font-weight: 700;
+		line-height: 24px;
+	}
+	.text {
+		text-align: center;
+	}
+  }
+}
