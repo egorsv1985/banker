@@ -1,5 +1,5 @@
 .requirements {
-  padding: 50px 0;
+  padding: 50px 0 100px;
   // .requirements__wrapper
   &__wrapper {
     @include flex($flex-direction: column);
@@ -7,10 +7,12 @@
   // .requirements__title
   &__title {
     margin-bottom: 42px;
+	
   }
   // .requirements__box
   &__box {
-	@include flex (space-between, center);
+	@include flex (space-between, center, wrap);
+	gap: 30px;
   }
   .box-content {
     width: 267px;
