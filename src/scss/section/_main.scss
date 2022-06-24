@@ -4,9 +4,9 @@
   &__wrapper {
     @include flex($flex-direction: column);
     max-width: 750px;
-	@include media (max, xl) {
-		max-width: 100%;
-	}
+    @include media(max, xl) {
+      max-width: 100%;
+    }
   }
   // .main__link
   &__link {
@@ -42,6 +42,27 @@
     line-height: 98.19%;
 
     margin-bottom: 30px;
+  }
+  // .main__list
+  &__list {
+    @include flex ($flex-direction: column);
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+  // .main__item
+  &__item {
+    list-style-type: disc;
+    p{
+      font-size: 30px;
+    }
+  }
+  // .main__text
+  &__text {
+font-weight: 400;
+
+text-shadow: none;
+
+font-size: 22px;
   }
   // .main__box
   &__box {
