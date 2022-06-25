@@ -1,0 +1,38 @@
+<section class="request section--bg section--bg-left">
+	<div class="container request__wrapper">
+		<div class="request__box-img">
+			<img src="img/request/request-img.png" alt="request" class="request__img">
+		</div>
+		<div class="request__content">
+			<div class="request__box-content">
+				<h2 class="request__title title title--left title--not-uppercase title--section">Оставьте заявку</h2>
+				<h3 class="request__subtitle subtitle subtitle--left">и получите консультацию по Вашим вопросам</h3>
+			</div>
+			<form action="#" class="request__form form">
+				<div class="form__group-box">
+					<div class="form__box">
+						<input type="tel" class="form__input input" id="tel" name="form[]" data-error="Ошибка" placeholder="" required>
+						<label for="tel" class="form__label label">Ваш телефон</label>
+					</div>
+					<div class="form__box">
+						<input type="text" class="form__input input" id="name" name="form[]" data-error="Ошибка" placeholder="" required>
+						<label for="name" class="form__label label">Ваше имя</label>
+					</div>
+				</div>
+				<div class="form__group-box">
+					<button type="submit" class="form__btn btn btn-primary">Отправить
+						заявку</button>
+					<div class="form__checkbox checkbox">
+						<input id="person" data-error="Ошибка" class="checkbox__input" type="checkbox" value="1" name="form[]">
+						<label for="person" class="checkbox__label _icon-check">
+							<span class="checkbox__text checkbox__text--personal">
+								Вы соглашаетесь с условиями <a href="#" class="checkbox__link link">обработки
+									персональных данных</a>
+							</span>
+						</label>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>

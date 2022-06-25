@@ -201,6 +201,11 @@
     }
   }
 }
+.requirements-finance.section--bg-planet{
+  &::after{
+    bottom: -190%;
+  }
+}
 
 .description {
   font-size: 20px;
