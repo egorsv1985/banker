@@ -10,9 +10,9 @@
   @include media(max, lg) {
     font-size: 20px;
   }
-&--normal{
-  font-weight: 400;
-}
+  &--normal {
+    font-weight: 400;
+  }
   &--left {
     text-align: left;
   }
@@ -119,8 +119,10 @@
   }
   &--finance {
     font-size: 20px;
-    font-weight: 800;
     line-height: 20px;
+    &-big {
+      font-size: 33px;
+    }
   }
   &--small {
     font-size: 25px;
