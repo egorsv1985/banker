@@ -10,7 +10,9 @@
   @include media(max, lg) {
     font-size: 20px;
   }
-
+&--normal{
+  font-weight: 400;
+}
   &--left {
     text-align: left;
   }
@@ -95,7 +97,6 @@
     font-size: 25px;
     font-weight: 700;
   }
-  
 }
 .span {
   font-size: 28px;
@@ -115,6 +116,11 @@
       font-size: 25px;
       line-height: 29px;
     }
+  }
+  &--finance {
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 20px;
   }
   &--small {
     font-size: 25px;

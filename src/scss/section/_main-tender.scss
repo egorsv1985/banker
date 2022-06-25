@@ -1,49 +1,33 @@
-.main {
-	// .main__wrapper
-	&__wrapper {}
-	// .main__link
-	&__link {}
-	// .main__title
-	&__title {
-		margin-bottom: 18px;
-	}
-	// .main__list
-	&__list {}
-	// .main__item
-	&__item {}
-	// .main__text
-	&__text {}
-	// .main__box
-	&__box {
-		margin: 30px 0 70px;
-	}
-	// .main__box-content
-	&__box-content {}
-	// .main__box-btns
-	&__box-btns {}
-	// .main__btn
-	&__btn {}
-}
 .main-tender {
-	// .main-tender__wrapper
-	&__wrapper {}
-	// .main-tender__link
-	&__link {}
-	// .main-tender__title
-	&__title {}
-	// .main-tender__list
-	&__list {}
-	// .main-tender__item
-	&__item {}
-	// .main-tender__text
-	&__text {}
-	// .main-tender__box
-	&__box {}
-	// .main-tender__box-content
-	&__box-content {}
-	// .main-tender__box-btns
-	&__box-btns {}
-	// .main-tender__btn
-	&__btn {}
+  // .main-tender__wrapper
+  &__wrapper {
+  }
+  // .main-tender__link
+  &__link {
+  }
+  // .main-tender__title
+  &__title {
+    margin-bottom: 18px;
+  }
+  // .main-tender__list
+  &__list {
+  }
+  // .main-tender__item
+  &__item {
+  }
+  // .main-tender__text
+  &__text {
+  }
+  // .main-tender__box
+  &__box {
+  }
+  // .main-tender__box-content
+  &__box-content {
+  }
+  // .main-tender__box-btns
+  &__box-btns {
+  }
+  // .main-tender__btn
+  &__btn {
+  }
 }
-
