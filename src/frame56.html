@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Заём под залог недвижимости"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			@@include('html/section/main/_main-loan.html')
+			@@include('html/section/advantage/_advantage-loan.html')
+			@@include('html/section/calculator/_calculator-loan.html')
+			@@include('html/section/requirements/_requirements-finance.html')
+			@@include('html/section/scheme/_scheme-finance.html')
+			@@include('html/section/forms/_request.html')
+		</main>
+		<!-- @@include('html/_footer.htm',{}) -->
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

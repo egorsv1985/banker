@@ -1,0 +1,89 @@
+<section class="calculator calculator-loan">
+  <div class="container">
+    <div class="calculator__wrapper calculator-loan__wrapper">
+      <h2
+        class="calculator__title calculator-loan__title title title--section title--not-uppercase"
+      >
+        Калькулятор расчёта заёма
+      </h2>
+      <button
+        class="calculator__button calculator-loan__button button button-primary"
+      >
+        АГЕНТ
+      </button>
+      <div class="calculator__box">
+        <div class="calculator__wrap">
+          <form action="#" class="calculator__form">
+            <label for="sum" class="calculator__label">
+              <h4>Сумма займа:</h4>
+            </label>
+            <div class="calculator__form-group">
+              <input
+                type="text"
+                class="calculator__input"
+                placeholder="1 000 000"
+              />
+              <input
+                class="calculator__range"
+                type="range"
+                name="sum"
+                id="sum"
+                min="1000000"
+                max="50000000"
+                step="1000000"
+              />
+              <div class="calculator__span-group">
+                <span class="calculator__value">1 000 000</span>
+                <span class="calculator__value">50 000 000</span>
+              </div>
+            </div>
+          </form>
+          <div class="calculator__inner">
+            <h4 class="calculator__desc">
+              Сумма залога:<span class="calculator__span">51 000</span>
+            </h4>
+          </div>
+        </div>
+        <div class="calculator__wrap">
+          <form action="" class="calculator__form">
+            <label for="time" class="calculator__label">
+              <h4>Срок, месяцы:</h4>
+            </label>
+            <div class="calculator__form-group">
+              <input type="text" class="calculator__input" placeholder="12" />
+              <input
+                class="calculator__range"
+                type="range"
+                name="time"
+                id="time"
+                min="12"
+                max="60"
+                step="6"
+              />
+              <div class="calculator__span-group">
+                <span class="calculator__value">12</span>
+                <span class="calculator__value">60</span>
+              </div>
+            </div>
+          </form>
+          <div class="calculator__inner">
+            <h4 class="calculator__desc">
+              Ежемесячный платёж:<span class="calculator__span">1 000</span>
+            </h4>
+          </div>
+        </div>
+        <div class="calculator__wrap">
+          <form action="" class="calculator__form">
+            <label for="rate" class="calculator__label">
+              <h4>% ставка в месяц</h4>
+            </label>
+            <div class="calculator__form-group">
+              <input type="text" class="calculator__input" placeholder="1" />
+            </div>
+          </form>
+          <button class="calculator__button button">Оставить заявку</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
