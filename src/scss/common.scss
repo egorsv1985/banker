@@ -52,6 +52,12 @@
   &--capitalized {
     text-transform: capitalize;
   }
+  &--uppercase{
+    text-transform: uppercase;
+  }
+  &--dark{
+    color: #151515;
+  }
 
   &--big {
     font-size: 30px;
@@ -88,7 +94,9 @@
   text-align: center;
 }
 
-
+&--dark{
+  color: #002A26;
+}
 
   @include media(max, lg) {
     font-size: 14px;
