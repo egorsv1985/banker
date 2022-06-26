@@ -46,7 +46,9 @@
   @include media(max, lg) {
     font-size: 18px;
   }
-
+&--mb15{
+  margin-bottom: 15px;
+}
   &--capitalized {
     text-transform: capitalize;
   }
@@ -78,6 +80,15 @@
   line-height: 106.19%;
 
   text-shadow: 0px 0px 20px #010715;
+&--normal{
+  font-weight: 400;
+}
+
+&--center{
+  text-align: center;
+}
+
+
 
   @include media(max, lg) {
     font-size: 14px;

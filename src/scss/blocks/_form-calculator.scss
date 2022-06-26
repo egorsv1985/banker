@@ -1,0 +1,79 @@
+.form-calculator {
+  max-width: 936px;
+  background: $mainColor;
+  border-radius: 15px;
+  margin: 0 auto;
+  color: $calculatorColor;
+  padding: 46px 36px;
+  gap: 40px;
+
+  // .form-calculator__wrapper
+  &__wrapper {
+    @include flex(space-between, $flex-wrap: wrap);
+    gap: 52px;
+    width: 100%;
+  }
+  // .form-calculator__content
+  &__content {
+    @include flex($flex-direction: column);
+    &--width30 {
+      width: 30%;
+    }
+  }
+  // .form-calculator__subtitle
+  &__subtitle {
+  }
+  // .form-calculator__box
+  &__box {
+    @include flex($flex-direction: column);
+
+    margin-bottom: 15px;
+  }
+  // .form-calculator__input
+  &__input {
+    width: 253px;
+    height: 58px;
+
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #8c8c8c;
+
+    background-color: #f7f7f7;
+  }
+  // .form-calculator__label
+  &__label {
+    left: 50%;
+    top: 15px;
+    transform: translateX(-50%);
+  }
+  // .form-calculator__range
+  &__range {
+  }
+  // .form-calculator__group
+  &__group {
+    @include flex(space-between);
+  }
+  // .form-calculator__span
+  &__span {
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #424242;
+  }
+  // .form-calculator__text
+  &__text {
+    font-weight: 700;
+
+    line-height: 81.26%;
+    text-shadow: none;
+    margin-bottom: 10px;
+  }
+  // .form-calculator__btn
+  &__btn {
+    width: 264px;
+    height: 62px;
+    border-radius: 4px;
+  }
+}

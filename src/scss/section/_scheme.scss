@@ -108,7 +108,11 @@
       font-size: 16px;
     }
   }
-
+  // .scheme__box-btns
+  &__box-btns {
+    @include flex(center, center);
+    gap: 44px;
+  }
   // .scheme__btn
   &__btn {
     margin: 0 auto;

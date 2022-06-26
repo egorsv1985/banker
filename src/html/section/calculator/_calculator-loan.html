@@ -6,23 +6,21 @@
       >
         Калькулятор расчёта заёма
       </h2>
-      <button
-        class="calculator__button calculator-loan__button button button-primary"
-      >
+      <p class="calculator__text calculator__loan__text text text--normal text--center">
         Получить заём
-      </button>
+      </p>
       <form
         action="#"
         class="calculator-loan__form calculator__form form-calculator form"
       >
-        <div class="form-calculator__wrapper">
-          <div class="form-calculator__content">
-            <h3 class="form-calculator__subtitle subtitle subtitle--bold">
+        <div class="form-calculator__wrapper form__wrapper">
+          <div class="form-calculator__content form__content">
+            <h3 class="form-calculator__subtitle subtitle subtitle--bold subtitle--mb15">
               Сумма займа:
             </h3>
             <div class="form-calculator__box form__box">
               <input
-                type="text"
+                type="number"
                 class="form-calculator__input form__input input"
                 id="summa"
                 name="form[]"
@@ -52,13 +50,15 @@
               </div>
             </div>
           </div>
-          <div class="form-calculator__content">
-            <h3 class="form-calculator__subtitle subtitle subtitle--bold">
+          <div class="form-calculator__content form__content">
+            <h3
+              class="form-calculator__subtitle form__subtitle subtitle subtitle--bold subtitle--mb15"
+            >
               Срок, месяцы:
             </h3>
             <div class="form-calculator__box form__box">
               <input
-                type="text"
+                type="number"
                 class="form-calculator__input form__input input"
                 id="timeline"
                 name="form[]"
@@ -88,13 +88,13 @@
               </div>
             </div>
           </div>
-          <div class="form-calculator__content">
-            <h3 class="form-calculator__subtitle subtitle subtitle--bold">
+          <div class="form-calculator__content form__content">
+            <h3 class="form-calculator__subtitle subtitle subtitle--bold subtitle--mb15">
               % ставка в месяц
             </h3>
             <div class="form-calculator__box form__box">
               <input
-                type="text"
+                type="number"
                 class="form-calculator__input form__input input"
                 id="rate"
                 name="form[]"
@@ -108,16 +108,16 @@
             </div>
           </div>
         </div>
-        <div class="form-calculator__wrapper">
-          <div class="form-calculator__content">
-            <h3 class="form-calculator__text form__text text">Сумма залога:</h3>
+        <div class="form-calculator__wrapper form__wrapper">
+          <div class="form-calculator__content form__content form-calculator__content--width30">
+            <h3 class="form-calculator__text form__text text text--center">Сумма залога:</h3>
             <span
               class="form-calculator__subtitle form__subtitle subtitle subtitle--green subtitle--big"
               >51 000</span
             >
           </div>
-          <div class="form-calculator__content">
-            <h3 class="form-calculator__text form__text text">
+          <div class="form-calculator__content form__content">
+            <h3 class="form-calculator__text form__text text text--center">
               Ежемесячный платёж:
             </h3>
             <span
@@ -125,7 +125,7 @@
               >1 000</span
             >
           </div>
-          <div class="form-calculator__content">
+          <div class="form-calculator__content form__content">
             <button class="form-calculator__btn form__btn btn btn-primary">
               Оставить заявку
             </button>

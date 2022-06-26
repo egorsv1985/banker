@@ -32,6 +32,7 @@ $bgLinkBtn: #082228; // Цвет фона ссылки-кнопки
 $linkBtnColor: #85a5ac; // Цвет текста ссылки-кнопки
 $accentColorText: #2e2e2e; //Цвет текста на белом фоне
 $accentColorSpan: #14b0a0; // Цвет текста в спане
+$calculatorColor: #282828; //Цвет текста в калькуляторах
 
 // НАСТРОЙКИ ===============================================================================================================================================================================================================================================================================================
 // Минимальная ширина страницы
@@ -192,13 +193,16 @@ body {
 @import "./section/scheme-commissions";
 @import "./section/scheme-tender";
 @import "./section/scheme-finance";
+@import "./section/scheme-loan";
 @import "./section/requirements";
 @import "./section/requirements-commissions";
 @import "./section/requirements-finance";
 @import "./section/decision";
+@import "./section/calculator";
 
 // block
 @import "header";
 @import "./blocks/logo";
 @import "./blocks/nav";
 @import "./blocks/box-content";
+@import "./blocks/form-calculator";
