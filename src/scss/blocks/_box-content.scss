@@ -1,7 +1,7 @@
 .box-content {
   @include flex(center, center, $flex-direction: column);
 
-  width: 182px;
+  min-width: 182px;
   height: 104px;
 
   background: $mainColor;

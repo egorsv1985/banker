@@ -43,7 +43,6 @@
 
     margin-bottom: 30px;
     span{
-      font-weight: 700;
       display: inline-block;
     }
   }
@@ -88,5 +87,33 @@ font-size: 22px;
   &__btn {
     max-width: 291px;
     height: 77px;
+  }
+  // .main__inner
+	&__inner {
+    @include flex(space-between, center);
+  }
+	// .main__box-text
+	&__box-text {
+    @include flex ($flex-direction: column);
+  }
+	// .main__span
+	&__span {
+    
+font-weight: 700;
+font-size: 70px;
+line-height: 83px;
+text-align: center;
+
+  }
+	// .main__text
+	&__text {
+
+line-height: 95.52%;
+text-shadow: none;
+letter-spacing: -.8px;
+
+color: #8B8B8B;
+
+
   }
 }

@@ -1,0 +1,125 @@
+.types {
+  padding: 60px 0;
+  // .types__wrapper
+  &__wrapper {
+    @include flex($flex-direction: column);
+  }
+  // .types__title
+  &__title {
+    margin-bottom: 48px;
+  }
+  // .types__inner
+  &__inner {
+    @include flex(space-between, center);
+    margin: 0 auto;
+    max-width: 750px;
+  }
+  // .types__box
+  &__box {
+    @include flex(center, center, $flex-direction: column);
+    gap: 10px;
+  }
+  // .types__box-img
+  &__box-img {
+    @include wh(121px);
+    @include flex(center, center);
+    position: relative;
+    &::after {
+      @include pseudo;
+      @include wh(150px);
+      @include pos(absolute, $top: 50%, $left: 50%);
+      @include background(url("@img/icons/types-border.svg"));
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+    &::before {
+      @include pseudo;
+      @include wh(43px, 32px);
+      @include background(url("@img/icons/types-check.svg"));
+      z-index: 1;
+      @include pos(absolute, $top: 20px, $right: -18px);
+    }
+  }
+  // .types__img
+  &__img {
+  }
+  // .types__text
+  &__text {
+    font-size: 25px;
+    line-height: 92.02%;
+  }
+}
+.types-platforma {
+  // .types-platforma__wrapper
+  &__wrapper {
+  }
+  // .types-platforma__title
+  &__title {
+  }
+  // .types-platforma__box
+  &__box {
+  }
+  // .types-platforma__box-img
+  &__box-img {
+  }
+  // .types-platforma__img
+  &__img {
+  }
+  // .types-platforma__text
+  &__text {
+  }
+}
+.types {
+  // .types__wrapper
+  &__wrapper {
+  }
+  // .types__title
+  &__title {
+  }
+
+  // .types__box
+  &__box {
+  }
+  // .types__box-img
+  &__box-img {
+  }
+  // .types__img
+  &__img {
+  }
+  // .types__text
+  &__text {
+  }
+}
+.types-platforma {
+  // .types-platforma__wrapper
+  &__wrapper {
+  }
+  // .types-platforma__title
+  &__title {
+  }
+  // .types-platforma__inner
+  &__inner {
+  }
+  // .types-platforma__box
+  &__box {
+  }
+  // .types-platforma__box-img
+  &__box-img {
+  }
+  // .types-platforma__img
+  &__img {
+  }
+  // .types-platforma__text
+  &__text {
+  }
+}
+.container {
+}
+.title {
+}
+.title--section {
+}
+.title--not-uppercase {
+}
+.text {
+}
