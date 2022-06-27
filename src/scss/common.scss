@@ -109,6 +109,9 @@
   &--green {
     color: $accentColor;
   }
+  &--small{
+    font-size: 15px;
+  }
 
   &--mb {
     margin-bottom: 42px;
