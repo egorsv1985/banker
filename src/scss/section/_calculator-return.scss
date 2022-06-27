@@ -1,0 +1,136 @@
+.calculator-return {
+  padding: 96px 0;
+  // .calculator-return__wrapper
+  &__wrapper {
+  }
+  // .calculator-return__title
+  &__title {
+    margin-bottom: 42px;
+  }
+  // .calculator-return__inner
+  &__inner {
+    @include flex(center, center);
+    gap: 58px;
+  }
+  // .calculator-return__form
+  &__form {
+  }
+.form-calculator-return__box{
+	margin-bottom: 0;
+}
+  .form-calculator {
+    position: relative;
+    padding: 22px 35px 60px;
+    // .form-calculator__wrapper
+    &__wrapper {
+      flex-wrap: nowrap;
+    }
+    // .form-calculator__content
+    &__content {
+    }
+    // .form-calculator__subtitle
+    &__subtitle {
+      max-width: 320px;
+      margin-bottom: 10px;
+    }
+    // .form-calculator__box
+    &__box {
+    }
+    // .form-calculator__input
+    &__input {
+    }
+    // .form-calculator__label
+    &__label {
+    }
+    // .form-calculator__range
+    &__range {
+    }
+    // .form-calculator__group
+    &__group {
+    }
+    // .form-calculator__span
+    &__span {
+    }
+    // .form-calculator__text
+    &__text {
+    }
+    // .form-calculator__radio
+    &__radio {
+    }
+    // .form-calculator__label-radio
+    &__label-radio {
+    }
+    // .form-calculator__content--width30
+    &__content--width30 {
+    }
+    // .form-calculator__btn
+    &__btn {
+      @include pos(absolute, $bottom: 32px, $left: 50%);
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.form {
+  // .form__wrapper
+  &__wrapper {
+  }
+  // .form__content
+  &__content {
+  }
+  // .form__box
+  &__box {
+  }
+  // .form__input
+  &__input {
+  }
+  // .form__label
+  &__label {
+  }
+  // .form__range
+  &__range {
+  }
+  // .form__group
+  &__group {
+  }
+  // .form__span
+  &__span {
+  }
+  // .form__subtitle
+  &__subtitle {
+  }
+  // .form__text
+  &__text {
+  }
+  // .form__radio
+  &__radio {
+  }
+  // .form__label-radio
+  &__label-radio {
+  }
+  // .form__btn
+  &__btn {
+  }
+}
+.subtitle {
+}
+.subtitle--bold {
+}
+.subtitle--mb15 {
+}
+.input {
+}
+.label {
+}
+.radio {
+}
+.label-radio {
+}
+.subtitle--green {
+}
+.subtitle--big {
+}
+.btn {
+}
+.btn-primary {
+}
