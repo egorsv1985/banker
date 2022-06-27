@@ -1,0 +1,63 @@
+.advantage-platforma {
+  // .advantage-platforma__wrapper
+  &__wrapper {
+  }
+  // .advantage-platforma__title
+  &__title {
+    margin-bottom: 32px;
+  }
+  // .advantage-platforma__inner
+  &__inner {
+    margin-bottom: 50px;
+  }
+  // .advantage-platforma__text
+  &__text {
+  }
+  // .advantage-platforma__wrap
+  &__wrap {
+    padding: 0;
+    @include flex(space-between);
+    gap: 40px;
+    margin-bottom: 50px;
+  }
+  // .advantage-platforma__box
+  &__box {
+    flex-direction: column;
+  }
+  // .advantage-platforma__content
+  &__content {
+    gap: 15px;
+    padding-left: 20px;
+    &--bg-white {
+      background: $mainColor;
+    }
+  }
+  // .advantage-platforma__img
+  &__img {
+  }
+  // .advantage-platforma__span
+  &__span {
+    font-weight: 700;
+    &--small {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+  // .advantage-platforma__box-btns
+  &__box-btns {
+    @include flex(center, center);
+    gap: 25px;
+  }
+  // .advantage-platforma__btn
+  &__btn {
+    width: 289px;
+    height: 76px;
+
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    @include flex(center, center);
+
+    color: #111111;
+  }
+}

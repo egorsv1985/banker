@@ -11,6 +11,11 @@
       font-size: 35px;
     }
   }
+  // .advantage__inner
+  &__inner {
+    @include flex(center, center);
+    gap: 58px;
+  }
   // .advantage__box
   &__box {
     @include flex(space-between, center, wrap);
@@ -50,5 +55,14 @@
     @include media(max, lg) {
       font-size: 18px;
     }
+  }
+  // .advantage__span
+  &__span {
+  }
+  // .advantage__box-btns
+  &__box-btns {
+  }
+  // .advantage__btn
+  &__btn {
   }
 }
