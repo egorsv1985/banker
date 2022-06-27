@@ -14,16 +14,7 @@
     margin-bottom: 43px;
     text-shadow: none;
 
-    position: relative;
-
-    &::before {
-      @include pseudo;
-      @include wh(162px, 3px);
-      @include pos(absolute, $bottom: -10px, $left: 50%);
-      transform: translateX(-50%);
-      border-radius: 5px;
-      background: linear-gradient(94.03deg, #0edac5 8%, #00211e 151.99%);
-    }
+    
   }
   // .calculator__loan
   &__loan {
