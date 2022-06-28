@@ -1,0 +1,13 @@
+.reviews {
+	padding: 64px 0;
+	// .reviews__wrapper
+	&__wrapper {
+		@include flex($flex-direction: column);
+	}
+	// .reviews__title
+	&__title {
+		margin-bottom: 50px;
+	}
+}
+
+
