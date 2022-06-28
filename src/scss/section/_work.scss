@@ -1,0 +1,300 @@
+.work {
+  padding: 90px 0;
+  // .work__wrapper
+  &__wrapper {
+    @include flex($flex-direction: column);
+  }
+  // .work__title
+  &__title {
+    margin-bottom: 50px;
+  }
+  // .work__box
+  &__box {
+    @include flex(space-between);
+    position: relative;
+    margin-bottom: 72px;
+  }
+  // .work__wrap
+  &__wrap {
+    @include flex(center, $flex-direction: column);
+    gap: 56px;
+    &:first-child {
+      width: 22%;
+    }
+  }
+  // .work__inner
+  &__inner {
+    @include flex($flex-direction: column);
+
+    &:nth-child(2) {
+      margin-right: 16%;
+      padding-top: 10px;
+      gap: 30px;
+      .work__box-pseudo {
+        position: relative;
+        &:first-child {
+          &::before {
+            @include wh(300px, 38px);
+            @include background(url("@img/icons/line1.svg"));
+            @include pos(absolute, $top: 16px, $left: -21px);
+            z-index: 1;
+          }
+        }
+        &:nth-child(2) {
+          &::before {
+            @include wh(231px, 32px);
+            @include background(url("@img/icons/line2.svg"));
+            @include pos(absolute, $top: 13px, $left: -26px);
+            z-index: 1;
+          }
+        }
+        &:nth-child(3) {
+          &::before {
+            @include wh(229px, 7px);
+            @include background(url("@img/icons/line3.svg"));
+            @include pos(absolute, $top: 13px, $left: -22px);
+            z-index: 1;
+          }
+        }
+        &:nth-child(4) {
+          &::before {
+            @include wh(231px, 32px);
+            @include background(url("@img/icons/line4.svg"));
+            @include pos(absolute, $top: -31px, $left: -26px);
+            z-index: 1;
+          }
+        }
+        &:nth-child(5) {
+          &::before {
+            @include wh(300px, 38px);
+            @include background(url("@img/icons/line5.svg"));
+            @include pos(absolute, $top: -19px, $left: -20px);
+            z-index: 1;
+          }
+        }
+      }
+    }
+    &:nth-child(4) {
+      padding: 24px 0 16px;
+      justify-content: space-between;
+      .work__box-pseudo {
+        position: relative;
+        &:first-child {
+          &::before {
+            @include wh(320px, 50px);
+            @include background(url("@img/icons/line6.svg"));
+            @include pos(absolute, $top: -10px, $left: -18px);
+            z-index: 1;
+          }
+        }
+        &:nth-child(2) {
+          &::before {
+            @include wh(320px, 50px);
+            @include background(url("@img/icons/line7.svg"));
+            @include pos(absolute, $top: -25px, $left: -18px);
+            z-index: 1;
+          }
+        }
+      }
+    }
+    &:nth-child(5) {
+      justify-content: center;
+      gap: 100px;
+      padding: 20px 0 6px;
+      .work__box-pseudo {
+        position: relative;
+        &:first-child {
+          &::before {
+            @include wh(229px, 31px);
+            @include background(url("@img/icons/line8.svg"));
+            @include pos(absolute, $top: 18px, $left: -82px);
+            z-index: 1;
+          }
+        }
+        &:nth-child(2) {
+          &::before {
+            @include wh(229px, 31px);
+            @include background(url("@img/icons/line9.svg"));
+            @include pos(absolute, $top: -40px, $left: -82px);
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
+  // .work__box-text
+  &__box-text {
+    width: 264px;
+    height: 53px;
+    @include flex(center, center);
+    border-radius: 15px;
+    &--bg-white {
+      background: $mainColor;
+    }
+    &--bg-green {
+      background: linear-gradient(118.93deg, #47c2b3 29.76%, #004940 106.17%);
+    }
+  }
+  // .work__text
+  &__text {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 94.52%;
+
+    color: #151515;
+  }
+  // .work__box-pseudo
+  &__box-pseudo {
+    position: relative;
+    &::before {
+      @include pseudo;
+    }
+    &:first-child {
+      margin-bottom: 15px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 10px;
+    }
+    &:nth-child(3) {
+      margin-bottom: 26px;
+    }
+  }
+  // .work__description
+  &__description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 94.52%;
+  }
+  // .work__logo
+  &__logo {
+    flex-direction: column;
+    gap: 11px;
+    @include pos(absolute, $top: 50%, $left: 50%);
+    transform: translate(-50%, -50%);
+  }
+  .logo {
+    // .logo__img
+    &__img {
+      @include wh(125px, 80px);
+    }
+    // .logo__content
+    &__content {
+    }
+    // .logo__title
+    &__title {
+      font-size: 28px;
+    }
+  }
+  // .work__steps
+  &__steps {
+    @include flex(space-between);
+	position: relative;
+	&::before {
+        @include pseudo;
+        @include wh(100%, 3px);
+        @include pos(absolute, $top: 13px, $left: 0);
+      
+        background-color: $accentColor;
+      }
+  }
+  // .work__item
+  &__item {
+	@include flex($flex-direction: column);
+   
+  }
+
+  // .work__steps-text
+  &__steps-text {
+    font-size: 25px;
+    margin-bottom: 24px;
+    position: relative;
+    &::before {
+      @include pseudo;
+      @include wh(47px);
+      @include pos(absolute, $top: 50%, $left: 50%);
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+
+      border: 3px solid #55d6c6;
+    }
+  }
+}
+.work {
+  // .work__wrapper
+  &__wrapper {
+  }
+  // .work__title
+  &__title {
+  }
+  // .work__box
+  &__box {
+  }
+  // .work__wrap
+  &__wrap {
+  }
+  // .work__box-text
+  &__box-text {
+  }
+  // .work__box-text--bg-green
+  &__box-text--bg-green {
+  }
+  // .work__text
+  &__text {
+  }
+  // .work__inner
+  &__inner {
+  }
+  // .work__box-pseudo
+  &__box-pseudo {
+  }
+  // .work__description
+  &__description {
+  }
+  // .work__logo
+  &__logo {
+  }
+  // .work__box-text--bg-white
+  &__box-text--bg-white {
+  }
+  // .work__steps
+  &__steps {
+  }
+  // .work__item
+  &__item {
+  }
+  // .work__box-step
+  &__box-step {
+  }
+  // .work__steps-text
+  &__steps-text {
+  }
+}
+.container {
+}
+.title--section {
+}
+.title {
+}
+.title--not-uppercase {
+}
+.text--bold {
+}
+.text--green {
+}
+.text--right {
+}
+.text {
+}
+.logo {
+  // .logo__img
+  &__img {
+  }
+  // .logo__content
+  &__content {
+  }
+  // .logo__title
+  &__title {
+  }
+}
+.text--center {
+}
