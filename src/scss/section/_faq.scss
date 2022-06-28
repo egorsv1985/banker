@@ -1,0 +1,18 @@
+.faq {
+	padding: 10px 0;
+	// .faq__wrapper
+	&__wrapper {
+		@include flex ($flex-direction:column);
+	}
+	// .faq__title
+	&__title {
+		margin-bottom: 54px;
+	}
+	// .faq__spollers-box
+	&__spollers-box {}
+	// .faq__spollers
+	&__spollers {}
+}
+
+
+

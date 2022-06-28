@@ -3,57 +3,83 @@
 
 // Блок со спойлерами
 .spollers {
-	display: grid;
-	gap: 15px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 // Спойлер
 .spollers__item {
-	font-size: rem(20);
-	&:not(:last-child) {
-		margin-bottom: em(30, 20);
-	}
+  width: 48%;
 }
 // Заголовок спойлера
 .spollers__title {
-	width: 100%;
-	cursor: default;
-	text-align: left;
-	border: 1px solid #eee;
-	padding: rem(10) rem(15);
-	border-radius: rem(5);
-	position: relative;
-	._spoller-init & {
-		cursor: pointer;
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			right: 10px;
-			top: 50%;
-			background-color: #000;
-			height: 2px;
-			width: 15px;
-			transition: transform 0.5s ease 0s;
-		}
-		&::before {
-			transform: translate(-75%, -50%) rotate(40deg);
-		}
-		&::after {
-			transform: translate(0, -50%) rotate(-40deg);
-		}
-		&._spoller-active {
-			&::before {
-				transform: translateX(-75%) rotate(-40deg);
-			}
-			&::after {
-				transform: rotate(40deg);
-			}
-		}
-	}
+  width: 100%;
+  cursor: default;
+  text-align: left;
+
+  height: 78px;
+  display: flex;
+  align-items: center;
+
+  background: radial-gradient(
+    184.97% 152.52% at 27.83% 24.1%,
+    #4e746f 0%,
+    #214642 100%
+  );
+  border-radius: 15px;
+
+  font-weight: 500;
+  font-size: 22px;
+  padding-left: 40px;
+
+  position: relative;
+  ._spoller-init & {
+    cursor: pointer;
+    &::before,
+    &::after {
+      position: absolute;
+      right: 20px;
+      top: 30%;
+      height: 35px;
+      font-size: 30px;
+      width: 30px;
+      transition: transform 0.5s ease 0s;
+    }
+    &::before {
+      //   transform: translate(-75%, -50%) rotate(40deg);
+    }
+    &::after {
+      //   transform: translate(0, -50%) rotate(-40deg);
+    }
+    &._spoller-active {
+      &::before {
+        transform: rotate(-40deg);
+      }
+      &::after {
+        transform: rotate(40deg);
+      }
+    }
+  }
 }
 // Контент спойлера
 .spollers__body {
-	padding: rem(20);
-	border-radius: rem(5);
-	border: 1px solid #eee;
+  padding: rem(20);
+  border-radius: rem(5);
+ background: #85a5ac;
+}
+
+.spollers {
+  // .spollers__item
+  &__item {
+  }
+  // .spollers__title
+  &__title {
+  }
+  // .spollers__body
+  &__body {
+  }
+  // .spollers__text
+  &__text {
+  }
 }
