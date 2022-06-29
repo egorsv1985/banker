@@ -1,0 +1,26 @@
+
+.advantage-revenue {
+	padding: 90px 0 75px;
+	// .advantage-revenue__wrapper
+	&__wrapper {}
+	// .advantage-revenue__title
+	&__title {
+		margin-bottom: 60px;
+	}
+	// .advantage-revenue__box
+	&__box {}
+	// .advantage-revenue__content
+	&__content {
+		padding-left: 20px;
+	}
+	// .advantage-revenue__img
+	&__img {}
+	// .advantage-revenue__text
+	&__text {}
+	// .advantage-revenue__span
+	&__span {
+		font-weight: 500;
+		font-size: 20px;
+	}
+}
+

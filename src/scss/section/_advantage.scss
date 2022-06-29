@@ -5,11 +5,9 @@
   }
   // .advantage__title
   &__title {
-    font-size: 50px;
+    
     margin-bottom: 50px;
-    @include media(max, lg) {
-      font-size: 35px;
-    }
+   
   }
   // .advantage__inner
   &__inner {
