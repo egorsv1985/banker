@@ -8,18 +8,7 @@
   &__wrapper {
     @include flex($flex-direction: column);
   }
-  // .news-platforma__grid
-  &__grid {
-  }
-  // .news-platforma__box
-  &__box {
-  }
-  // .news-platforma__date
-  &__date {
-  }
-  // .news-platforma__link
-  &__link {
-  }
+
   // .news-platforma__img
   &__img {
     margin-bottom: 20px;

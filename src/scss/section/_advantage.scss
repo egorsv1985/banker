@@ -1,8 +1,6 @@
 .advantage {
   padding: 60px 0;
-  // .advantage__wrapper
-  &__wrapper {
-  }
+  
   // .advantage__title
   &__title {
     
@@ -40,9 +38,7 @@
 
     border-radius: 15px;
   }
-  // .advantage__img
-  &__img {
-  }
+  
   // .advantage__text
   &__text {
     font-size: 25px;
@@ -54,13 +50,5 @@
       font-size: 18px;
     }
   }
-  // .advantage__span
-  &__span {
-  }
-  // .advantage__box-btns
-  &__box-btns {
-  }
-  // .advantage__btn
-  &__btn {
-  }
+  
 }

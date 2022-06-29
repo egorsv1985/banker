@@ -46,12 +46,8 @@
       width: 30px;
       transition: transform 0.5s ease 0s;
     }
-    &::before {
-      //   transform: translate(-75%, -50%) rotate(40deg);
-    }
-    &::after {
-      //   transform: translate(0, -50%) rotate(-40deg);
-    }
+    
+    
     &._spoller-active {
       &::before {
         transform: rotate(-40deg);
@@ -69,17 +65,3 @@
  background: #85a5ac;
 }
 
-.spollers {
-  // .spollers__item
-  &__item {
-  }
-  // .spollers__title
-  &__title {
-  }
-  // .spollers__body
-  &__body {
-  }
-  // .spollers__text
-  &__text {
-  }
-}
