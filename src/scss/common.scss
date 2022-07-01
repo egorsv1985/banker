@@ -26,6 +26,9 @@
   &--not-uppercase {
     text-transform: none;
   }
+  &--green{
+    color: $accentColor;
+  }
 
   &--big {
     font-size: 45px;
