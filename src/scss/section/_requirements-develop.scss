@@ -1,0 +1,49 @@
+.requirements-develop {
+  padding: 140px 0 100px;
+  // .requirements-develop__title
+  &__title {
+    margin-bottom: 60px;
+  }
+  // .requirements-develop__box
+  &__box {
+	margin-bottom: 80px;
+  }
+  // .requirements-develop__text
+  &__text {
+    font-size: 35px;
+    line-height: 92.19%;
+
+    letter-spacing: 0.055em;
+    max-width: 340px;
+  }
+  .text--pseudo {
+    &::before {
+      width: 360px;
+      height: 8px;
+	  top: 80px;
+    }
+    &-white {
+      &::before{
+		height: 3px;
+	  }
+    }
+  }
+
+  // .requirements-develop__list
+  &__list {
+	@include flex ($flex-direction: column);
+	padding-left: 46px;
+	max-width: 970px;
+  }
+  // .requirements-develop__item
+  &__item {
+    list-style-type: disc;
+    p {
+      line-height: 122.19%;
+	  max-width: unset;
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}

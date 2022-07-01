@@ -37,6 +37,9 @@
     );
 
     border-radius: 15px;
+    &--bg-white {
+      background: $mainColor;
+    }
   }
   
   // .advantage__text
