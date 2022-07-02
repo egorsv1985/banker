@@ -18,8 +18,9 @@ global.app = {
 
 // Импорт задач
 import { reset } from "./config/gulp-tasks/reset.js";
-import { html } from "./config/gulp-tasks/html.js";
-import { css } from "./config/gulp-tasks/css.js";
+import { html, /* It's a function that is exported from `./config/gulp-tasks/html.js` */
+htmlPage } from "./config/gulp-tasks/html.js";
+import { css, pageCss } from "./config/gulp-tasks/css.js";
 import { js } from "./config/gulp-tasks/js.js";
 import { jsp } from "./config/gulp-tasks/js-p.js";
 import { images } from "./config/gulp-tasks/images.js";
@@ -34,11 +35,11 @@ const fonts = gulp.series(reset, otfToTtf, ttfToWoff, fonstStyle);
 // Основные задачи будем выполнять параллельно после обработки шрифтов
 const devTasks = gulp.parallel(fonts, sprite, gitignore);
 // Основные задачи будем выполнять параллельно после обработки шрифтов
-const buildTasks = gulp.series(fonts, js, gulp.parallel(html, css, images, sprite, gitignore), jsp);
+const buildTasks = gulp.series(fonts, js, gulp.parallel(html, htmlPage, css, pageCss, images, sprite, gitignore), jsp);
 
 // Экспорт задач
-export { html }
-export { css }
+export { html, htmlPage }
+export { css, pageCss }
 export { js }
 export { images }
 export { fonts }
