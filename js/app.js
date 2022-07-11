@@ -151,7 +151,7 @@
               a = t[s];
             return o + C([n, r], i) / S(o, a);
           }
-          function I(e, t, i) {
+          function P(e, t, i) {
             if (i >= 100) return e.slice(-1)[0];
             var s = T(i, t),
               n = e[s - 1],
@@ -159,7 +159,7 @@
               o = t[s - 1];
             return E([n, r], (i - o) * S(o, t[s]));
           }
-          function P(e, t, i, s) {
+          function I(e, t, i, s) {
             if (100 === s) return s;
             var n = T(s, e),
               r = e[n - 1],
@@ -258,10 +258,10 @@
                   return (e = L(this.xVal, this.xPct, e));
                 }),
                 (e.prototype.fromStepping = function (e) {
-                  return I(this.xVal, this.xPct, e);
+                  return P(this.xVal, this.xPct, e);
                 }),
                 (e.prototype.getStep = function (e) {
-                  return (e = P(this.xPct, this.xSteps, this.snap, e));
+                  return (e = I(this.xPct, this.xSteps, this.snap, e));
                 }),
                 (e.prototype.getDefaultStep = function (e, t, i) {
                   var s = T(e, this.xPct);
@@ -405,14 +405,14 @@
               );
             e.keyboardDefaultStep = t;
           }
-          function V(e, t) {
+          function B(e, t) {
             if ("object" != typeof t || Array.isArray(t))
               throw new Error("noUiSlider: 'range' is not an object.");
             if (void 0 === t.min || void 0 === t.max)
               throw new Error("noUiSlider: Missing 'min' or 'max' in 'range'.");
             e.spectrum = new A(t, e.snap || !1, e.singleStep);
           }
-          function B(e, t) {
+          function V(e, t) {
             if (((t = h(t)), !Array.isArray(t) || !t.length))
               throw new Error("noUiSlider: 'start' option is incorrect.");
             (e.handles = t.length), (e.start = t);
@@ -454,7 +454,7 @@
             }
             e.connect = s;
           }
-          function q(e, t) {
+          function R(e, t) {
             switch (t) {
               case "horizontal":
                 e.ort = 0;
@@ -466,7 +466,7 @@
                 throw new Error("noUiSlider: 'orientation' option is invalid.");
             }
           }
-          function R(e, t) {
+          function q(e, t) {
             if (!d(t))
               throw new Error("noUiSlider: 'margin' option must be numeric.");
             0 !== t && (e.margin = e.spectrum.getDistance(t));
@@ -546,7 +546,7 @@
                 throw new Error(
                   "noUiSlider: 'fixed' behaviour must be used with 2 handles"
                 );
-              R(e, e.start[1] - e.start[0]);
+              q(e, e.start[1] - e.start[0]);
             }
             if (a && (e.margin || e.limit))
               throw new Error(
@@ -643,15 +643,15 @@
                 keyboardPageMultiplier: { r: !1, t: N },
                 keyboardMultiplier: { r: !1, t: _ },
                 keyboardDefaultStep: { r: !1, t: G },
-                start: { r: !0, t: B },
+                start: { r: !0, t: V },
                 connect: { r: !0, t: W },
                 direction: { r: !0, t: X },
                 snap: { r: !1, t: H },
                 animate: { r: !1, t: F },
                 animationDuration: { r: !1, t: j },
-                range: { r: !0, t: V },
-                orientation: { r: !1, t: q },
-                margin: { r: !1, t: R },
+                range: { r: !0, t: B },
+                orientation: { r: !1, t: R },
+                margin: { r: !1, t: q },
                 limit: { r: !1, t: U },
                 padding: { r: !1, t: Y },
                 behaviour: { r: !0, t: K },
@@ -707,8 +707,8 @@
               E = y(),
               T = w() && b(),
               L = t,
-              I = i.spectrum,
-              P = [],
+              P = i.spectrum,
+              I = [],
               M = [],
               k = [],
               A = 0,
@@ -721,7 +721,7 @@
               var i = D.createElement("div");
               return t && g(i, t), e.appendChild(i), i;
             }
-            function V(e, t) {
+            function B(e, t) {
               var s = G(e, i.cssClasses.origin),
                 n = G(s, i.cssClasses.handle);
               if (
@@ -751,14 +751,14 @@
                 s
               );
             }
-            function B(e, t) {
+            function V(e, t) {
               return !!t && G(e, i.cssClasses.connect);
             }
             function H(e, t) {
               var s = G(t, i.cssClasses.connects);
-              (p = []), (S = []).push(B(s, e[0]));
+              (p = []), (S = []).push(V(s, e[0]));
               for (var n = 0; n < i.handles; n++)
-                p.push(V(t, n)), (k[n] = n), S.push(B(s, e[n + 1]));
+                p.push(B(t, n)), (k[n] = n), S.push(V(s, e[n + 1]));
             }
             function F(e) {
               return (
@@ -785,10 +785,10 @@
             function W() {
               return L.hasAttribute("disabled");
             }
-            function q(e) {
+            function R(e) {
               return p[e].hasAttribute("disabled");
             }
-            function R() {
+            function q() {
               C &&
                 (ve("update" + z.tooltips),
                 C.forEach(function (e) {
@@ -797,7 +797,7 @@
                 (C = null));
             }
             function U() {
-              R(),
+              q(),
                 (C = p.map(j)),
                 fe("update" + z.tooltips, function (e, t, s) {
                   if (C && i.tooltips && !1 !== C[t]) {
@@ -816,9 +816,9 @@
                       o = be(M, e, 100, !0, !0, !0),
                       a = r[e],
                       l = String(i.ariaFormat.to(s[e]));
-                    (n = I.fromStepping(n).toFixed(1)),
-                      (o = I.fromStepping(o).toFixed(1)),
-                      (a = I.fromStepping(a).toFixed(1)),
+                    (n = P.fromStepping(n).toFixed(1)),
+                      (o = P.fromStepping(o).toFixed(1)),
+                      (a = P.fromStepping(a).toFixed(1)),
                       t.children[0].setAttribute("aria-valuemin", n),
                       t.children[0].setAttribute("aria-valuemax", o),
                       t.children[0].setAttribute("aria-valuenow", a),
@@ -828,7 +828,7 @@
             }
             function X(t) {
               if (t.mode === e.PipsMode.Range || t.mode === e.PipsMode.Steps)
-                return I.xVal;
+                return P.xVal;
               if (t.mode === e.PipsMode.Count) {
                 if (t.values < 2)
                   throw new Error(
@@ -843,14 +843,14 @@
                 : t.mode === e.PipsMode.Values
                 ? t.stepped
                   ? t.values.map(function (e) {
-                      return I.fromStepping(I.getStep(I.toStepping(e)));
+                      return P.fromStepping(P.getStep(P.toStepping(e)));
                     })
                   : t.values
                 : [];
             }
             function K(e, t) {
               return e.map(function (e) {
-                return I.fromStepping(t ? I.getStep(e) : e);
+                return P.fromStepping(t ? P.getStep(e) : e);
               });
             }
             function Z(t) {
@@ -859,8 +859,8 @@
               }
               var s = X(t),
                 n = {},
-                r = I.xVal[0],
-                a = I.xVal[I.xVal.length - 1],
+                r = P.xVal[0],
+                a = P.xVal[P.xVal.length - 1],
                 l = !1,
                 d = !1,
                 c = 0;
@@ -886,7 +886,7 @@
                     S = s[o + 1],
                     x = t.mode === e.PipsMode.Steps;
                   for (
-                    x && (a = I.xNumSteps[o]),
+                    x && (a = P.xNumSteps[o]),
                       a || (a = S - w),
                       void 0 === S && (S = w),
                       a = Math.max(a, 1e-7),
@@ -895,13 +895,13 @@
                     u = i(u, a)
                   ) {
                     for (
-                      v = (g = (p = I.toStepping(u)) - c) / (t.density || 1),
+                      v = (g = (p = P.toStepping(u)) - c) / (t.density || 1),
                         b = g / (y = Math.round(v)),
                         h = 1;
                       h <= y;
                       h += 1
                     )
-                      n[(f = c + h * b).toFixed(5)] = [I.fromStepping(f), 0];
+                      n[(f = c + h * b).toFixed(5)] = [P.fromStepping(f), 0];
                     (m =
                       s.indexOf(u) > -1
                         ? e.PipsType.LargeValue
@@ -1058,7 +1058,7 @@
                 i = !1;
               return (
                 p.forEach(function (s, n) {
-                  if (!q(n)) {
+                  if (!R(n)) {
                     var r = M[n],
                       o = Math.abs(r - e);
                     (o < t || (o <= t && e > r) || (100 === o && 100 === t)) &&
@@ -1113,7 +1113,7 @@
                 });
             }
             function ce(e, t) {
-              if (!t.handleNumbers.some(q)) {
+              if (!t.handleNumbers.some(R)) {
                 var s;
                 1 === t.handleNumbers.length &&
                   ((s = p[t.handleNumbers[0]].children[0]),
@@ -1173,8 +1173,8 @@
             }
             function he(e) {
               var t = ne(e.calcPoint),
-                i = I.getStep(t),
-                s = I.fromStepping(i);
+                i = P.getStep(t),
+                s = P.fromStepping(i);
               Object.keys(O).forEach(function (e) {
                 "hover" === e.split(".")[0] &&
                   O[e].forEach(function (e) {
@@ -1183,7 +1183,7 @@
               });
             }
             function pe(e, t) {
-              if (W() || q(t)) return !1;
+              if (W() || R(t)) return !1;
               var s = ["Left", "Right"],
                 n = ["Down", "Up"],
                 r = ["PageDown", "PageUp"],
@@ -1205,18 +1205,18 @@
                   m = De(t)[f];
                 if (null === m) return !1;
                 !1 === m &&
-                  (m = I.getDefaultStep(M[t], u, i.keyboardDefaultStep)),
+                  (m = P.getDefaultStep(M[t], u, i.keyboardDefaultStep)),
                   (m *=
                     c || d ? i.keyboardPageMultiplier : i.keyboardMultiplier),
                   (m = Math.max(m, 1e-7)),
                   (m *= u ? -1 : 1),
-                  (a = P[t] + m);
+                  (a = I[t] + m);
               } else
                 a = g
                   ? i.spectrum.xVal[i.spectrum.xVal.length - 1]
                   : i.spectrum.xVal[0];
               return (
-                Te(t, I.toStepping(a), !0, !0),
+                Te(t, P.toStepping(a), !0, !0),
                 ye("slide", t),
                 ye("update", t),
                 ye("change", t),
@@ -1283,9 +1283,9 @@
                   O[n].forEach(function (e) {
                     e.call(
                       _e,
-                      P.map(i.format.to),
+                      I.map(i.format.to),
                       t,
-                      P.slice(),
+                      I.slice(),
                       s || !1,
                       M.slice(),
                       _e
@@ -1300,30 +1300,30 @@
                   !i.events.unconstrained &&
                   (n &&
                     t > 0 &&
-                    ((l = I.getAbsoluteDistance(e[t - 1], i.margin, !1)),
+                    ((l = P.getAbsoluteDistance(e[t - 1], i.margin, !1)),
                     (s = Math.max(s, l))),
                   r &&
                     t < p.length - 1 &&
-                    ((l = I.getAbsoluteDistance(e[t + 1], i.margin, !0)),
+                    ((l = P.getAbsoluteDistance(e[t + 1], i.margin, !0)),
                     (s = Math.min(s, l)))),
                 p.length > 1 &&
                   i.limit &&
                   (n &&
                     t > 0 &&
-                    ((l = I.getAbsoluteDistance(e[t - 1], i.limit, !1)),
+                    ((l = P.getAbsoluteDistance(e[t - 1], i.limit, !1)),
                     (s = Math.min(s, l))),
                   r &&
                     t < p.length - 1 &&
-                    ((l = I.getAbsoluteDistance(e[t + 1], i.limit, !0)),
+                    ((l = P.getAbsoluteDistance(e[t + 1], i.limit, !0)),
                     (s = Math.max(s, l)))),
                 i.padding &&
                   (0 === t &&
-                    ((l = I.getAbsoluteDistance(0, i.padding[0], !1)),
+                    ((l = P.getAbsoluteDistance(0, i.padding[0], !1)),
                     (s = Math.max(s, l))),
                   t === p.length - 1 &&
-                    ((l = I.getAbsoluteDistance(100, i.padding[1], !0)),
+                    ((l = P.getAbsoluteDistance(100, i.padding[1], !0)),
                     (s = Math.min(s, l)))),
-                a || (s = I.getStep(s)),
+                a || (s = P.getStep(s)),
                 !((s = u(s)) === e[t] && !o) && s
               );
             }
@@ -1359,7 +1359,7 @@
               return i.dir ? 100 - e - t : e;
             }
             function Ce(e, t) {
-              (M[e] = t), (P[e] = I.fromStepping(t));
+              (M[e] = t), (I[e] = P.fromStepping(t));
               var s = "translate(" + we(xe(t, 0) - _ + "%", "0") + ")";
               (p[e].style[i.transformRule] = s), Le(e), Le(e + 1);
             }
@@ -1386,23 +1386,23 @@
                 S[e].style[i.transformRule] = r + " " + o;
               }
             }
-            function Ie(e, t) {
+            function Pe(e, t) {
               return null === e || !1 === e || void 0 === e
                 ? M[t]
                 : ("number" == typeof e && (e = String(e)),
-                  !1 !== (e = i.format.from(e)) && (e = I.toStepping(e)),
+                  !1 !== (e = i.format.from(e)) && (e = P.toStepping(e)),
                   !1 === e || isNaN(e) ? M[t] : e);
             }
-            function Pe(e, t, s) {
+            function Ie(e, t, s) {
               var n = h(e),
                 r = void 0 === M[0];
               (t = void 0 === t || t),
                 i.animate && !r && c(L, i.cssClasses.tap, i.animationDuration),
                 k.forEach(function (e) {
-                  Te(e, Ie(n[e], e), !0, !1, s);
+                  Te(e, Pe(n[e], e), !0, !1, s);
                 });
               var o = 1 === k.length ? 0 : 1;
-              if (r && I.hasNoSize() && ((s = !0), (M[0] = 0), k.length > 1)) {
+              if (r && P.hasNoSize() && ((s = !0), (M[0] = 0), k.length > 1)) {
                 var a = 100 / (k.length - 1);
                 k.forEach(function (e) {
                   M[e] = e * a;
@@ -1418,17 +1418,17 @@
                 });
             }
             function Me(e) {
-              Pe(i.start, e);
+              Ie(i.start, e);
             }
             function ke(e, t, i, s) {
               if (!((e = Number(e)) >= 0 && e < k.length))
                 throw new Error("noUiSlider: invalid handle number, got: " + e);
-              Te(e, Ie(t, e), !0, !0, s), ye("update", e), i && ye("set", e);
+              Te(e, Pe(t, e), !0, !0, s), ye("update", e), i && ye("set", e);
             }
             function Ae(e) {
               if ((void 0 === e && (e = !1), e))
-                return 1 === P.length ? P[0] : P.slice(0);
-              var t = P.map(i.format.to);
+                return 1 === I.length ? I[0] : I.slice(0);
+              var t = I.map(i.format.to);
               return 1 === t.length ? t[0] : t;
             }
             function Oe() {
@@ -1446,8 +1446,8 @@
             }
             function De(e) {
               var t = M[e],
-                s = I.getNearbySteps(t),
-                n = P[e],
+                s = P.getNearbySteps(t),
+                n = I[e],
                 r = s.thisStep.step,
                 o = null;
               if (i.snap)
@@ -1463,7 +1463,7 @@
                     ? s.thisStep.step
                     : !1 !== s.stepBefore.step && n - s.stepBefore.highestStep),
                 100 === t ? (r = null) : 0 === t && (o = null);
-              var a = I.countStepDecimals();
+              var a = P.countStepDecimals();
               return (
                 null !== r && !1 !== r && (r = Number(r.toFixed(a))),
                 null !== o && !1 !== o && (o = Number(o.toFixed(a))),
@@ -1494,20 +1494,20 @@
               r.forEach(function (t) {
                 void 0 !== e[t] && (i[t] = o[t]);
               }),
-                (I = o.spectrum),
+                (P = o.spectrum),
                 (i.margin = o.margin),
                 (i.limit = o.limit),
                 (i.padding = o.padding),
                 i.pips ? ee(i.pips) : Q(),
-                i.tooltips ? U() : R(),
+                i.tooltips ? U() : q(),
                 (M = []),
-                Pe(n(e.start) ? e.start : s, t);
+                Ie(n(e.start) ? e.start : s, t);
             }
             function Ne() {
               (d = F(L)),
                 H(i.connect, d),
                 ge(i.events),
-                Pe(i.start),
+                Ie(i.start),
                 i.pips && ee(i.pips),
                 i.tooltips && U(),
                 Y();
@@ -1519,7 +1519,7 @@
               on: fe,
               off: ve,
               get: Ae,
-              set: Pe,
+              set: Ie,
               setHandle: ke,
               reset: Me,
               __moveHandles: function (e, t, i) {
@@ -1529,7 +1529,7 @@
               updateOptions: $e,
               target: L,
               removePips: Q,
-              removeTooltips: R,
+              removeTooltips: q,
               getPositions: function () {
                 return M.slice();
               },
@@ -2380,10 +2380,10 @@
       Object.defineProperty(x.fn, e, { value: T[e], writable: !0 });
     });
     const L = x;
-    function I(e, t) {
+    function P(e, t) {
       return void 0 === t && (t = 0), setTimeout(e, t);
     }
-    function P() {
+    function I() {
       return Date.now();
     }
     function M(e, t) {
@@ -2537,7 +2537,7 @@
         $
       );
     }
-    function V(e) {
+    function B(e) {
       return (
         void 0 === e && (e = {}),
         N ||
@@ -2585,7 +2585,7 @@
         N
       );
     }
-    function B() {
+    function V() {
       return (
         _ ||
           (_ = (function () {
@@ -3320,7 +3320,7 @@
             : t.emit(`slidePrevTransition${n}`);
       }
     }
-    const q = {
+    const R = {
       slideTo: function (e, t, i, s, n) {
         if (
           (void 0 === e && (e = 0),
@@ -3599,7 +3599,7 @@
                     )
                     .eq(0)
                     .index()),
-                  I(() => {
+                  P(() => {
                     e.slideTo(r);
                   }))
                 : e.slideTo(r)
@@ -3611,14 +3611,14 @@
                   )
                   .eq(0)
                   .index()),
-                I(() => {
+                P(() => {
                   e.slideTo(r);
                 }))
               : e.slideTo(r);
         } else e.slideTo(r);
       },
     };
-    const R = {
+    const q = {
       loopCreate: function () {
         const e = this,
           t = m(),
@@ -3771,7 +3771,7 @@
         }),
         (o.startX = h),
         (o.startY = p),
-        (n.touchStartTime = P()),
+        (n.touchStartTime = I()),
         (t.allowClick = !0),
         t.updateSize(),
         (t.swipeDirection = void 0),
@@ -3830,7 +3830,7 @@
               currentX: c,
               currentY: u,
             }),
-            (s.touchStartTime = P()))
+            (s.touchStartTime = I()))
           )
         );
       if (s.isTouchEvent && n.touchReleaseOnEdges && !n.loop)
@@ -3990,7 +3990,7 @@
         i.isTouched &&
         (!0 === t.allowSlideNext || !0 === t.allowSlidePrev) &&
         t.setGrabCursor(!1);
-      const d = P(),
+      const d = I(),
         c = d - i.touchStartTime;
       if (t.allowClick) {
         const e = l.path || (l.composedPath && l.composedPath());
@@ -4001,8 +4001,8 @@
             t.emit("doubleTap doubleClick", l);
       }
       if (
-        ((i.lastClickTime = P()),
-        I(() => {
+        ((i.lastClickTime = I()),
+        P(() => {
           t.destroyed || (t.allowClick = !0);
         }),
         !i.isTouched ||
@@ -4458,8 +4458,8 @@
                 W({ swiper: i, runCallbacks: e, direction: t, step: "End" }));
           },
         },
-        slide: q,
-        loop: R,
+        slide: R,
+        loop: q,
         grabCursor: {
           setGrabCursor: function (e) {
             const t = this;
@@ -4577,8 +4577,8 @@
         const r = this;
         (r.__swiper__ = !0),
           (r.support = G()),
-          (r.device = V({ userAgent: t.userAgent })),
-          (r.browser = B()),
+          (r.device = B({ userAgent: t.userAgent })),
+          (r.browser = V()),
           (r.eventsListeners = {}),
           (r.eventsAnyListeners = []),
           (r.modules = [...r.__modules__]),
@@ -4653,7 +4653,7 @@
               startTranslate: void 0,
               allowThresholdMove: void 0,
               focusableElements: r.params.focusableElements,
-              lastClickTime: P(),
+              lastClickTime: I(),
               clickTimeout: void 0,
               velocities: [],
               allowMomentumBounce: void 0,
@@ -4815,6 +4815,19 @@
             t && i.update()),
           i
         );
+      }
+      changeLanguageDirection(e) {
+        const t = this;
+        (t.rtl && "rtl" === e) ||
+          (!t.rtl && "ltr" === e) ||
+          ((t.rtl = "rtl" === e),
+          (t.rtlTranslate = "horizontal" === t.params.direction && t.rtl),
+          t.rtl
+            ? (t.$el.addClass(`${t.params.containerModifierClass}rtl`),
+              (t.el.dir = "rtl"))
+            : (t.$el.removeClass(`${t.params.containerModifierClass}rtl`),
+              (t.el.dir = "ltr")),
+          t.update());
       }
       mount(e) {
         const t = this;
@@ -5088,11 +5101,13 @@
       }
       function l(e) {
         e.preventDefault(),
-          (!t.isBeginning || t.params.loop || t.params.rewind) && t.slidePrev();
+          (!t.isBeginning || t.params.loop || t.params.rewind) &&
+            (t.slidePrev(), n("navigationPrev"));
       }
       function d(e) {
         e.preventDefault(),
-          (!t.isEnd || t.params.loop || t.params.rewind) && t.slideNext();
+          (!t.isEnd || t.params.loop || t.params.rewind) &&
+            (t.slideNext(), n("navigationNext"));
       }
       function c() {
         const e = t.params.navigation;
@@ -5383,8 +5398,8 @@
       Ee = "lgSlideItemLoad",
       Te = "lgBeforeSlide",
       Le = "lgAfterSlide",
-      Ie = "lgPosterClick",
-      Pe = "lgDragStart",
+      Pe = "lgPosterClick",
+      Ie = "lgDragStart",
       Me = "lgDragMove",
       ke = "lgDragEnd",
       Ae = "lgBeforeNextSlide",
@@ -5414,6 +5429,8 @@
         defaultCaptionHeight: 0,
         ariaLabelledby: "",
         ariaDescribedby: "",
+        resetScrollPosition: !0,
+        hideScrollbar: !1,
         closable: !0,
         swipeToClose: !0,
         closeOnTap: !0,
@@ -5422,6 +5439,7 @@
         loop: !0,
         escKey: !0,
         keyPress: !0,
+        trapFocus: !0,
         controls: !0,
         slideEndAnimation: !0,
         hideControlOnEnd: !1,
@@ -5817,7 +5835,7 @@
       "disqusIdentifier",
       "disqusUrl",
     ];
-    function Ve(e) {
+    function Be(e) {
       return "href" === e
         ? "src"
         : (e = (e =
@@ -5826,7 +5844,7 @@
             return e[1].toUpperCase();
           }));
     }
-    var Be = function (e, t, i, s) {
+    var Ve = function (e, t, i, s) {
         void 0 === i && (i = 0);
         var n = _e(e).attr("data-lg-size") || s;
         if (n) {
@@ -5944,10 +5962,10 @@
           }
         return s;
       },
-      qe = function (e) {
+      Re = function (e) {
         return !!e && !!e.complete && 0 !== e.naturalWidth;
       },
-      Re = function (e, t, i, s, n) {
+      qe = function (e, t, i, s, n) {
         return (
           '<div class="lg-video-cont ' +
           (n && n.youtube
@@ -5968,7 +5986,16 @@
           '" />\n        </div>'
         );
       },
-      Ue = function (e, t, i, s) {
+      Ue = function (e) {
+        var t = e.querySelectorAll(
+          'a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])'
+        );
+        return [].filter.call(t, function (e) {
+          var t = window.getComputedStyle(e);
+          return "none" !== t.display && "hidden" !== t.visibility;
+        });
+      },
+      Ye = function (e, t, i, s) {
         var n = [],
           r = (function () {
             for (var e = 0, t = 0, i = arguments.length; t < i; t++)
@@ -5985,7 +6012,7 @@
             for (var t = {}, o = 0; o < e.attributes.length; o++) {
               var a = e.attributes[o];
               if (a.specified) {
-                var l = Ve(a.name),
+                var l = Be(a.name),
                   d = "";
                 r.indexOf(l) > -1 && (d = l), d && (t[d] = a.value);
               }
@@ -6002,10 +6029,10 @@
           n
         );
       },
-      Ye = function () {
+      Xe = function () {
         return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
       },
-      Xe = function (e, t, i) {
+      Ke = function (e, t, i) {
         if (!e)
           return t
             ? { html5: !0 }
@@ -6031,8 +6058,8 @@
           ? { wistia: r }
           : void 0;
       },
-      Ke = 0,
-      Ze = (function () {
+      Ze = 0,
+      Je = (function () {
         function e(e, t) {
           if (
             ((this.lgOpened = !1),
@@ -6042,6 +6069,7 @@
             (this.lgBusy = !1),
             (this.currentItemsInDom = []),
             (this.prevScrollTop = 0),
+            (this.bodyPaddingRight = 0),
             (this.isDummyImageRemoved = !1),
             (this.dragOrSwipeEnabled = !1),
             (this.mediaContainerPosition = { top: 0, bottom: 0 }),
@@ -6049,8 +6077,8 @@
           )
             return this;
           if (
-            (Ke++,
-            (this.lgId = Ke),
+            (Ze++,
+            (this.lgId = Ze),
             (this.el = e),
             (this.LGel = _e(e)),
             this.generateSettings(t),
@@ -6075,7 +6103,7 @@
               this.settings.isMobile &&
               "function" == typeof this.settings.isMobile
                 ? this.settings.isMobile()
-                : Ye())
+                : Xe())
             ) {
               var t = fe(
                 fe({}, this.settings.mobileSettings),
@@ -6311,7 +6339,7 @@
                 i = t.top,
                 s = t.bottom;
               if (
-                ((this.currentImageSize = Be(
+                ((this.currentImageSize = Ve(
                   this.items[this.index],
                   this.outer,
                   i + s,
@@ -6369,19 +6397,47 @@
                   this.items = this.el.querySelectorAll(this.settings.selector);
               else this.items = this.settings.selector;
             else this.items = this.el.children;
-            return Ue(
+            return Ye(
               this.items,
               this.settings.extraProps,
               this.settings.getCaptionFromTitleOrAlt,
               this.settings.exThumbImage
             );
           }),
+          (e.prototype.shouldHideScrollbar = function () {
+            return (
+              this.settings.hideScrollbar &&
+              document.body === this.settings.container
+            );
+          }),
+          (e.prototype.hideScrollbar = function () {
+            if (this.shouldHideScrollbar()) {
+              this.bodyPaddingRight = parseFloat(
+                _e("body").style().paddingRight
+              );
+              var e = document.documentElement.getBoundingClientRect(),
+                t = window.innerWidth - e.width;
+              _e(document.body).css(
+                "padding-right",
+                t + this.bodyPaddingRight + "px"
+              ),
+                _e(document.body).addClass("lg-overlay-open");
+            }
+          }),
+          (e.prototype.resetScrollBar = function () {
+            this.shouldHideScrollbar() &&
+              (_e(document.body).css(
+                "padding-right",
+                this.bodyPaddingRight + "px"
+              ),
+              _e(document.body).removeClass("lg-overlay-open"));
+          }),
           (e.prototype.openGallery = function (e, t) {
             var i = this;
             if ((void 0 === e && (e = this.settings.index), !this.lgOpened)) {
               (this.lgOpened = !0),
-                this.outer.get().focus(),
                 this.outer.removeClass("lg-hide-items"),
+                this.hideScrollbar(),
                 this.$container.addClass("lg-show");
               var s = this.getItemsToBeInsertedToDom(e, e);
               this.currentItemsInDom = s;
@@ -6401,7 +6457,7 @@
               var d = this.galleryItems[e].__slideVideoInfo;
               this.zoomFromOrigin &&
                 t &&
-                ((this.currentImageSize = Be(
+                ((this.currentImageSize = Ve(
                   t,
                   this.outer,
                   a + l,
@@ -6443,6 +6499,11 @@
                     i.$backdrop.addClass("in"),
                       i.$container.addClass("lg-show-in");
                   }, 10),
+                    setTimeout(function () {
+                      i.settings.trapFocus &&
+                        document.body === i.settings.container &&
+                        i.trapFocus();
+                    }, i.settings.backdropDuration + 50),
                     (i.zoomFromOrigin && r) ||
                       setTimeout(function () {
                         i.outer.addClass("lg-visible");
@@ -6626,7 +6687,7 @@
           }),
           (e.prototype.onSlideObjectLoad = function (e, t, i, s) {
             var n = e.find(".lg-object").first();
-            qe(n.get()) || t
+            Re(n.get()) || t
               ? i()
               : (n.on("load.lg error.lg", function () {
                   i && i();
@@ -6674,7 +6735,7 @@
           (e.prototype.addSlideVideoInfo = function (e) {
             var t = this;
             e.forEach(function (e, i) {
-              (e.__slideVideoInfo = Xe(e.src, !!e.video, i)),
+              (e.__slideVideoInfo = Ke(e.src, !!e.video, i)),
                 e.__slideVideoInfo &&
                   t.settings.loadYouTubePoster &&
                   !e.poster &&
@@ -6717,7 +6778,7 @@
                 var y = this.mediaContainerPosition,
                   b = y.top,
                   w = y.bottom,
-                  S = Be(
+                  S = Ve(
                     this.items[e],
                     this.outer,
                     b + w,
@@ -6741,7 +6802,7 @@
                   this.zoomFromOrigin &&
                   this.currentImageSize &&
                   (C = this.getDummyImageContent(n, e, ""));
-                x = Re(r, C || "", g, this.settings.strings.playVideo, p);
+                x = qe(r, C || "", g, this.settings.strings.playVideo, p);
                 n.prepend(x);
               } else if (p) {
                 x = '<div class="lg-video-cont " style="' + g + '"></div>';
@@ -6772,15 +6833,18 @@
                 }, this.settings.startAnimationDuration + 100),
                 n.hasClass("lg-loaded") ||
                   setTimeout(function () {
-                    if (
-                      "image" === i.getSlideType(s) &&
-                      (n
-                        .find(".lg-img-wrap")
-                        .append(je(e, d, "", o, a, s.sources)),
-                      o || l)
-                    ) {
-                      var t = n.find(".lg-object");
-                      i.initPictureFill(t);
+                    if ("image" === i.getSlideType(s)) {
+                      var t = s.alt,
+                        c = t ? 'alt="' + t + '"' : "";
+                      if (
+                        (n
+                          .find(".lg-img-wrap")
+                          .append(je(e, d, c, o, a, s.sources)),
+                        o || l)
+                      ) {
+                        var u = n.find(".lg-object");
+                        i.initPictureFill(u);
+                      }
                     }
                     ("image" === i.getSlideType(s) ||
                       ("video" === i.getSlideType(s) && r)) &&
@@ -6958,7 +7022,7 @@
                   var u = this.mediaContainerPosition,
                     h = u.top,
                     p = u.bottom,
-                    g = Be(
+                    g = Ve(
                       this.items[e],
                       this.outer,
                       h + p,
@@ -7109,7 +7173,7 @@
                   r && Math.abs(e.pageX - t.pageX) < 5)
                 ) {
                   var a = _e(i.target);
-                  n.isPosterElement(a) && n.LGel.trigger(Ie);
+                  n.isPosterElement(a) && n.LGel.trigger(Pe);
                 }
                 n.swipeDirection = void 0;
               }),
@@ -7158,7 +7222,7 @@
                   if (s) (s = !1), e.touchEnd(i, t, r);
                   else if (n) {
                     var o = _e(r.target);
-                    e.isPosterElement(o) && e.LGel.trigger(Ie);
+                    e.isPosterElement(o) && e.LGel.trigger(Pe);
                   }
                   (e.touchAction = void 0), (n = !1);
                 }
@@ -7186,7 +7250,7 @@
                       (e.outer.get().scrollLeft += 1),
                       (e.outer.get().scrollLeft -= 1),
                       e.outer.removeClass("lg-grab").addClass("lg-grabbing"),
-                      e.LGel.trigger(Pe))));
+                      e.LGel.trigger(Ie))));
               }),
               _e(window).on("mousemove.lg.global" + this.lgId, function (r) {
                 s &&
@@ -7201,7 +7265,7 @@
                   var o = _e(r.target);
                   n
                     ? ((n = !1), e.touchEnd(i, t, r), e.LGel.trigger(ke))
-                    : e.isPosterElement(o) && e.LGel.trigger(Ie),
+                    : e.isPosterElement(o) && e.LGel.trigger(Pe),
                     s &&
                       ((s = !1),
                       e.outer.removeClass("lg-grabbing").addClass("lg-grab"));
@@ -7213,7 +7277,7 @@
             this.$inner.on("click.lg", function (t) {
               !e.dragOrSwipeEnabled &&
                 e.isPosterElement(_e(t.target)) &&
-                e.LGel.trigger(Ie);
+                e.LGel.trigger(Pe);
             });
           }),
           (e.prototype.manageSwipeClass = function () {
@@ -7369,6 +7433,22 @@
               t.off("click.lgcustom-item-" + t.attr("data-lg-id"));
             }
           }),
+          (e.prototype.trapFocus = function () {
+            var e = this;
+            this.$container.get().focus({ preventScroll: !0 }),
+              _e(window).on("keydown.lg.global" + this.lgId, function (t) {
+                if (e.lgOpened && ("Tab" === t.key || 9 === t.keyCode)) {
+                  var i = Ue(e.$container.get()),
+                    s = i[0],
+                    n = i[i.length - 1];
+                  t.shiftKey
+                    ? document.activeElement === s &&
+                      (n.focus(), t.preventDefault())
+                    : document.activeElement === n &&
+                      (s.focus(), t.preventDefault());
+                }
+              });
+          }),
           (e.prototype.manageCloseGallery = function () {
             var e = this;
             if (this.settings.closable) {
@@ -7395,7 +7475,10 @@
           (e.prototype.closeGallery = function (e) {
             var t = this;
             if (!this.lgOpened || (!this.settings.closable && !e)) return 0;
-            this.LGel.trigger(De), _e(window).scrollTop(this.prevScrollTop);
+            this.LGel.trigger(De),
+              this.settings.resetScrollPosition &&
+                !this.settings.hideScrollbar &&
+                _e(window).scrollTop(this.prevScrollTop);
             var i,
               s = this.items[this.index];
             if (this.zoomFromOrigin && s) {
@@ -7405,7 +7488,7 @@
                 a = this.galleryItems[this.index],
                 l = a.__slideVideoInfo,
                 d = a.poster,
-                c = Be(
+                c = Ve(
                   s,
                   this.outer,
                   r + o,
@@ -7447,6 +7530,7 @@
                   i &&
                   t.outer.removeClass("lg-zoom-from-image"),
                   t.$container.removeClass("lg-show"),
+                  t.resetScrollBar(),
                   t.$backdrop
                     .removeAttr("style")
                     .css(
@@ -7457,7 +7541,7 @@
                   t.getSlideItem(t.index).removeClass("lg-start-end-progress"),
                   t.$inner.empty(),
                   t.lgOpened && t.LGel.trigger(ze, { instance: t }),
-                  t.outer.get() && t.outer.get().blur(),
+                  t.$container.get() && t.$container.get().blur(),
                   (t.lgOpened = !1);
               }, u + 100),
               u + 100
@@ -7514,16 +7598,16 @@
           e
         );
       })();
-    const Je = function (e, t) {
-        return new Ze(e, t);
+    const Qe = function (e, t) {
+        return new Je(e, t);
       },
-      Qe = document.querySelectorAll("[data-gallery]");
-    if (Qe.length) {
+      et = document.querySelectorAll("[data-gallery]");
+    if (et.length) {
       let t = [];
-      Qe.forEach((e) => {
+      et.forEach((e) => {
         t.push({
           gallery: e,
-          galleryClass: Je(e, {
+          galleryClass: Qe(e, {
             licenseKey: "7EC452A9-0CFD441C-BD984C7C-17C8456E",
             speed: 500,
           }),
